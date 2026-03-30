@@ -1,0 +1,1961 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>7&nbsp; Week 12 - Practical – SPRT2002 Prac Book</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./Practical6.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-364982630eef5352dd1537128a8ed5cb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="include/webex.css">
+<link rel="stylesheet" href="custom.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">SPRT2002 Prac Book</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-practicals" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Practicals</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-practicals">    
+        <li>
+    <a class="dropdown-item" href="./Practical1.html">
+ <span class="dropdown-text">Practical 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Practical2.html">
+ <span class="dropdown-text">Practical 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Practical3.html">
+ <span class="dropdown-text">Practical 3</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Practical4.html">
+ <span class="dropdown-text">Practical 4</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Practical5.html">
+ <span class="dropdown-text">Practical 5</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Practical6.html">
+ <span class="dropdown-text">Practical 6</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Practical7.html">
+ <span class="dropdown-text">Practical 7</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="./SPRT2002-Prac-Book.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="./SPRT2002-Prac-Book.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#learning-outcome" id="toc-learning-outcome" class="nav-link active" data-scroll-target="#learning-outcome"><span class="header-section-number">7.1</span> Learning Outcome:</a></li>
+  <li><a href="#practical-goals" id="toc-practical-goals" class="nav-link" data-scroll-target="#practical-goals"><span class="header-section-number">7.2</span> Practical Goals:</a></li>
+  <li><a href="#example-case-study" id="toc-example-case-study" class="nav-link" data-scroll-target="#example-case-study"><span class="header-section-number">7.3</span> Example case study</a></li>
+  <li><a href="#hypothesis-testing-recap" id="toc-hypothesis-testing-recap" class="nav-link" data-scroll-target="#hypothesis-testing-recap"><span class="header-section-number">7.4</span> Hypothesis testing recap</a></li>
+  <li><a href="#but-what-is-a-p-value" id="toc-but-what-is-a-p-value" class="nav-link" data-scroll-target="#but-what-is-a-p-value"><span class="header-section-number">7.5</span> But what is a p-value</a>
+  <ul class="collapse">
+  <li><a href="#what-a-p-value-isnt" id="toc-what-a-p-value-isnt" class="nav-link" data-scroll-target="#what-a-p-value-isnt"><span class="header-section-number">7.5.1</span> What a p-value isn’t</a></li>
+  </ul></li>
+  <li><a href="#test-your-learning" id="toc-test-your-learning" class="nav-link" data-scroll-target="#test-your-learning"><span class="header-section-number">7.6</span> Test your learning</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 12 - Practical</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstat/1.9.6/jstat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+<section id="learning-outcome" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="learning-outcome"><span class="header-section-number">7.1</span> Learning Outcome:</h2>
+<ol type="1">
+<li><p>Understand measurement accuracy concepts and their application to exercise testing and measurement</p></li>
+<li><p>Evaluate the feasibility of different tests according to environmental conditions and client characteristics</p></li>
+<li><p>Demonstrate basic data processing and analytical techniques</p></li>
+<li><p>Communicate test results and their implications to hypothetical client scenarios</p></li>
+</ol>
+<p><br></p>
+</section>
+<section id="practical-goals" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="practical-goals"><span class="header-section-number">7.2</span> Practical Goals:</h2>
+<ol type="1">
+<li><p>Build intuition around Hypothesis testing by performing your own hypothesis test</p></li>
+<li><p>Practice interpreting results of your findings make sure to give context to the size of your effect, the precision around the effect you observed and confidence that these results may be reproducible in the future.</p></li>
+<li><p>Professional report 2 overview <br></p></li>
+</ol>
+</section>
+<section id="example-case-study" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="example-case-study"><span class="header-section-number">7.3</span> Example case study</h2>
+<p>You work for an organisation that wants to know whether some intervention/factor influences a measure that you track with clients. For example it may be that your boss wants know how much a warm up influence flexibility screening, or they might want to know how much getting to practise an activity acutely influences your performance on it.</p>
+<p>In groups your goal is to come up with a question in which you want to test a hypothesis on?</p>
+<p>You need to formally decide ahead of time what expected result it? e.g.&nbsp;Whether you think it will have an effect or not have an effect.</p>
+<p>Using material discussed in Week 11 and 12 seminar your job is to test this hypothesis and report the results of your finding.</p>
+<p><br></p>
+</section>
+<section id="hypothesis-testing-recap" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="hypothesis-testing-recap"><span class="header-section-number">7.4</span> Hypothesis testing recap</h2>
+<p>A quick recap of the main points discussed in lecture material. When we perform a hypothesis test, we are effectively trying to identify whether the signal (mean difference) we have observed can be considered an interesting result or could easily be explained via random variation. For this unit, we are going to focus on the T-statistic calculated from a paired t-test design (effectively comparing the same individuals pre and post some intervention). The T-statistic is calculated as:</p>
+<p><span class="math display">\[
+T = \frac{\text{mean diff}}{\frac{\text{sd(differences)}}{\sqrt{N}}}
+\]</span></p>
+<p>Where <span class="math inline">\(N\)</span> the number of participants.</p>
+<p>Let’s look into the equation in a little more detail:</p>
+<p>We have a mean difference which can be thought of as a signal. We divide that by the <span class="math inline">\(sd(differences)\)</span>, which can be thought of as the level of consistency in change amongst individuals or also considered a measure of noise</p>
+<p>The smaller the noise (greater consistency), the larger the T-value will be.</p>
+<p>Finally, we divide this noise by the <span class="math inline">\(\sqrt{N}\)</span>, which can be thought of as a penalty for the fact that we are only testing on a sample and not the full population</p>
+<p>The more people, the less penalty is applied and the greater the T-value will be</p>
+<p>The interactive figure below should hopefully drive home the message on how changing these parameters changes the T value.</p>
+<div id="stat-visualization-container" style="max-width: 1400px; margin: 0 auto;">
+  <style>
+    /* Scope all styles to only affect elements inside our container */
+    #stat-visualization-container {
+      font-family: 'Space Mono', monospace;
+      color: #859596;
+      padding: 20px;
+    }
+    
+    #stat-visualization-container .slider-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    
+    #stat-visualization-container .slider-group {
+      flex: 1;
+      margin: 0 10px;
+    }
+    
+    #stat-visualization-container .slider-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    #stat-visualization-container .slider-value {
+      display: inline-block;
+      width: 40px;
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+      background-color: #1883b0;
+      color: white;
+      border-radius: 3px;
+      margin-bottom: 10px;
+    }
+    
+    #stat-visualization-container input[type="range"] {
+      width: 100%;
+      margin-top: 10px;
+    }
+    
+    #stat-visualization-container .axis text {
+      fill: #859596;
+    }
+    
+    #stat-visualization-container .axis path, 
+    #stat-visualization-container .axis line {
+      stroke: #859596;
+    }
+    
+    #stat-visualization-container .participant-line {
+      stroke: #1882b0af;
+      stroke-width: 1.5;
+    }
+    
+    #stat-visualization-container .mean-point {
+      fill: rgb(68, 67, 67);
+    }
+    
+    #stat-visualization-container .error-bar {
+      stroke: #859596;
+      stroke-width: 1.5;
+    }
+    
+    #stat-visualization-container .mean-line {
+      stroke: rgba(199, 199, 199, 0.473);
+      stroke-width: 1.5;
+    }
+    
+    #stat-visualization-container .post-mean-line {
+      stroke: #2b6a6e;
+      stroke-width: 1.5;
+      stroke-dasharray: 4;
+    }
+    
+    #stat-visualization-container .significant {
+      stroke: red;
+      fill: red;
+    }
+    
+    #stat-visualization-container .not-significant {
+      stroke: rgb(68, 67, 67);
+      fill: rgb(80, 80, 80);
+    }
+    
+    #stat-visualization-container .cohens-d-point {
+      fill: purple;
+      stroke: white;
+      stroke-width: 1;
+    }
+    
+    #stat-visualization-container .d-axis text {
+      fill: purple;
+    }
+    
+    #stat-visualization-container .d-axis path, 
+    #stat-visualization-container .d-axis line {
+      stroke: purple;
+    }
+
+    #stat-visualization-container .t-axis text {
+      fill: #1883b0;
+    }
+    
+    #stat-visualization-container .t-axis path, 
+    #stat-visualization-container .t-axis line {
+      stroke: #1883b0;
+    }
+
+    #stat-visualization-container .t-value-point {
+      fill: #1883b0;
+      stroke: white;
+      stroke-width: 1;
+    }
+
+    #stat-visualization-container .stats-formula {
+      font-size: 14px;
+      fill: #333;
+    }
+    
+    #stat-visualization-container .rope-rect {
+      fill: rgba(144, 238, 144, 0.3);
+      stroke: green;
+      stroke-width: 1;
+    }
+    
+    #stat-visualization-container .calculation-container {
+      border-top: 1px solid #ddd;
+      padding-top: 15px;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    
+    #stat-visualization-container .formula-row {
+      margin-bottom: 8px;
+    }
+    
+    #stat-visualization-container .interpretation-container {
+      border-top: 1px solid #ddd;
+      padding-top: 15px;
+      margin-top: 10px;
+    }
+    
+    #stat-visualization-container .toggle-button {
+      background-color: #1883b0;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-right: 10px;
+      margin-top: 10px;
+    }
+    
+    #stat-visualization-container .toggle-button:hover {
+      background-color: #1565a0;
+    }
+    
+    #stat-visualization-container .interpretation-text {
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+  </style>
+
+  <div class="slider-container">
+    <div class="slider-group">
+      <label for="participants">Participants (n)</label>
+      <div class="slider-value" id="participants-value">21</div>
+      <input type="range" id="participants" min="6" max="100" value="21" step="5">
+    </div>
+    <div class="slider-group">
+      <label for="mean-post">Mean difference</label>
+      <div class="slider-value" id="mean-post-value">1.75</div>
+      <input type="range" id="mean-post" min="-20" max="20" value="1.75" step="0.25">
+    </div>
+    <div class="slider-group">
+      <label for="sd-value">Standard deviation</label>
+      <div class="slider-value" id="sd-value-value">5</div>
+      <input type="range" id="sd-value" min="1" max="15" value="5" step="0.5">
+    </div>
+    <div class="slider-group">
+      <label for="correlation">Correlation</label>
+      <div class="slider-value" id="correlation-value">0</div>
+      <input type="range" id="correlation" min="-1" max="1" value="0" step="0.1">
+    </div>
+  </div>
+  
+  <div class="slider-container">
+    <div class="slider-group">
+      <label for="rope-size">ROPE size (× SD)</label>
+      <div class="slider-value" id="rope-size-value">0.2</div>
+      <input type="range" id="rope-size" min="0.05" max="1" value="0.2" step="0.05">
+    </div>
+    <div style="flex: 3; display: flex; align-items: flex-end; margin-bottom: 10px;">
+      <button id="toggle-rope" class="toggle-button">Show ROPE</button>
+      <button id="reset-viz" class="toggle-button">Reset Visualization</button>
+    </div>
+  </div>
+  
+  <div class="chart-container" id="chart"></div>
+  
+  <div class="calculation-container" id="calculations">
+    <!-- Calculations will be inserted here -->
+  </div>
+  
+  <div class="interpretation-container">
+    <div class="interpretation-text" id="interpretation">
+      <!-- Interpretation will be inserted here -->
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jstat/1.9.6/jstat.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+  <script>
+    // Initialize parameters
+    let params = {
+        participants: 21,
+        meanPost: 1.75,
+        correlation: 0,
+        sdValue: 5,
+        ropeSize: 0.2, // ROPE size as a multiple of SD
+        showRope: false // Toggle for showing/hiding ROPE
+    };
+    
+    // Store full dataset
+    let fullDataset = [];
+    let originalPreValues = [];
+    
+    // Update slider value displays
+    function updateSliderDisplay(id, value) {
+        document.getElementById(id + '-value').textContent = value;
+    }
+    
+    // Set up event listeners for sliders
+    document.getElementById('participants').addEventListener('input', function() {
+        params.participants = parseInt(this.value);
+        updateSliderDisplay('participants', params.participants);
+        updateVisualization(false); // Don't regenerate data
+    });
+    
+    document.getElementById('mean-post').addEventListener('input', function() {
+        params.meanPost = parseFloat(this.value);
+        updateSliderDisplay('mean-post', params.meanPost);
+        updateVisualization(false); // Don't regenerate data
+    });
+    
+    document.getElementById('sd-value').addEventListener('input', function() {
+        params.sdValue = parseFloat(this.value);
+        updateSliderDisplay('sd-value', params.sdValue);
+        updateVisualization(true); // Regenerate data with new SD
+    });
+    
+    document.getElementById('correlation').addEventListener('input', function() {
+        params.correlation = parseFloat(this.value);
+        updateSliderDisplay('correlation', params.correlation);
+        updateVisualization(false); // Don't regenerate data
+    });
+    
+    document.getElementById('rope-size').addEventListener('input', function() {
+        params.ropeSize = parseFloat(this.value);
+        updateSliderDisplay('rope-size', params.ropeSize);
+        updateVisualization(false); // Just update the ROPE, don't regenerate data
+    });
+    
+    // Toggle ROPE visibility
+    document.getElementById('toggle-rope').addEventListener('click', function() {
+        params.showRope = !params.showRope;
+        this.textContent = params.showRope ? 'Hide ROPE' : 'Show ROPE';
+        updateVisualization(false);
+    });
+    
+    // Reset visualization
+    document.getElementById('reset-viz').addEventListener('click', function() {
+        params = {
+            participants: 21,
+            meanPost: 1.75,
+            correlation: 0,
+            sdValue: 5,
+            ropeSize: 0.2,
+            showRope: params.showRope // Keep current ROPE visibility
+        };
+        
+        // Update all slider displays and values
+        updateSliderDisplay('participants', params.participants);
+        document.getElementById('participants').value = params.participants;
+        
+        updateSliderDisplay('mean-post', params.meanPost);
+        document.getElementById('mean-post').value = params.meanPost;
+        
+        updateSliderDisplay('sd-value', params.sdValue);
+        document.getElementById('sd-value').value = params.sdValue;
+        
+        updateSliderDisplay('correlation', params.correlation);
+        document.getElementById('correlation').value = params.correlation;
+        
+        updateSliderDisplay('rope-size', params.ropeSize);
+        document.getElementById('rope-size').value = params.ropeSize;
+        
+        updateVisualization(true); // Regenerate data
+    });
+    
+    // Set up the D3 visualization
+    const margin = {top: 40, right: 120, bottom: 40, left: 60}; // Increased right margin for third axis
+    const width = 800 - margin.left - margin.right;
+    const height = 500 - margin.top - margin.bottom;
+    
+    const svg = d3.select('#chart')
+        .append('svg')
+        .attr('width', width + margin.left + margin.right)
+        .attr('height', height + margin.top + margin.bottom)
+        .append('g')
+        .attr('transform', `translate(${margin.left},${margin.top})`);
+        
+    // Set up scales
+    const x = d3.scalePoint()
+        .domain(['pre', 'post', 'diff'])
+        .range([60, 220, 350]); // Adjusted positions for better spacing
+        
+    const y = d3.scaleLinear()
+        .domain([25, 75])
+        .range([height, 0]);
+        
+    // Define the mean difference scale (y2)
+    // We want this to be centered at y=50 (preMean) with range -15 to +15
+    const y2 = d3.scaleLinear()
+        .domain([-15, 15])
+        .range([y(50-15), y(50+15)]); // Map -15 to y(35) and +15 to y(65)
+        
+    // Define the Cohen's d scale (y3)
+    // Range -10 to +10 where each 5 units = 1 SD
+    const y3 = d3.scaleLinear()
+        .domain([-10, 10])
+        .range([y(50-10), y(50+10)]); // Map -10 to y(40) and +10 to y(60)
+
+    // Define the tvalue scale (y4) with range -5 to 5
+    const y4 = d3.scaleLinear()
+        .domain([-5, 5])
+        .range([y(50-10), y(50+10)]);
+        
+    // Add axes with capital labels for x-axis
+    const xAxis = svg.append('g')
+        .attr('class', 'axis')
+        .attr('transform', `translate(0,${height})`)
+        .call(d3.axisBottom(x).tickFormat(d => d.toUpperCase()));
+        
+    const yAxis = svg.append('g')
+        .attr('class', 'axis')
+        .call(d3.axisLeft(y));
+        
+    // Add y axis for mean difference (right side)
+    const y2Axis = svg.append('g')
+        .attr('class', 'axis')
+        .attr('transform', `translate(${x('diff') + 15},0)`)
+        .call(d3.axisRight(y2).ticks(7));
+        
+    // Add y axis for Cohen's d (far right side)
+    const y3Axis = svg.append('g')
+        .attr('class', 'axis d-axis')
+        .attr('transform', `translate(${x('diff') + 200},0)`)
+        .call(d3.axisRight(y3)
+            .tickValues([-10, -5, 0, 5, 10])
+            .tickFormat(d => {
+                // Convert scale values to SD units
+                const sd = d / 5;
+                return `${sd}SD`;
+            })
+        );
+        
+    // Add T-value axis with proper styling
+    const y4Axis = svg.append('g')
+        .attr('class', 'axis t-axis')
+        .attr('transform', `translate(${x('diff') + 120},0)`)
+        .call(d3.axisRight(y4)
+            .tickValues([-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5])
+            .tickFormat(d => `${d}`)
+        );
+    
+    // Add label for right axis (mean difference) - vertical orientation
+    svg.append('text')
+        .attr('transform', `translate(${x('diff') + 50},${height/2}) rotate(90)`)
+        .attr('text-anchor', 'middle')
+        .text('mean difference')
+        .attr('fill', '#859596');
+        
+    // Add label for far right axis (Cohen's d) - vertical orientation
+    svg.append('text')
+        .attr('transform', `translate(${x('diff') + 240},${height/2}) rotate(90)`)
+        .attr('text-anchor', 'middle')
+        .text('Cohen\'s d')
+        .attr('fill', 'purple');
+
+    // Add label for T-value axis - vertical orientation
+    svg.append('text')
+        .attr('transform', `translate(${x('diff') + 140},${height/2}) rotate(90)`)
+        .attr('text-anchor', 'middle')
+        .text('T-value')
+        .attr('fill', '#1883b0');
+        
+    // Create elements for visualization components
+    const mainGroup = svg.append('g');
+    const participantLines = mainGroup.append('g');
+    const errorBars = mainGroup.append('g');
+    const meanPoints = mainGroup.append('g');
+    const diffPoint = mainGroup.append('g');
+    const dPoint = mainGroup.append('g'); // Group for Cohen's d point
+    const tPoint = mainGroup.append('g'); // Group for T-value point
+    const statsText = mainGroup.append('g');
+    const meanLines = mainGroup.append('g'); // Dedicated group for mean lines
+    const ropeGroup = mainGroup.append('g'); // Group for ROPE rectangle
+    
+    // Generate multivariate normal random values with empirical correction
+    function mvrnorm(n, mu, sigma, empirical = false) {
+        // Set seed for reproducibility
+        Math.seedrandom(1);
+        
+        // Initialize array with standard normal values
+        let z = Array(n).fill().map(() => [
+            boxMuller(),
+            boxMuller()
+        ]);
+        
+        // Box-Muller transform to get normal variates
+        function boxMuller() {
+            let u = 0, v = 0;
+            while(u === 0) u = Math.random();
+            while(v === 0) v = Math.random();
+            return Math.sqrt(-2.0 * Math.log(u)) * Math.cos(2.0 * Math.PI * v);
+        }
+        
+        // Calculate Cholesky decomposition
+        const s1 = Math.sqrt(sigma[0][0]);
+        const s2 = Math.sqrt(sigma[1][1]);
+        const r = sigma[0][1] / (s1 * s2);
+        
+        const L = [
+            [s1, 0],
+            [s2 * r, s2 * Math.sqrt(1 - r*r)]
+        ];
+        
+        // Apply linear transformation to get correlated normal values
+        let x = z.map(zi => [
+            L[0][0] * zi[0] + L[0][1] * zi[1],
+            L[1][0] * zi[0] + L[1][1] * zi[1]
+        ]);
+        
+        // If empirical correction is requested
+        if (empirical && n > 1) {
+            // Calculate sample mean
+            let xbar = [0, 0];
+            for (let i = 0; i < n; i++) {
+                xbar[0] += x[i][0];
+                xbar[1] += x[i][1];
+            }
+            xbar[0] /= n;
+            xbar[1] /= n;
+            
+            // Center the data
+            for (let i = 0; i < n; i++) {
+                x[i][0] -= xbar[0];
+                x[i][1] -= xbar[1];
+            }
+            
+            // Calculate sample covariance
+            let S = [[0, 0], [0, 0]];
+            for (let i = 0; i < n; i++) {
+                S[0][0] += x[i][0] * x[i][0];
+                S[0][1] += x[i][0] * x[i][1];
+                S[1][0] += x[i][1] * x[i][0];
+                S[1][1] += x[i][1] * x[i][1];
+            }
+            S[0][0] /= (n - 1);
+            S[0][1] /= (n - 1);
+            S[1][0] /= (n - 1);
+            S[1][1] /= (n - 1);
+            
+            // Calculate Cholesky decomposition of sample covariance
+            const sS1 = Math.sqrt(S[0][0]);
+            const sS2 = Math.sqrt(S[1][1]);
+            const sR = S[0][1] / (sS1 * sS2);
+            
+            const sL = [
+                [sS1, 0],
+                [sS2 * sR, sS2 * Math.sqrt(1 - sR*sR)]
+            ];
+            
+            // Calculate inverse of sL
+            const det = sL[0][0] * sL[1][1] - sL[0][1] * sL[1][0];
+            const sLInv = [
+                [sL[1][1] / det, -sL[0][1] / det],
+                [-sL[1][0] / det, sL[0][0] / det]
+            ];
+            
+            // Apply transformation: x = L * sLInv * (x - xbar) + mu
+            for (let i = 0; i < n; i++) {
+                const temp = [
+                    sLInv[0][0] * x[i][0] + sLInv[0][1] * x[i][1],
+                    sLInv[1][0] * x[i][0] + sLInv[1][1] * x[i][1]
+                ];
+                
+                x[i][0] = L[0][0] * temp[0] + L[0][1] * temp[1] + mu[0];
+                x[i][1] = L[1][0] * temp[0] + L[1][1] * temp[1] + mu[1];
+            }
+        } else {
+            // Just add the means
+            for (let i = 0; i < n; i++) {
+                x[i][0] += mu[0];
+                x[i][1] += mu[1];
+            }
+        }
+        
+        // Convert to objects with pre/post properties
+        return x.map(xi => ({
+            pre: xi[0],
+            post: xi[1]
+        }));
+    }
+    
+    // Calculate t-test statistics for paired samples
+    function pairedTTest(data) {
+        const diffs = data.map(d => d.post - d.pre);
+        const n = diffs.length;
+        const meanDiff = diffs.reduce((sum, val) => sum + val, 0) / n;
+        const sumSquaredDiffs = diffs.reduce((sum, val) => sum + Math.pow(val - meanDiff, 2), 0);
+        const sd = Math.sqrt(sumSquaredDiffs / (n - 1));
+        const se = sd / Math.sqrt(n);
+        const t = meanDiff / se;
+        
+        // Calculate p-value
+        const df = n - 1;
+        // Using jStat for t-distribution
+        const pValue = jStat.ttest(t, df, 2); // two-tailed test
+        
+        return {
+            meanDiff,
+            sd,
+            se,
+            t,
+            df,
+            pValue,
+            n
+        };
+    }
+    
+    // Cohen's d calculation using average of SDs
+    function cohensD(data) {
+        // Calculate pre and post means and SDs
+        const preValues = data.map(d => d.pre);
+        const postValues = data.map(d => d.post);
+        
+        const preMean = d3.mean(preValues);
+        const postMean = d3.mean(postValues);
+        const preSd = d3.deviation(preValues);
+        const postSd = d3.deviation(postValues);
+        
+        // Calculate mean difference
+        const meanDiff = postMean - preMean;
+        
+        // Use average of pre and post SDs
+        const avgSd = (preSd + postSd) / 2;
+        
+        return meanDiff / avgSd;
+    }
+
+    // Calculate Common Language Effect Size (CLES)
+    function cles(data) {
+        const diffs = data.map(d => d.post - d.pre);
+        const n = diffs.length;
+        const meanDiff = diffs.reduce((sum, val) => sum + val, 0) / n;
+        const sumSquaredDiffs = diffs.reduce((sum, val) => sum + Math.pow(val - meanDiff, 2), 0);
+        const sdDiff = Math.sqrt(sumSquaredDiffs / (n - 1));
+        
+        // Calculate probability using SD of differences for CLES
+        const clesValue = jStat.normal.cdf(meanDiff / (sdDiff * Math.sqrt(2)), 0, 1);
+        
+        return clesValue;
+    }
+    
+    // Function to generate initial dataset
+    function generateInitialData() {
+        const preMean = 50;
+        const postMean = 50; // No adjustment initially
+        const mu = [preMean, postMean];
+        const preSd = params.sdValue;
+        const postSd = params.sdValue;
+        const sigma = [
+            [preSd * preSd, 0], // No correlation initially
+            [0, postSd * postSd]
+        ];
+        
+        // Generate data with empirical correction
+        fullDataset = mvrnorm(100, mu, sigma, true);
+        
+        // Store original pre values
+        originalPreValues = fullDataset.map(d => d.pre);
+    }
+    
+    // Function to update the data based on current parameters
+    function updateData() {
+        const preMean = 50;
+        const postMean = 50 + params.meanPost;
+        const mu = [preMean, postMean];
+        const preSd = params.sdValue;
+        const postSd = params.sdValue;
+        const correlation = params.correlation;
+        const visibleCount = params.participants;
+        
+        // Create variance-covariance matrix
+        const sigma = [
+            [preSd * preSd, preSd * postSd * correlation],
+            [preSd * postSd * correlation, postSd * postSd]
+        ];
+        
+        // Generate new data with empirical correction to match exact means and covariance
+        const data = mvrnorm(visibleCount, mu, sigma, true);
+        
+        return data;
+    }
+    
+    // Function to update the calculations display
+    function updateCalculations(tTestResults, d, clesValue, data) {
+        const calculationsDiv = document.getElementById('calculations');
+        
+        // Get pre/post SDs
+        const preValues = data.map(d => d.pre);
+        const postValues = data.map(d => d.post);
+        const preSdValue = d3.deviation(preValues);
+        const postSdValue = d3.deviation(postValues);
+        
+        // Create HTML for calculations
+        let html = `
+            <div class="formula-row">
+                <strong>T-value:</strong> t = mean diff / (sd diff / √N) = ${tTestResults.meanDiff.toFixed(2)} / (${tTestResults.sd.toFixed(2)} / √${tTestResults.n}) = ${tTestResults.t.toFixed(3)}
+            </div>
+            <div class="formula-row">
+                <strong>Cohen's d:</strong> d = mean diff / avg(SD pre, SD post) = ${tTestResults.meanDiff.toFixed(2)} / ${((preSdValue + postSdValue)/2).toFixed(2)} = ${d.toFixed(3)}
+            </div>
+            <div class="formula-row">
+                <strong>CLES:</strong> ${clesValue.toFixed(3)} = probability of a random post value exceeding a random pre value
+            </div>
+        `;
+        
+        calculationsDiv.innerHTML = html;
+    }
+    
+    // Function to update the interpretation text with equivalence testing concepts
+    function updateInterpretation(tTestResults, d, clesValue) {
+        const interpretationDiv = document.getElementById('interpretation');
+        
+        // Interpret Cohen's d
+        let dInterpretation = "";
+        const absD = Math.abs(d);
+        if (absD < 0.2) {
+            dInterpretation = "negligible effect (d < 0.2)";
+        } else if (absD < 0.5) {
+            dInterpretation = "small effect (0.2 ≤ d < 0.6)";
+        } else if (absD < 0.8) {
+            dInterpretation = "medium effect (0.6 ≤ d < 1.2)";
+        } else {
+            dInterpretation = "large effect (d ≥ 1.2)";
+        }
+        
+        // Calculate confidence interval for mean difference
+        const seMultiplier = jStat.studentt.inv(0.975, tTestResults.df);
+        const ciLower = tTestResults.meanDiff - tTestResults.se * seMultiplier;
+        const ciUpper = tTestResults.meanDiff + tTestResults.se * seMultiplier;
+        
+        // Interpret CLES
+        const clesPercentage = (clesValue * 100).toFixed(1);
+        const clesInterpretation = `There is a ${clesPercentage}% chance that a randomly selected post-intervention measure will exceed a randomly selected pre-intervention measure.`;
+        
+        // Create the interpretation text
+        let html = `
+            <p><strong>Effect size:</strong> Cohen's d = ${d.toFixed(2)} indicates a ${dInterpretation}.</p>
+            <p><strong>Practical significance:</strong> ${clesInterpretation}</p>
+        `;
+        
+        // Add ROPE and equivalence testing interpretation if visible
+        if (params.showRope) {
+            const ropeValue = params.ropeSize * params.sdValue;
+            const ropeLower = -ropeValue;
+            const ropeUpper = ropeValue;
+            
+            // Check CI overlap with zero and ROPE
+            const ciContainsZero = (ciLower <= 0 && ciUpper >= 0);
+            const ciCompletelyInRope = (ciLower >= ropeLower && ciUpper <= ropeUpper);
+            const ciCompletelyOutsideRope = (ciLower > ropeUpper || ciUpper < ropeLower);
+            const ciOverlapsRope = !ciCompletelyOutsideRope && !ciCompletelyInRope;
+            
+            // Build statistical significance interpretation
+            let statSignificance = "";
+            if (ciContainsZero) {
+                statSignificance = "The effect is not statistically significant (95% CI includes zero).";
+            } else {
+                statSignificance = `The effect is statistically significant (95% CI: [${ciLower.toFixed(2)}, ${ciUpper.toFixed(2)}] does not include zero).`;
+            }
+            
+            // Build equivalence/practical significance interpretation
+            let practSignificance = "";
+            if (ciCompletelyInRope) {
+                practSignificance = "The effect is statistically equivalent to zero (the entire 95% CI falls within the ROPE).";
+            } else if (ciCompletelyOutsideRope) {
+                practSignificance = "The effect is practically significant (the entire 95% CI falls outside the ROPE).";
+            } else if (ciOverlapsRope) {
+                if (Math.abs(tTestResults.meanDiff) > ropeValue) {
+                    practSignificance = "The point estimate suggests a practically meaningful effect (outside ROPE), but the 95% CI overlaps with the ROPE. Therefore, we cannot confidently conclude practical significance.";
+                } else {
+                    practSignificance = "The point estimate falls within the ROPE, but the 95% CI extends outside the ROPE. The evidence for practical equivalence is inconclusive.";
+                }
+            }
+            
+            // Combined interpretation using equivalence testing framework
+            html += `
+                <p><strong>ROPE analysis:</strong> The Region of Practical Equivalence is set at ±${params.ropeSize} SD (±${ropeValue.toFixed(2)} units).</p>
+                <p><strong>Statistical testing:</strong> ${statSignificance}</p>
+                <p><strong>Equivalence testing:</strong> ${practSignificance}</p>
+            `;
+            
+            // Add overall conclusion based on both statistical significance and ROPE analysis
+            let conclusion = "";
+            if (!ciContainsZero && ciCompletelyOutsideRope) {
+                conclusion = "The intervention produces a statistically and practically significant effect.";
+            } else if (!ciContainsZero && ciCompletelyInRope) {
+                conclusion = "The intervention produces a statistically significant effect, but the effect is too small to be practically meaningful.";
+            } else if (!ciContainsZero && ciOverlapsRope) {
+                conclusion = "The intervention produces a statistically significant effect. However, the practical significance is inconclusive - more precise measurement is needed to determine if the effect is practically meaningful.";
+            } else if (ciContainsZero && ciCompletelyInRope) {
+                conclusion = "The intervention produces neither a statistically significant nor practically meaningful effect. We can confidently conclude practical equivalence.";
+            } else if (ciContainsZero && !ciCompletelyInRope) {
+                conclusion = "The intervention does not produce a statistically significant effect, and we cannot conclude practical equivalence. The study may be underpowered.";
+            }
+            
+            html += `<p><strong>Conclusion:</strong> ${conclusion}</p>`;
+        } else {
+            // Simple statistical significance when ROPE is not displayed
+            if (tTestResults.pValue < 0.05) {
+                html += `<p><strong>Statistical significance:</strong> The effect is statistically significant (p = ${tTestResults.pValue.toFixed(3)}).</p>`;
+            } else {
+                html += `<p><strong>Statistical significance:</strong> The effect is not statistically significant (p = ${tTestResults.pValue.toFixed(3)}).</p>`;
+            }
+        }
+        
+        interpretationDiv.innerHTML = html;
+    }
+    
+    // Function to update the visualization
+    function updateVisualization(regenerateData = true) {
+        // Generate or update data
+        if (regenerateData) {
+            generateInitialData();
+        }
+        
+        const data = updateData();
+        
+        // Calculate statistics
+        const tTestResults = pairedTTest(data);
+        const d = cohensD(data);
+        const clesValue = cles(data);
+        
+        // Update main visualization
+        
+        // 1. Update participant lines
+        const lineGenerator = d3.line()
+            .x(d => d.x)
+            .y(d => y(d.y));
+            
+        // Use adjusted x positions for start and end points
+        const participantData = data.map((d, i) => [
+            {x: x('pre') + 0.1 * (x('post') - x('pre')), y: d.pre},  // Start at 1.1 of pre
+            {x: x('post') - 0.1 * (x('post') - x('pre')), y: d.post}  // End at 0.9 of post
+        ]);
+        
+        const lines = participantLines.selectAll('.participant-line')
+            .data(participantData);
+            
+        lines.enter()
+            .append('path')
+            .attr('class', 'participant-line')
+            .merge(lines)
+            .attr('d', lineGenerator);
+            
+        lines.exit().remove();
+        
+        // 2. Calculate means and standard deviations
+        const preValues = data.map(d => d.pre);
+        const postValues = data.map(d => d.post);
+        
+        const preMeanValue = d3.mean(preValues);
+        const postMeanValue = d3.mean(postValues);
+        const preSdValue = d3.deviation(preValues);
+        const postSdValue = d3.deviation(postValues);
+        
+        // 3. Update mean lines
+        meanLines.selectAll('*').remove(); // Clear all previous mean lines
+        
+        meanLines.append('line')
+            .attr('class', 'mean-line')
+            .attr('x1', 0)
+            .attr('x2', x('diff'))
+            .attr('y1', y(preMeanValue))
+            .attr('y2', y(preMeanValue));
+            
+        meanLines.append('line')
+            .attr('class', 'post-mean-line')
+            .attr('x1', x('post'))
+            .attr('x2', x('diff'))
+            .attr('y1', y(postMeanValue))
+            .attr('y2', y(postMeanValue));
+            
+        // 4. Update error bars
+        errorBars.selectAll('.pre-error-bar').remove();
+        errorBars.append('line')
+            .attr('class', 'error-bar pre-error-bar')
+            .attr('x1', x('pre'))
+            .attr('x2', x('pre'))
+            .attr('y1', y(preMeanValue - preSdValue))
+            .attr('y2', y(preMeanValue + preSdValue));
+            
+        errorBars.selectAll('.post-error-bar').remove();
+        errorBars.append('line')
+            .attr('class', 'error-bar post-error-bar')
+            .attr('x1', x('post'))
+            .attr('x2', x('post'))
+            .attr('y1', y(postMeanValue - postSdValue))
+            .attr('y2', y(postMeanValue + postSdValue));
+            
+        // 5. Update mean points
+        meanPoints.selectAll('.mean-point').remove();
+        
+        meanPoints.append('circle')
+            .attr('class', 'mean-point')
+            .attr('cx', x('pre'))
+            .attr('cy', y(preMeanValue))
+            .attr('r', 7);
+            
+        meanPoints.append('circle')
+            .attr('class', 'mean-point')
+            .attr('cx', x('post'))
+            .attr('cy', y(postMeanValue))
+            .attr('r', 7);
+            
+        // 6. Update difference point and confidence interval
+        const seMultiplier = jStat.studentt.inv(0.975, tTestResults.df);
+        const ciLower = tTestResults.meanDiff - tTestResults.se * seMultiplier;
+        const ciUpper = tTestResults.meanDiff + tTestResults.se * seMultiplier;
+        
+        diffPoint.selectAll('*').remove();
+        
+        // Add confidence interval line
+        diffPoint.append('line')
+            .attr('class', tTestResults.pValue < 0.05 ? 'significant' : 'not-significant')
+            .attr('x1', x('diff'))
+            .attr('x2', x('diff'))
+            .attr('y1', y2(ciLower))
+            .attr('y2', y2(ciUpper));
+        
+        // Create square marker at the exact mean difference position
+        const squareSize = 12; // Size of the square in pixels
+        diffPoint.append('rect')
+            .attr('class', tTestResults.pValue < 0.05 ? 'significant' : 'not-significant')
+            .attr('x', x('diff') - squareSize/2) // Center horizontally
+            .attr('y', y2(tTestResults.meanDiff) - squareSize/2) // Center vertically
+            .attr('width', squareSize)
+            .attr('height', squareSize);
+        
+        // 7. Update Cohen's d point on third axis
+        dPoint.selectAll('*').remove();
+        
+        // Map the Cohen's d value to the y3 scale
+        // Convert d to the -10 to 10 scale (d * 5)
+        const scaledD = d * 5;
+        // Clamp the value to be within our axis range
+        const clampedScaledD = Math.max(-10, Math.min(10, scaledD));
+        
+        // Add a diamond marker for Cohen's d
+        dPoint.append('path')
+            .attr('class', 'cohens-d-point')
+            .attr('d', d3.symbol().type(d3.symbolDiamond).size(150))
+            .attr('transform', `translate(${x('diff') + 190}, ${y3(clampedScaledD)})`);
+            
+        // 8. Add T-value point
+        tPoint.selectAll('*').remove();
+        
+        // Clamp the t-value to be within our axis range (-5 to 5)
+        const clampedT = Math.max(-5, Math.min(5, tTestResults.t));
+        
+        // Add a triangle marker for the t-value
+        tPoint.append('path')
+            .attr('class', 't-value-point')
+            .attr('d', d3.symbol().type(d3.symbolTriangle).size(150)) 
+            .attr('transform', `translate(${x('diff') + 110}, ${y4(clampedT)})`);
+        
+        // 9. Update stats text
+        statsText.selectAll('*').remove();
+
+        statsText.append('text')
+            .attr('x', x('diff'))
+            .attr('y', y(75))
+            .attr('text-anchor', 'middle')
+            .attr('fill', '#1883b0')
+            .text(`t = ${tTestResults.t.toFixed(3)}`);
+        
+        statsText.append('text')
+            .attr('x', x('diff'))
+            .attr('y', y(72))
+            .attr('text-anchor', 'middle')
+            .attr('fill', tTestResults.pValue < 0.05 ? 'red' : '#859596')
+            .text(`p = ${tTestResults.pValue.toFixed(3)}`);
+
+        statsText.append('text')
+            .attr('x', x('diff') + 140)
+            .attr('y', y(75))
+            .attr('text-anchor', 'middle')
+            .attr('fill', 'purple')
+            .text(`d = ${d.toFixed(2)}`);
+
+        // Add CLES value as text
+        statsText.append('text')
+            .attr('x', x('diff') + 140)
+            .attr('y', y(72)) 
+            .attr('text-anchor', 'middle')
+            .attr('fill', '#859596')
+            .text(`CLES = ${clesValue.toFixed(2)}`);
+            
+        // 10. Update ROPE rectangle
+        ropeGroup.selectAll('*').remove();
+        
+        if (params.showRope) {
+            const ropeSize = params.ropeSize * params.sdValue; // ROPE as fraction of SD
+            
+            // Add ROPE rectangle on the mean difference scale
+            ropeGroup.append('rect')
+                .attr('class', 'rope-rect')
+                .attr('x', x('diff') - 10) // Width on either side of the diff line
+                .attr('y', y2(ropeSize)) // Upper bound (converted to y position)
+                .attr('width', 20) // Width of rectangle
+                .attr('height', y2(-ropeSize) - y2(ropeSize)); // Height based on ROPE bounds
+                
+            // Add ROPE lines extending to axes
+            ropeGroup.append('line')
+                .attr('class', 'rope-rect')
+                .attr('stroke-dasharray', '3,3')
+                .attr('x1', 0)
+                .attr('x2', x('diff') - 10)
+                .attr('y1', y2(ropeSize))
+                .attr('y2', y2(ropeSize));
+                
+            ropeGroup.append('line')
+                .attr('class', 'rope-rect')
+                .attr('stroke-dasharray', '3,3')
+                .attr('x1', 0)
+                .attr('x2', x('diff') - 10)
+                .attr('y1', y2(-ropeSize))
+                .attr('y2', y2(-ropeSize));
+                
+            // ROPE text labels
+            ropeGroup.append('text')
+                .attr('x', 5)
+                .attr('y', y2(ropeSize) - 5)
+                .attr('text-anchor', 'start')
+                .attr('fill', 'green')
+                .attr('font-size', '12px')
+                .text(`+${ropeSize.toFixed(2)}`);
+                
+            ropeGroup.append('text')
+                .attr('x', 5)
+                .attr('y', y2(-ropeSize) + 15)
+                .attr('text-anchor', 'start')
+                .attr('fill', 'green')
+                .attr('font-size', '12px')
+                .text(`-${ropeSize.toFixed(2)}`);
+        }
+        
+        // Update calculations and interpretation displays
+        updateCalculations(tTestResults, d, clesValue, data);
+        updateInterpretation(tTestResults, d, clesValue);
+    }
+    
+    // Initialize the visualization
+    updateVisualization(true); // Generate initial data
+  </script>
+</div>
+<p><br></p>
+<p>Key points from the plot above should be that increasing the sample size increases the precision/confidence we have in what the true mean difference is between the pre and post intervention which is shown by the smaller confidence interval around the change score. This can cause an issue in extremely large samples where tiny mean differences can be deemed “statistically significant” as we are effectively very confident that true mean difference from pre to post may indeed be greater than zero. You may then ask the question, “but do we care if something is only different than zero?”. Indeed, this is a perfectly reasonable question to ask and something that statisticians have been encouraging researchers to do for a long time and this is to report the magnitude of the effect. It should be noted that the word “magnitude” may mean different things in different contexts across different fields. However, the two measures of effect magnitude that I want you to focus on for this unit are</p>
+<p><span class="math display">\[
+Cohens D = \frac{\text{mean diff}}{\text{Pooled SD}}
+\]</span></p>
+<p>Where <span class="math inline">\(Pooled SD\)</span> is the average <span class="math inline">\(SD\)</span> across both pre and post trials.</p>
+<p>For understanding of qualitative interpretation around the Cohens D numbers make sure to check out the Week 11 and 12 seminar material.</p>
+<p>The other measure of effect I want you to develop some intition around is <strong>common language effect size (CLES)</strong> sometimes also called the probability of superiority</p>
+<p><span class="math display">\[ CLES = \Phi\left(\frac{\text{mean diff}}{\text{sd diff}}\right) \]</span></p>
+<p>Okay lets talk through this a little more slowly as there is a scary looking symbol in there. We first compute what is called the signal to noise ratio <span class="math inline">\((SNR)\)</span> which is calculated via <span class="math inline">\(\frac{\text{mean diff}}{\text{sd diff}}\)</span>. This is then put into a function with a scary looking symbol <span class="math inline">\(\Phi(\text{SNR})\)</span> however all this function does is convert the SNR into a probability for us. This probability can be thought of a randomly drawn person from this sample having a higher score vs lower score.</p>
+</section>
+<section id="but-what-is-a-p-value" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="but-what-is-a-p-value"><span class="header-section-number">7.5</span> But what is a p-value</h2>
+<p>A p-value can be thought of as the probability of observing the test statistic we did assuming that there is no difference between testing occasions. Put differently, that any effect you observed is explained via pure random sampling variation. Effectively, all we are doing when we calculate a p-value is comparing the test statistic we observed to a distribution of test statistics that can be created via random sampling variation. If we observe a test statistic that can very rarely be created under random sampling variation, let’s say less than 5% of the time, we deem this a statistically significant result. That is, we observed a test statistic that is very rarely observed under the null hypothesis so we will treat our result as interesting.</p>
+<p>The simulation below will hopefully build your intuition around the null distribution and p-values.</p>
+<p><a href="https://r2mu.github.io/tvalSim/" class="uri">https://r2mu.github.io/tvalSim/</a></p>
+<section id="what-a-p-value-isnt" class="level3" data-number="7.5.1">
+<h3 data-number="7.5.1" class="anchored" data-anchor-id="what-a-p-value-isnt"><span class="header-section-number">7.5.1</span> What a p-value isn’t</h3>
+<ul>
+<li><p><strong>Represent the probability that the null hypothesis is true</strong></p>
+<ul>
+<li>A p-value is calculated assuming the null hypothesis is true, not the probability of the null being true</li>
+</ul></li>
+<li><p><strong>Measure the size, importance, or practical significance of an effect</strong></p>
+<ul>
+<li>Small p-values can occur with trivial effects in large samples, and large p-values can occur with important effects in small samples</li>
+</ul></li>
+<li><p><strong>Does not tell you the probability that your results occurred by chance alone</strong></p>
+<ul>
+<li><p>The p-value tells you how often you would observe results at least as extreme as yours <em>if</em> the null hypothesis were true (pure chance) - Remember we are assuming it is true.</p></li>
+<li><p>It doesn’t tell you the probability that your specific result was caused by chance versus a real effect</p></li>
+</ul></li>
+<li><p><strong>Indicate the probability of replicating your finding</strong></p>
+<ul>
+<li>A significant result (p &lt; .05) does not mean there’s a 95% chance of replication; replication probability depends on many other factors (sample size and size of the effect)</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="test-your-learning" class="level2" data-number="7.6">
+<h2 data-number="7.6" class="anchored" data-anchor-id="test-your-learning"><span class="header-section-number">7.6</span> Test your learning</h2>
+What does the T-statistic represent in a paired t-test?
+<div id="radio_OXIOXMUBKU" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_OXIOXMUBKU" value=""> <span>The correlation between pre and post measurements</span></label><label><input type="radio" autocomplete="off" name="radio_OXIOXMUBKU" value=""> <span>The standard deviation of individual scores</span></label><label><input type="radio" autocomplete="off" name="radio_OXIOXMUBKU" value="answer"> <span>The mean difference divided by the standard error of the differences</span></label><label><input type="radio" autocomplete="off" name="radio_OXIOXMUBKU" value=""> <span>The p-value multiplied by the sample size</span></label>
+</div>
+How does increasing sample size (N) affect the T-statistic?
+<div id="radio_QOGZFGLLKK" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_QOGZFGLLKK" value="answer"> <span>Larger sample sizes increase the T-value by reducing the penalty for sampling variation</span></label><label><input type="radio" autocomplete="off" name="radio_QOGZFGLLKK" value=""> <span>Larger sample sizes decrease the T-value by increasing noise</span></label><label><input type="radio" autocomplete="off" name="radio_QOGZFGLLKK" value=""> <span>Sample size has no effect on the T-statistic</span></label><label><input type="radio" autocomplete="off" name="radio_QOGZFGLLKK" value=""> <span>Larger sample sizes only affect the p-value, not the T-statistic</span></label>
+</div>
+What does Cohen’s D measure?
+<div id="radio_BJWVWZUHIA" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_BJWVWZUHIA" value=""> <span>The p-value adjusted for sample size</span></label><label><input type="radio" autocomplete="off" name="radio_BJWVWZUHIA" value=""> <span>The probability of replicating the study</span></label><label><input type="radio" autocomplete="off" name="radio_BJWVWZUHIA" value="answer"> <span>The mean difference divided by the pooled standard deviation</span></label><label><input type="radio" autocomplete="off" name="radio_BJWVWZUHIA" value=""> <span>The correlation between pre and post measurements</span></label>
+</div>
+What does the Common Language Effect Size (CLES) represent?
+<div id="radio_THVHYVKNQO" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_THVHYVKNQO" value=""> <span>The percentage of participants who showed improvement</span></label><label><input type="radio" autocomplete="off" name="radio_THVHYVKNQO" value="answer"> <span>The probability that a randomly selected person will have a higher post-intervention score</span></label><label><input type="radio" autocomplete="off" name="radio_THVHYVKNQO" value=""> <span>The correlation between individual differences and group means</span></label><label><input type="radio" autocomplete="off" name="radio_THVHYVKNQO" value=""> <span>The statistical power of the test</span></label>
+</div>
+Which of the following is NOT what a p-value represents?
+<div id="radio_IWGWCTVWFZ" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_IWGWCTVWFZ" value=""> <span>The probability of observing the test statistic assuming no true difference</span></label><label><input type="radio" autocomplete="off" name="radio_IWGWCTVWFZ" value="answer"> <span>The probability that the null hypothesis is true</span></label><label><input type="radio" autocomplete="off" name="radio_IWGWCTVWFZ" value=""> <span>How often you would see results this extreme if there was no real effect</span></label><label><input type="radio" autocomplete="off" name="radio_IWGWCTVWFZ" value=""> <span>The likelihood of the observed data under the null hypothesis</span></label>
+</div>
+In the T-statistic equation, what represents the ‘signal’ and what represents the ‘noise’?
+<div id="radio_KWKJMLQSAG" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_KWKJMLQSAG" value=""> <span>Mean difference is signal, sample size is noise</span></label><label><input type="radio" autocomplete="off" name="radio_KWKJMLQSAG" value="answer"> <span>Mean difference is signal, standard deviation of differences is noise</span></label><label><input type="radio" autocomplete="off" name="radio_KWKJMLQSAG" value=""> <span>P-value is signal, confidence interval is noise</span></label><label><input type="radio" autocomplete="off" name="radio_KWKJMLQSAG" value=""> <span>Effect size is signal, p-value is noise</span></label>
+</div>
+What potential issue can arise with extremely large sample sizes in hypothesis testing?
+<div id="radio_CKVBPOLIFS" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_CKVBPOLIFS" value=""> <span>Large samples always produce more accurate results</span></label><label><input type="radio" autocomplete="off" name="radio_CKVBPOLIFS" value=""> <span>Large samples reduce the need for effect size calculations</span></label><label><input type="radio" autocomplete="off" name="radio_CKVBPOLIFS" value="answer"> <span>Large samples can make trivially small differences appear statistically significant</span></label><label><input type="radio" autocomplete="off" name="radio_CKVBPOLIFS" value=""> <span>Large samples eliminate the need for hypothesis testing</span></label>
+</div>
+What three components are needed to calculate a T-statistic for a paired t-test?
+<div id="radio_BCZLVIAYGN" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_BCZLVIAYGN" value=""> <span>Pre-test scores, post-test scores, and population standard deviation</span></label><label><input type="radio" autocomplete="off" name="radio_BCZLVIAYGN" value="answer"> <span>Mean difference, standard deviation of differences, and sample size</span></label><label><input type="radio" autocomplete="off" name="radio_BCZLVIAYGN" value=""> <span>Effect size, p-value, and confidence interval</span></label><label><input type="radio" autocomplete="off" name="radio_BCZLVIAYGN" value=""> <span>Correlation coefficient, regression slope, and intercept</span></label>
+</div>
+If a test statistic occurs less than _____ of the time under random sampling variation, it is typically considered statistically significant.
+<div id="radio_UAJSGTFSAI" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_UAJSGTFSAI" value=""> <span>1%</span></label><label><input type="radio" autocomplete="off" name="radio_UAJSGTFSAI" value=""> <span>10%</span></label><label><input type="radio" autocomplete="off" name="radio_UAJSGTFSAI" value="answer"> <span>5%</span></label><label><input type="radio" autocomplete="off" name="radio_UAJSGTFSAI" value=""> <span>0.1%</span></label>
+</div>
+To test whether a warm-up influences flexibility screening using a paired t-test design, you would:
+<div id="radio_RPDHKDASCQ" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_RPDHKDASCQ" value=""> <span>Measure flexibility once and compare to population norms</span></label><label><input type="radio" autocomplete="off" name="radio_RPDHKDASCQ" value="answer"> <span>Measure flexibility before and after warm-up in the same individuals</span></label><label><input type="radio" autocomplete="off" name="radio_RPDHKDASCQ" value=""> <span>Measure flexibility in two different groups of people</span></label><label><input type="radio" autocomplete="off" name="radio_RPDHKDASCQ" value=""> <span>Measure flexibility at multiple time points across several weeks</span></label>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script>
+
+/* update total correct if #webex-total_correct exists */
+update_total_correct = function() {
+  console.log("webex: update total_correct");
+
+  var t = document.getElementsByClassName("webex-total_correct");
+  for (var i = 0; i < t.length; i++) {
+    p = t[i].parentElement;
+    var correct = p.getElementsByClassName("webex-correct").length;
+    var solvemes = p.getElementsByClassName("webex-solveme").length;
+    var radiogroups = p.getElementsByClassName("webex-radiogroup").length;
+    var selects = p.getElementsByClassName("webex-select").length;
+
+    t[i].innerHTML = correct + " of " + (solvemes + radiogroups + selects) + " correct";
+  }
+}
+
+/* webex-solution button toggling function */
+b_func = function() {
+  console.log("webex: toggle hide");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('open')) {
+    cl.remove("open");
+  } else {
+    cl.add("open");
+  }
+}
+
+/* check answers */
+check_func = function() {
+  console.log("webex: check answers");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('unchecked')) {
+    cl.remove("unchecked");
+    this.innerHTML = "Hide Answers";
+  } else {
+    cl.add("unchecked");
+    this.innerHTML = "Show Answers";
+  }
+}
+
+/* function for checking solveme answers */
+solveme_func = function(e) {
+  console.log("webex: check solveme");
+
+  var real_answers = JSON.parse(this.dataset.answer);
+  var my_answer = this.value;
+  var cl = this.classList;
+  if (cl.contains("ignorecase")) {
+    my_answer = my_answer.toLowerCase();
+  }
+  if (cl.contains("nospaces")) {
+    my_answer = my_answer.replace(/ /g, "")
+  }
+
+  if (my_answer == "") {
+    cl.remove("webex-correct");
+    cl.remove("webex-incorrect");
+  } else if (real_answers.includes(my_answer)) {
+    cl.add("webex-correct");
+    cl.remove("webex-incorrect");
+  } else {
+    cl.add("webex-incorrect");
+    cl.remove("webex-correct");
+  }
+
+  // match numeric answers within a specified tolerance
+  if(this.dataset.tol > 0){
+    var tol = JSON.parse(this.dataset.tol);
+    var matches = real_answers.map(x => Math.abs(x - my_answer) < tol)
+    if (matches.reduce((a, b) => a + b, 0) > 0) {
+      cl.add("webex-correct");
+    } else {
+      cl.remove("webex-correct");
+    }
+  }
+
+  // added regex bit
+  if (cl.contains("regex")){
+    answer_regex = RegExp(real_answers.join("|"))
+    if (answer_regex.test(my_answer)) {
+      cl.add("webex-correct");
+    }
+  }
+
+  update_total_correct();
+}
+
+/* function for checking select answers */
+select_func = function(e) {
+  console.log("webex: check select");
+
+  var cl = this.classList
+
+  /* add style */
+  cl.remove("webex-incorrect");
+  cl.remove("webex-correct");
+  if (this.value == "answer") {
+    cl.add("webex-correct");
+  } else if (this.value != "blank") {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+/* function for checking radiogroups answers */
+radiogroups_func = function(e) {
+  console.log("webex: check radiogroups");
+
+  var checked_button = document.querySelector('input[name=' + this.id + ']:checked');
+  var cl = checked_button.parentElement.classList;
+  var labels = checked_button.parentElement.parentElement.children;
+
+  /* get rid of styles */
+  for (i = 0; i < labels.length; i++) {
+    labels[i].classList.remove("webex-incorrect");
+    labels[i].classList.remove("webex-correct");
+  }
+
+  /* add style */
+  if (checked_button.value == "answer") {
+    cl.add("webex-correct");
+  } else {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+window.onload = function() {
+  console.log("webex onload");
+  /* set up solution buttons */
+  var buttons = document.getElementsByTagName("button");
+
+  for (var i = 0; i < buttons.length; i++) {
+    if (buttons[i].parentElement.classList.contains('webex-solution')) {
+      buttons[i].onclick = b_func;
+    }
+  }
+
+  var check_sections = document.getElementsByClassName("webex-check");
+  console.log("check:", check_sections.length);
+  for (var i = 0; i < check_sections.length; i++) {
+    check_sections[i].classList.add("unchecked");
+
+    let btn = document.createElement("button");
+    btn.innerHTML = "Show Answers";
+    btn.classList.add("webex-check-button");
+    btn.onclick = check_func;
+    check_sections[i].appendChild(btn);
+
+    let spn = document.createElement("span");
+    spn.classList.add("webex-total_correct");
+    check_sections[i].appendChild(spn);
+  }
+
+  /* set up webex-solveme inputs */
+  var solveme = document.getElementsByClassName("webex-solveme");
+
+  for (var i = 0; i < solveme.length; i++) {
+    /* make sure input boxes don't auto-anything */
+    solveme[i].setAttribute("autocomplete","off");
+    solveme[i].setAttribute("autocorrect", "off");
+    solveme[i].setAttribute("autocapitalize", "off");
+    solveme[i].setAttribute("spellcheck", "false");
+    solveme[i].value = "";
+
+    /* adjust answer for ignorecase or nospaces */
+    var cl = solveme[i].classList;
+    var real_answer = solveme[i].dataset.answer;
+    if (cl.contains("ignorecase")) {
+      real_answer = real_answer.toLowerCase();
+    }
+    if (cl.contains("nospaces")) {
+      real_answer = real_answer.replace(/ /g, "");
+    }
+    solveme[i].dataset.answer = real_answer;
+
+    /* attach checking function */
+    solveme[i].onkeyup = solveme_func;
+    solveme[i].onchange = solveme_func;
+
+    $(solveme[i]).after(" <span class='webex-icon'></span>");
+  }
+
+  /* set up radiogroups */
+  var radiogroups = document.getElementsByClassName("webex-radiogroup");
+  for (var i = 0; i < radiogroups.length; i++) {
+    radiogroups[i].onchange = radiogroups_func;
+  }
+
+  /* set up selects */
+  var selects = document.getElementsByClassName("webex-select");
+  for (var i = 0; i < selects.length; i++) {
+    selects[i].onchange = select_func;
+    $(selects[i]).after(" <span class='webex-icon'></span>");
+  }
+
+  update_total_correct();
+}
+
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./Practical6.html" class="pagination-link" aria-label="Week 10 - Practical">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 10 - Practical</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

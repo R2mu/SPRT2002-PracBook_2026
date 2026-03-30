@@ -1,0 +1,50 @@
+/* custom.css */
+
+/* --- Reduce Left Padding/Margin in Sidebar Table of Contents --- */
+
+/* Target the main list container within the sidebar navigation */
+/* This often has default left padding we want to reduce */
+#quarto-sidebar nav.sidebar-navigation > ul {
+  padding-left: 10px; /* Adjust this value - try 5px, 15px, etc. */
+}
+
+/* Target individual list items (chapters/sections) */
+/* Sometimes padding is applied here instead of/in addition to the UL */
+#quarto-sidebar nav.sidebar-navigation .sidebar-item {
+ /* If the rule above doesn't work, you might need padding here instead: */
+ /* padding-left: 10px; */
+ /* Or reset it if the UL padding is enough: */
+ padding-left: 0;
+ margin-left: 0; /* Also reset margin just in case */
+}
+
+/* Target the actual links within the list items */
+/* Less common for padding, but possible */
+#quarto-sidebar nav.sidebar-navigation .sidebar-link {
+  /* padding-left: 5px; */ /* Usually not needed here */
+}
+
+/* --- Adjust Indentation for Nested Items --- */
+
+/* Target nested lists (sections within chapters, etc.) */
+/* Ensure they still have some indentation relative to their parent */
+#quarto-sidebar nav.sidebar-navigation ul ul {
+  padding-left: 10px; /* Adjust for desired sub-item indentation */
+}
+
+/* You might need to target nested items more specifically */
+#quarto-sidebar nav.sidebar-navigation .sidebar-item .sidebar-item {
+  /* padding-left: 15px; */ /* Alternative way to target nested items */
+}
+
+/* --- Optional: Reduce space around the Search Box if needed --- */
+#quarto-sidebar .quarto-sidebar-search {
+  /* margin-bottom: 5px; */ /* Reduce space below search */
+  /* padding: 5px 10px; */ /* Reduce internal padding of search container */
+}
+
+/* --- Optional: Reduce space around Tools if needed --- */
+#quarto-sidebar .quarto-sidebar-tools {
+   /* padding-top: 5px; */ /* Reduce space above tools */
+   /* padding-bottom: 5px; */ /* Reduce space below tools */
+}

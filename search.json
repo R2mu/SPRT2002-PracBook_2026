@@ -1,0 +1,486 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "SPRT2002 Prac Book",
+    "section": "",
+    "text": "Introduction\nThis lab book will be used over the semester to aid in your learning. This is to be used in conjunction with material on vUWS.\nPlease refer to the learning guide, which you can find on vUWS.\n\nImportant notes\n\nPre screening must be completed before being able to participate in practical activities\nData collected over the practicals will be used in your professional reports due in Weeks 9 and 14.\nRegarding assessments, an attempt must be made in ALL assessments to be able to pass the unit.\nCome to class prepared to exercise.\n\n\n\nKeys for success over the unit\n\nKEEP UP WITH MATERIAL over the semester!!!\nTry to watch lecture material before practical classes.\nAttend practical classes\n\n\n\nCommunication\n\nLearning guide, vUWS announcements\nFirst 5 minutes of lecture material\nPracticals\nClassmates\nEmail\nZoom",
+    "crumbs": [
+      "Home",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "Practical1.html",
+    "href": "Practical1.html",
+    "title": "1  Week 2 - Practical",
+    "section": "",
+    "text": "1.1 Learning Outcome:",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Week 2 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical1.html#learning-outcome",
+    "href": "Practical1.html#learning-outcome",
+    "title": "1  Week 2 - Practical",
+    "section": "",
+    "text": "Understand measurement accuracy concepts and their application to exercise testing and measurement\nEvaluate the feasibility of different tests according to environmental conditions and client characteristics\nDemonstrate basic data processing and analytical techniques for calculating distribution based statistics (Mean, Standard Deviation) \n\n\n1.1.1 Assessments:\nThis is the first of three lab weeks (weeks 2, 3 and 4) where the data you collect will be used for your first professional report assessment (1-page report in week 9). HELPFUL TIP: The more attention you pay to the quality of your data during this lab, the easier it will be to complete your professional.\n\n\n1.1.2 Background:\nMaximal sprinting speed and its derivative acceleration have both been shown to be key discriminators in playing status across many sports. Whilst, performing a maximal sprint test would give the most valid insight into these qualities, it may not always be possible to perform this test in a practical environment due factors such as, perceived risk of injury and cost of equipment (timing gates, radar gun etc). Hence, identifying cost effective test that may give insight into these qualities is of interest.\nTwo commonly used test that are used as both proxy measures of acceleration and sprinting speed respectively are the standing broad jump (SBJ) and assessment of lower limb stiffness. Whilst a number of techniques for measuring lower limb stiffness exist, the test we will focus on today is the drop jump test.\nPART 1 of today will involve collecting data across a 0-5 and 0-10m sprint test, standing broad jump and drop jump test (look to get at least two trials across each test). PART 2 aims of today involve calculating basic summary statistics that represent the mean and spread/deviation of the data and other descriptive statistics discussed in the lecture.",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Week 2 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical1.html#practical-procedures-part-1",
+    "href": "Practical1.html#practical-procedures-part-1",
+    "title": "1  Week 2 - Practical",
+    "section": "1.2 Practical Procedures (PART 1):",
+    "text": "1.2 Practical Procedures (PART 1):\nBefore completing each assessment as a group discuss what you think would be an appropriate warm up and then action the warm up together before completing trials.\nFor each assessment make at least one individual is updating the results into the Google form below.\nhttps://docs.google.com/spreadsheets/d/1ovjxRvN4N5482ikOBO_SK1qetU6CBPnkArYUs_rRigM/edit?usp=sharing\n\n1.2.1 Broad Jump\nhttps://www.youtube.com/watch?v=n0UeHxglMJ4\n\nPosition yourself accurately by standing behind the marker with your toes aligned directly with it - proper starting position is crucial for consistent measurement.\nUtilize the permitted counter-movement effectively by bending your knees and trunk while swinging your arms before takeoff, as this motion helps generate maximum power for the jump.\nExecute a proper two-foot takeoff and landing, ensuring both feet leave and touch the ground simultaneously - any step before takeoff will invalidate the attempt.\nMaintain balance during landing since falling backward will require a repeat attempt - focus on landing firmly on both feet with controlled momentum.\nComplete multiple attempts to achieve your maximal distance, which will be measured from the marker to the point of first contact (typically heel strike) upon landing.\n \n\n\n\n1.2.2 Max speed assessment\n\nComplete a standardized warm-up before beginning maximal 10m sprint testing, with timing gates positioned at both 5m and 10m distances\nOrganize into groups of 4-5 students and establish a clear testing order, with each athlete performing multiple maximal sprint effort\nRecord sprint times using both electronic timing gates (Swift SpeedLight Timing™ Gates) and handheld stopwatches, ensuring to match and record corresponding times from both measurement methods for each attempt\nEnsure all group members complete their designated number of sprint attempts while maintaining accurate record-keeping of all times  \n\n\n\n1.2.3 Drop Jump assessment\nUtilsing the EZ jumpmat.\n\n Stand on a box or elevated platform behind.\nPlace your hands on your hips.\nKeep your chest up and look forward.\nStep off the box; then.\nLand on the plates with both feet at the same time;\nImmediately jump as high as possible whilst looking to minimize ground contact time; then\nLand softly, remaining completely still on the jump mat.\nRecord RSI from device  \n\n\n\n1.2.4 Interactive stiffness visual\nBelow is simplified interactive visualization to help build intuition of how we can thinking about the legs as springs.\n\n\n\n\n\n\nClick to expand\n\n\n\n\n\n\n\n    \n\n\n    \n        Compare Springs with Different Stiffness\n        \n        \n            \n                Ball Mass: 1.0 kg\n            \n            \n        \n        \n        \n            \n                Spring Compression: 20.0 cm\n            \n            \n        \n\n        \n            \n                Softer Spring\n                k = 30 N/m\n                Force = 0 N\n                Max Height = 0 cm\n            \n            \n                Stiffer Spring\n                k = 90 N/m\n                Force = 0 N\n                Max Height = 0 cm\n            \n        \n\n        \n            Play\n            Reset\n        \n\n        \n            Animation Progress\n            \n        \n\n        \n    \n\n\n\n\n\n\n\nWhat difference do you notice between the two springs that have different stiffness values?",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Week 2 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical1.html#practical-procedures-part-2",
+    "href": "Practical1.html#practical-procedures-part-2",
+    "title": "1  Week 2 - Practical",
+    "section": "1.3 Practical Procedures (PART 2):",
+    "text": "1.3 Practical Procedures (PART 2):\nREMEMBER: the data you collect today and over the previous week’s labs will be used for your first 1-page report…so be attentive and ask questions during PART 2 of the lab session!\nUse lecture material as a reference point to calculate mean and standard deviation of data collected. ( you may use excel functions but also have a go going step by step through calculations)\n\nPractice plotting data has a histogram.\nCalculate the mean, SD and CV%\nCalculate Z – Scores (Also outlined in lecture material)\n\nReflection Question:\n\nWhy is important to understand how your data is distributed?\nWhy is the practical reason for us transforming numbers into a Zscore?\nWhen trying to describe a distribution what are the most important components we would want to know?",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Week 2 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical1.html#test-your-learning",
+    "href": "Practical1.html#test-your-learning",
+    "title": "1  Week 2 - Practical",
+    "section": "2.1 Test your learning",
+    "text": "2.1 Test your learning\nIf you calculate a mean from a sample of 100 participants, this mean is:\n\n Always exactly equal to the true population mean Always lower than the true population mean Not related to the true population mean An estimate of the true population mean\n\nWhen the population standard deviation increases, what happens to the standard error of the mean?\n\n It decreases It stays the same It becomes zero It increases\n\nA researcher collects vertical jump data from 25 athletes and calculates a 95% confidence interval of [45cm, 55cm]. This means:\n\n 95% of all athletes' jumps fall between 45cm and 55cm The true population mean definitely lies between 45cm and 55cm 95% of individual jump heights in this sample fall between 45cm and 55cm If we repeated this sampling process many times, about 95% of the calculated intervals would contain the true population mean\n\nIf you have a sample mean of 50 and a standard error of 2, what is the 68% confidence interval?\n\n [46, 54] [47, 53] [49, 51] [48, 52]\n\nWhich of the following would NOT reduce the standard error of the mean?\n\n Increasing the sample size Reducing measurement error Using more precise equipment Calculating the median instead of the mean\n\nThe coefficient of variation (CV%) is 15% for a group of athletes’ sprint times. This indicates:\n\n The data varies by exactly 15 seconds 15% of the data points are outliers The confidence interval is 15% wide The standard deviation is 15% of the mean value\n\nAssuming a normal distribution (Bell curve) what proportion of the observations are contained between -1 to +1SD units around the mean?\n\n 95% 34% 99% 68%",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Week 2 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical2.html",
+    "href": "Practical2.html",
+    "title": "2  Week 3 - Practical",
+    "section": "",
+    "text": "2.1 Learning Outcome:",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Week 3 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical2.html#learning-outcome",
+    "href": "Practical2.html#learning-outcome",
+    "title": "2  Week 3 - Practical",
+    "section": "",
+    "text": "Understand measurement accuracy concepts and their application to exercise testing and measurement\nEvaluate the feasibility of different tests according to environmental conditions and client characteristics\nDemonstrate basic data processing and analytically techniques",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Week 3 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical2.html#practical-goals",
+    "href": "Practical2.html#practical-goals",
+    "title": "2  Week 3 - Practical",
+    "section": "2.2 Practical Goals:",
+    "text": "2.2 Practical Goals:\n\n2nd round of data collection for practical report 2\nPractice developing skills at running and collecting commonly used test for vertical power assessment.\nUnderstand basic intuition and use of Bland-Altman plots for exercise and sport science. (This will be developed more in seminar content next week)\nBuild confidence in analysing reliability based metrics such as typical error (TE), CVTE%, minimal detectable change (MDC). (Use lecture notes for help)",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Week 3 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical2.html#example-case-study",
+    "href": "Practical2.html#example-case-study",
+    "title": "2  Week 3 - Practical",
+    "section": "2.3 Example case study",
+    "text": "2.3 Example case study\nYou are hired by an elite sporting organization to help them decide whether they should invest in the purchase of a force plate ($20,000+). The organization currently has access to a range of other measures that can give indications of vertical jump ($400 to $2000) height but the company they are thinking of purchasing the force plate from has loaned them a force plate for two weeks to test it out.\nWhat are some important factors that you might consider when helping the organization make this decision?\n\n\n2.3.1 Bland-Altman plot\nOne of the key ways we look to assess the ability to interchange between testing technologies that are attempting to measure the same trait is use of a Bland-Altman plot.\nWe will discuss Bland-Altman plots in more detail in the lecture in Week 4 but quite simply all the Bland-Altman plot attempts to show us is the difference between one test compared to another test measuring the same thing/\nFor example we might compare jump height collected from a force plate and linear position transducer. From this we are interested in knowing the mean difference between measures (BIAS) and limits of agreement (LOA). LOA is calculated by looking at the standard deviation of the differences between test and multiplying by 2 (technically 1.96).\n\nThe ULOA is then BIAS + LOA\nand\nLLOA calculated as BIAS - LOA\n\n\n\n\n\n\nClick for interactive Bland-Altman plot\n\n\n\n\n\n\n\n    \n\n    Interactive Bland-Altman Plot\n    \n        \n            \n                Fixed Bias: 0\n                \n            \n            \n                LOA Width: 2\n                \n            \n            \n                Proportional Bias: 0\n                \n            \n            \n                Heteroscedasticity: 0\n                \n            \n        \n        \n            \n                \n                Show Regression Line (for Proportional Bias)\n            \n        \n        \n        Download Data",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Week 3 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical2.html#practical-procedures-part-1",
+    "href": "Practical2.html#practical-procedures-part-1",
+    "title": "2  Week 3 - Practical",
+    "section": "2.4 Practical Procedures (PART 1)",
+    "text": "2.4 Practical Procedures (PART 1)\n\n\nGet yourself into groups of 5-7 people. Your tutor will allocate each group to a testing location. The tutor will explain how to use technology and equipment to each group at each testing location once.\nIt is then the responsibility of each group to educate the following group on how to successfully perform and run test for each testing station.\nContinue the above until you have completed each testing station.\nAim to perform at least 2 repetitions per station making sure to upload the results on the Google form link below. (This can be done by one person per group)\n\n\n\n2.4.1 Practical Procedures reflection\n\nWhat were the key differences you noticed between the technologies used?\nBased on your experience using the technologies which technology would you lean towards using and why?",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Week 3 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical2.html#section-2---typical-error-of-measurement",
+    "href": "Practical2.html#section-2---typical-error-of-measurement",
+    "title": "2  Week 3 - Practical",
+    "section": "2.5 Section 2 - Typical Error of Measurement",
+    "text": "2.5 Section 2 - Typical Error of Measurement\nIn the following section the aim is to try and calculate the Typical Error (TE), CVTE%, minimal detectable change (MDC95).\nIn the visual below, set the number of trials to 2 and then download the data.\nSee if you are able to replicate the results in the text box above the visual (hint,the back end of this weeks lecture will help you figure out how to do this)\n\n2.5.1 Visual 1\n\n    \n        \n            \n            \n        \n        \n            \n                \n                    Number of Trials:\n                    \n                    \n                \n                \n                    Number of Subjects:\n                    \n                    \n                \n                \n                    Variation Learning Effect:\n                    \n                    \n                \n            \n            \n                \n                    Systematic Bias (±15 units max):\n                    \n                    \n                \n                \n                    Learning Rate:\n                    \n                    \n                \n                \n                    Within-subject Variation:\n                    \n                    \n                \n            \n        \n\n        \n\n        \n            \n                Show Group Average:\n                 Show\n                 Hide\n            \n            \n                Show Individual Paths:\n                 Show\n                 Hide\n            \n            \n                Download Data (CSV)\n            \n        \n    \n\n    \n\n\n\n2.5.2 Visual 2\nThe visual below looks to highlight the importance of wanting to minimise Typical Error. You hopefully feel comfortable with the idea that any measurement we collect has some uncertainty around it. That uncertainty may be due to biological variation, technology and or methodology error, which all limit our confidence in reporting a “true” measurement. We aim to represent this uncertainty in a similar fashion to what we did last week with the 95% Confidence Interval (CI).\nTo calculate the CI around the observed scores (point A and B), we use a similar formula that we did last week when we calculated the 95% CI around a sample mean, the only difference being instead of using a standard error, we will use the Typical Error (TE).\nFor example,\nPoint A score = 50. For a given value of the Typical Error slider, e.g. 3 the 95 % CI would be\n50 - (3 \\(\\times\\) 1.96) = 44.1 to 50 + (3 \\(\\times\\) 1.96) = 55.9\nThis interval represents our uncertainty around where we believe the true measurement might be. From an interpretation perspective we can’t say the probability of the true value being between the lower limit and upper limit is 95%, rather that the method we used to create the interval has a 95% success rate in capturing true values over the long run.\nWe can also calculate an uncertainty around the change score observed between these two measurements (A and B). Now that we are comparing two measurements that both come with uncertainty we have to adjust our calculation slightly to account for this when calculating a CI for a change score we do so with the equation below.\nChange 95% LL = (Point B - Point A observed values) - \\(\\sqrt{2}\\) \\(\\times\\) TE \\(\\times\\) 1.96 Change 95% UL = (Point B - Point A observed values) + \\(\\sqrt{2}\\) \\(\\times\\) TE \\(\\times\\) 1.96\nThe \\(\\sqrt{2}\\) is included because we now have two trials that both have a potential source of uncertainty. The addition of the \\(\\sqrt{2}\\) as you can see makes the CI larger for change scores than for individual observations.\n\n  \n    Interactive Difference Plot\n    \n    \n      \n        Change Score:\n        \n        \n      \n      \n      \n        Typical Error:\n        \n        \n      \n      \n      \n        Between-Subject SD:\n        \n        \n      \n      \n      \n        SD Multiplier:\n        \n        \n      \n    \n    \n    \n      \n         Show Confidence Intervals\n      \n      \n         Show SWC\n      \n      \n         Show MDC Lines\n      \n      \n         Show MCID Lines\n      \n    \n    \n    \n    \n    \n      \n    \n  \n\n  \n\nTwo more measures we discussed in the lecture that can also be calculated from an understanding of TE are the minimal detectable change MDC and minimal clinically import difference MCID. Both of these are commonly reported to a 95% confidence level so will be multiplied by 1.96 respectively. The key take away is that the MDC is looking to tell you how the large the change would need to be for you to be confident at the 95% level that the observed change wasn’t due to measurement noise. However the MDC only tells you whether a change is statistically different from zero which may not indicate that the change is meaningful in a practical sense. The MCID however, aims to let you know whether the change observed is greater than some magnitude of importance often termed the smallest worthwhile change (SWC).\nMDC_95 = TE \\(\\times\\) \\(\\sqrt{2}\\) \\(\\times\\) 1.96\nMCID_95 = MDC_95 + SWC\nWhilst there are may ways we can identify a value considered the SWC, a commonly used method is to multiply the between subject SD by some factor. In exercise and sport science a commonly used factor is 0.2 therefore;\nSWCsml = SD \\(\\times\\) 0.2 (Small)\nSWCmdr = SD \\(\\times\\) 0.6 (Moderate)\nSWClrg = SD \\(\\times\\) 1.2 (Large)",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Week 3 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical2.html#test-your-learning",
+    "href": "Practical2.html#test-your-learning",
+    "title": "2  Week 3 - Practical",
+    "section": "2.6 Test your learning",
+    "text": "2.6 Test your learning\n\nWhat does a Bland-Altman plot show?\n\n The difference between measurements plotted against time The difference between measurements plotted against the mean of both measurements The correlation between two measurements The mean of both measurements plotted against time\n\nWhat does the mean difference line (bias) in a Bland-Altman plot represent?\n\n Random error in the measurements The standard deviation of the differences Systematic differences between measurements The reliability of the measurement\n\nWhat does the Typical Error (TE) represent?\n\n The average difference between measurements The typical variation in repeated measurements for an individual The minimum detectable change The correlation between measurements\n\nIf you have a single measurement (e.g., 45 kg) and know the Typical Error (TE) is 2 kg, how would you construct a 95% confidence interval around this measurement?\n\n Add and subtract 1×TE from the measurement Add and subtract 1.96×TE from the measurement Add and subtract 2×TE from the measurement Add and subtract the MDC95 from the measurement\n\nIf you measure an athlete’s max strength as 80 kg with a TE of 3 kg and calculate a 95% confidence interval of 74.1-85.9 kg, what does this interval represent?\n\n The athlete will score between 74.1-85.9 kg on 95% of future tests 95% of athletes with similar measured strength have a true strength in this range If we could measure this athlete's strength at this exact moment repeatedly without fatigue, 95% of the confidence intervals calculated using the above procedure would contain their true strength The athlete's strength will improve by up to 5.9 kg or decrease by up to 5.9 kg with 95% probability\n\nWhat does the Minimum Detectable Change (MDC95) represent?\n\n The smallest change that could occur by chance The average change between measurements The minimum change needed to be confident a real change has occurred at the 95% confidence level The typical error multiplied by 0.68\n\nWhen monitoring an individual’s changes over time, which criterion should you use to determine if a real change has occurred?\n\n The change is significant if it exceeds the TE The change is significant if it exceeds the MDC95 The change is significant if it exceeds the mean bias The change is significant if it exceeds the CV\n\nWhy is the Coefficient of Variation (CVTE%) useful?\n\n It allows comparison of reliability between different units It expresses error relative to the mean It's useful when error increases with larger values All of the above\n\nIf you want to construct a 95% confidence interval around an individual’s measurement, you should use:\n\n ±1 × TE from the measured value ±1.96 × TE from the measured value ±1 × MDC from the measured value ±2 × CV from the measured value",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Week 3 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical3.html",
+    "href": "Practical3.html",
+    "title": "3  Week 4 - Practical",
+    "section": "",
+    "text": "3.1 Learning Outcome:",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 4 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical3.html#learning-outcome",
+    "href": "Practical3.html#learning-outcome",
+    "title": "3  Week 4 - Practical",
+    "section": "",
+    "text": "Understand measurement accuracy concepts and their application to exercise testing and measurement\nEvaluate the feasibility of different tests according to environmental conditions and client characteristics\nDemonstrate basic data processing and analytically techniques",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 4 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical3.html#practical-goals",
+    "href": "Practical3.html#practical-goals",
+    "title": "3  Week 4 - Practical",
+    "section": "3.2 Practical Goals:",
+    "text": "3.2 Practical Goals:\n\n3rd round of data collection for practical report 2\nPractice developing skills at running and collecting commonly used test for assessment of cardiovascular fitness and parasympathetic vs sympathetic activity.\nUnderstand how measures collected would be practically applied in the field, considering important limitations to the measures.\nUnderstand basic intuition around how correlation plots can be used as a measure of convergent validity between measures testing the same trait/construct.\nTime permitting; practise making Bland-Altman plots using data collected from previous weeks.",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 4 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical3.html#example-case-study",
+    "href": "Practical3.html#example-case-study",
+    "title": "3  Week 4 - Practical",
+    "section": "3.3 Example case study",
+    "text": "3.3 Example case study\nYou hired by an organisation that are use different testing modalities to infer cardiovascular fitness. Namely, they are currently using a combination of a 3 minute step up test, 4 minute fixed wattage bike test and 4 minute run test at 8.5km.hr. The company/team want to know how related these test are. More explicitly they want to know if they knew the result of one test could they use it to infer what the individual may have got on one of the other test.\nHow might you go about answering this? \n\n3.3.1 Correlation and regression\nIn this situation the business/club is asking a question about how much does one test tell us about another test. Or put another way how correlated/associated is one test with another.\nWhilst, there are may different ways to get a measure of association/correlation, the most common method is via using simple linear regression (think line of best of fit), and calculating something called a correlation coefficient.\nWe will go over these measures in a lot more detail in the Week 5 lecture. \n\n\n\n\n\n\nInteractive regression\n\n\n\n\n\n\n\n    \n\n    \n        \n            Correlation Strength:\n            \n            0.7\n        \n        \n        \n            Intercept (β₀):\n            \n            5\n        \n        \n        \n            Slope (β₁):\n            \n            1\n        \n        \n        \n            Generate New Data\n            Hide Regression Line\n            Show Residuals\n            Show Squared Errors\n            Hide Optimal Line\n            Show Mean Lines\n            Download CSV\n        \n    \n    \n    \n        \n            y = 1x + 5",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 4 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical3.html#practical-procedures-part-1",
+    "href": "Practical3.html#practical-procedures-part-1",
+    "title": "3  Week 4 - Practical",
+    "section": "3.4 Practical Procedures (PART 1)",
+    "text": "3.4 Practical Procedures (PART 1)\n\nYour tutor will put you into groups of 3.\nWe are looking for individuals who think they could participate in at least two of the test mentioned above.\nDuring the 3-4 minute sub maximal task, you will track the individual Heart Rate at the end of each minute and their HR at the end of 1 minute resting HR\nYou will additionally track there HR recovery or the heart rate after resting 60 seconds.\n\nEnter data into the Google form that will be provided on VUWS.\n\n4 minute run test: this is done at speed of 9km.hr on the treadmill. (Make sure to monitor the participants HR, ideally we are aiming to see HR’s no higher than 170 bpm)\nYMCA step test: download a metronome app and set it 96 BPM males and 88 BPM female, https://www.metronomeonline.com/\n\n\nSet the metronome to 96 beats per minute etc and turn the volume up loud enough that you can hear each beat.\nStand facing your step.\nWhen ready to begin start the stopwatch or timer and begin stepping on and off the step to the metronome beat following a cadence of up, up, down, down.\nContinue for 3 minutes.\nAs soon as you reach 3 minutes, stop immediately and sit down.\n\n\n4 minute Monark Bike test: Cycle at 70 RPM at 1.5 KP for female and 2 KP for male for 4 minutes.\nIf for any reason you feel faint or ill during any of testing it is fine to stop.",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 4 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical3.html#reflection",
+    "href": "Practical3.html#reflection",
+    "title": "3  Week 4 - Practical",
+    "section": "3.5 Reflection",
+    "text": "3.5 Reflection\nHow could have we better controlled for potential sources of noise/error in the testing procedure we did today?\nWhy would using a Bland-Altman plot not be appropriate to compare heart rates in this situation?",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 4 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical3.html#section-2---bland-altman-plot",
+    "href": "Practical3.html#section-2---bland-altman-plot",
+    "title": "3  Week 4 - Practical",
+    "section": "3.6 Section 2 - Bland Altman plot",
+    "text": "3.6 Section 2 - Bland Altman plot\nIn week 3 practical we introduced the Bland-Altman plot, we then discussed use of this plot in more detail in the Week 4 seminar (see 50 minutes in).\nSimilar to previous weeks you will now have time to practice making a Bland-Altman plot.\nDownload data from the below tab, and use the excel document used in this weeks seminar (1hr and 2minutes in) to see if you can replicate the results.\n\n\n\n\n\n\nSeminar content\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nClick for interactive Bland-Altman Plot\n\n\n\n\n\n\n    \n\n    Interactive Bland-Altman Plot\n    \n        \n            \n                Fixed Bias: 0\n                \n            \n            \n                LOA Width: 2\n                \n            \n            \n                Proportional Bias: 0\n                \n            \n            \n                Heteroscedasticity: 0\n                \n            \n        \n        \n            \n                \n                Show Regression Line (for Proportional Bias)\n            \n        \n        \n        Download Data",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 4 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical4.html",
+    "href": "Practical4.html",
+    "title": "4  Week 5 - Practical",
+    "section": "",
+    "text": "4.1 Learning Outcome:",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 5 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical4.html#learning-outcome",
+    "href": "Practical4.html#learning-outcome",
+    "title": "4  Week 5 - Practical",
+    "section": "",
+    "text": "Understand measurement accuracy concepts and their application to exercise testing and measurement\nEvaluate the feasibility of different tests according to environmental conditions and client characteristics\nDemonstrate basic data processing and analytical techniques\nCommunicate test results and their implications to hypothetical client scenarios",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 5 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical4.html#practical-goals",
+    "href": "Practical4.html#practical-goals",
+    "title": "4  Week 5 - Practical",
+    "section": "4.2 Practical Goals:",
+    "text": "4.2 Practical Goals:\n\nConsolidate previous 5 weeks of practical and seminar material.\nPreliminary introduction to performing a systematic review search.\nBuild confidence in verbally discussing results",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 5 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical4.html#key-terms-discussed-so-far-this-semester",
+    "href": "Practical4.html#key-terms-discussed-so-far-this-semester",
+    "title": "4  Week 5 - Practical",
+    "section": "4.3 Key Terms Discussed So Far This Semester",
+    "text": "4.3 Key Terms Discussed So Far This Semester\nA useful step to build confidence for your professional report would be to make sure you feel confident calculating and discussing the key terms listed below.\n\n\n\n\n\n\nWeek 2 material\n\n\n\n\n\nValidity (Logical and Statistical):\n- Logical = (Face, Ecological, Content)\n- Statistical = Criterion (Concurrent and Predictive) and Construct\nDescriptive Stats:\n- Mean - Standard Deviation (SD)\n- Coefficient Variation (CV%)\n- Standard Error (SE)\n- Confidence Interval (CI)\n- Zscore\n\n\n\n\n\n\n\n\n\nWeek 3 material\n\n\n\n\n\nDose Response relationships (Neuromuscular)\nReliability:\n-Typical Error (TE)\n-CVTE%\n-Minimal Detectable Change (MDC)\n-Smallest Worthwhile Change (SWC)\n-Minimal Clinically important Difference (MCID)\n\n\n\n\n\n\n\n\n\nWeek 4 material\n\n\n\n\n\nDose Response relationships (Internal, Biochemical)\nBland-Altman Plots:\n-Bias\n-Limits of Agreement (LOA)\n-Proportional Bias\n-Heteroskedasticity\n\n\nPlease note the final two points are discussed in Week 5\n\n\n\n\n\n\n\n\n\n\nWeek 5 material\n\n\n\n\n\nCorrelations\nScatter plots:\n- Pearsons Correlation Coefficient (r)\n- r2 (r squared)\n- y = bX+c = Linear regression equation\n- b = Slope of the regression line\n- c = Intercept of regression line when X = 0\n- SEE = Standard Error of the Estimate",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 5 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical4.html#task-1",
+    "href": "Practical4.html#task-1",
+    "title": "4  Week 5 - Practical",
+    "section": "4.4 Task 1:",
+    "text": "4.4 Task 1:\nOver the last 5 weeks we have learnt about concepts relating to descriptive statistics, validity, reliability and dose response relationships. In particular, a focus a was made regarding the importance of reliability and how it can help identify was can be considered a practically meaningful effect.\nIn the first task, your tutor will rotate you in pairs. One of you will act as the client and one of you will act as the trainer. The trainer, using the interactive document below is to draw a random sample of data, and then summarise the data to their partner as if they were a client.\nhttps://r2mu.github.io/ETM_Wk5/\n\n\n\n\n\n\nExample\n\n\n\n\n\nMean 1-RM squat: 120 kg and Standard deviation (SD): 15 kg Test-retest reliability showed a SD of difference scores = 5.66 kg\nCalculations:\nTypical Error (TE) = SD_diff/√2 = 5.66/1.414 = 4 kg\nCVTE = 4/120*100 = 3.33%\nInterpretation: On average, repeated measurements will vary by about 4 kg due to measurement variability.\n\nMinimal Detectable Change (MDC) = TE×√2×1.96 = 4×1.414×1.96 = 11.1 kg\nInterpretation: A change of at least 11.1 kg is needed to be 95% confident the change is real and not due to measurement error.\n\nSmallest Worthwhile Change (SWC) = 0.2×SD = 0.2×15 = 3 kg\nInterpretation: A change of 3 kg would be considered practically meaningful for these athletes.\n\nMinimal Clinically Important Difference (MCID) = MDC+SWC = 11.1+3 = 14.1 kg\nInterpretation: An increase of at least 14.1 kg represents a change that is both statistically significant and practically meaningful.",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 5 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical4.html#task-2",
+    "href": "Practical4.html#task-2",
+    "title": "4  Week 5 - Practical",
+    "section": "4.5 Task 2:",
+    "text": "4.5 Task 2:\nYou are hired by a organisation (sports team , high school, private clinic) to help increase the rigour of their testing procedures via development of evidenced-based position statement for best practice guidelines. This includes from testing justification, testing methodology to testing application.\nIn groups of 7, you are to pick a scenario (sport, school based, clinic), you are to pick 3 test that you believe measure the most important constructs within the scenario you have chosen. Your focus however,is to convince the organisation that these are indeed the the three best test to use.\nUsing aspects that we have discussed over the previous 5 weeks you are to create a mini representation (aim for 1-2 slides per test), that talks about validity and reliability of each of the test and aspects that could increase measurement accuracy. You will be expected to use research to support your claims.\n\n4.5.1 Useful resources:\nWSU library & Google Scholar systematic search\nFor example try and copy and paste the below into Google scholar\n“Netball” AND ((“validity” AND “reliability”) OR “physical qualities” OR “determinants”)\nBook search:\nPhysiological Test for Elite Athletes (2nd Edition) (Available online in library)\nAdditional resources:\nhttps://www.ais.gov.au/position_statements\n\n\n\n4.5.2 Reflection:\nWhat aspects of the presentations you heard today made you feel most confident in the test that were chosen from each group for their scenario?\nWhat additionally information do you think would have been relevant for them to add?\nWould you have chosen different test?",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 5 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical4.html#task-3",
+    "href": "Practical4.html#task-3",
+    "title": "4  Week 5 - Practical",
+    "section": "4.6 Task 3:",
+    "text": "4.6 Task 3:\nUsing the scatter interactive regression plot from Week 4 (3.3.1) Practice making a scatter plot with regression and correlation statistics.\n\n\n\n\n\n\nScatter plot and regression helper video",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 5 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical4.html#test-your-learning",
+    "href": "Practical4.html#test-your-learning",
+    "title": "4  Week 5 - Practical",
+    "section": "4.7 Test your learning",
+    "text": "4.7 Test your learning\n\nWhy do we calculate a z-score?\n\n To calculate the mean of a distribution To determine the sample size needed for a study To standardize values so they can be compared across different scales and distributions To convert all negative values to positive values\n\nA student scores 85 on a fitness test where the class mean is 75 and the standard deviation is 6.67. What is their z-score? (Round to 1 decimal place)\n\n -0.5 1.5 2.5 0.67\n\nIn the linear regression equation y = mx + b, which statement correctly describes the relationship?\n\n y equals the sum of x and b y equals the product of x and m, minus b y equals the product of m and x, plus b y equals the sum of m and x, divided by b\n\nIn a linear regression equation y = mx + b, what does the slope (m) represent?\n\n The value of y when the analysis begins The amount y changes when x increases by one unit The starting point of the regression line The amount x changes when y increases by one unit\n\nIn a linear regression equation y = mx + b, what does the y-intercept (b) represent?\n\n The average value of all y measurements The point where the regression line crosses the x-axis The predicted value of y when x equals zero The minimum possible value for y in the dataset\n\nWhat does Pearson’s correlation coefficient (r) represent in the context of linear regression?\n\n The proportion of variance in y explained by x The average error in the prediction model The slope of the regression line The strength and direction of the linear relationship between x and y\n\nWhat does the coefficient of determination (R²) represent in linear regression?\n\n The square root of the average squared error The square of the slope in the regression equation The proportion of variance in the dependent variable explained by the independent variable The average distance between predicted and actual values\n\nWhat does the standard error of the estimate represent in linear regression?\n\n The average distance of data points from the mean The average distance between observed values and predicted values on the regression line The standard deviation of the slope coefficient The standard deviation of the x variable\n\nIf a regression equation is TestScore = 2x + 65, where x is hours spent studying, what is the correct interpretation if a student increases their study time from 10 to 15 hours?\n\n 5 additional hours of studying has no effect on test scores 5 additional hours of studying is associated with a 10-point increase in test scores Each hour of studying is associated with a 2-point increase in test scores For every 2 points increase in test scores, students study 1 additional hour\n\nIf Pearson’s r = 0.8 for the relationship between two variables, what does the corresponding R² = 0.64 tell us?\n\n The relationship is perfectly linear There is no relationship between the variables About 64% of the variation in y can be explained by its linear relationship with x The slope of the regression line is 0.8\n\nWhat does a Pearson’s r value of -0.7 indicate about the relationship between variables x and y?\n\n The relationship between x and y is weak As x increases, y remains constant As x increases, y tends to decrease As x increases, y tends to increase\n\nIf the standard error of the estimate for a regression model is 3.0, what does this tell us?\n\n The regression model perfectly predicts all y values The correlation between x and y is very strong The observed y values tend to differ from predicted values by about 3 units on average The slope of the regression line is changing by 3 units",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 5 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical5.html",
+    "href": "Practical5.html",
+    "title": "5  Week 6 - Practical",
+    "section": "",
+    "text": "5.1 Learning Outcome:",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 6 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical5.html#learning-outcome",
+    "href": "Practical5.html#learning-outcome",
+    "title": "5  Week 6 - Practical",
+    "section": "",
+    "text": "Understand measurement accuracy concepts and their application to exercise testing and measurement\nEvaluate the feasibility of different tests according to environmental conditions and client characteristics\nDemonstrate basic data processing and analytical techniques\nCommunicate test results and their implications to hypothetical client scenarios",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 6 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical5.html#practical-goals",
+    "href": "Practical5.html#practical-goals",
+    "title": "5  Week 6 - Practical",
+    "section": "5.2 Practical Goals:",
+    "text": "5.2 Practical Goals:\n\nConsolidate previous 5 weeks of practical and seminar material.\nProfessional report 1 overview\nIntroduction to pivot tables.",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 6 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical5.html#case-study",
+    "href": "Practical5.html#case-study",
+    "title": "5  Week 6 - Practical",
+    "section": "5.3 Case Study",
+    "text": "5.3 Case Study\nOver the semester we have learnt about different ways we can assess the validity and reliability of metrics. In particular, you have calculated descriptive statistics (mean, SD and CV%), reliability statistics (TE,CVTE%, MDC, SWC & MCID), created a Bland-Altman plot and create a scatter plot with a regression line. The interactive documents that allow you to download the datasets to practise calculating these statistics however, have largely been optimised to make the analysis as easy as possible for you.\n\nIn reality however, the datasets you will work with will often require some transformation to get it into a format that allows you to do the analysis you want.\nTherefore the goal of practicals this week is to introduce you to Pivot Tables in excel. Pivot tables allow you to relatively easily manipulate datasets into different formats that make analysis easier. You will be required to use a pivot table to manipulate the dataset given to you for your first professional report due in week 9.",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 6 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical5.html#by-end-of-class",
+    "href": "Practical5.html#by-end-of-class",
+    "title": "5  Week 6 - Practical",
+    "section": "5.4 By end of class",
+    "text": "5.4 By end of class\n\nYou should feel confident with the requirements for the professional report.\nYou should have chosen what variables you want to analyse for what aspects of the report.\n\n\nWhat three test will you analyse regarding reliability based metrics?\nWhat two test will you compare using a Bland-Altman plot?\nWhat two test will you compare using a scatter plot and regression analysis?\n\n\nYou should know where to find the relevant information regarding how to perform the appropriate analysis and its interpretation.\n\nThis material can be found in both the seminar content and prac work book.",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 6 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical6.html",
+    "href": "Practical6.html",
+    "title": "6  Week 10 - Practical",
+    "section": "",
+    "text": "6.1 Learning Outcome:",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 10 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical6.html#learning-outcome",
+    "href": "Practical6.html#learning-outcome",
+    "title": "6  Week 10 - Practical",
+    "section": "",
+    "text": "Understand measurement accuracy concepts and their application to exercise testing and measurement\nEvaluate the feasibility of different tests according to environmental conditions and client characteristics\nDemonstrate basic data processing and analytical techniques\nCommunicate test results and their implications to hypothetical client scenarios",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 10 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical6.html#practical-goals",
+    "href": "Practical6.html#practical-goals",
+    "title": "6  Week 10 - Practical",
+    "section": "6.2 Practical Goals:",
+    "text": "6.2 Practical Goals:\n• Explore athlete monitoring tools and technologies: Gain both theoretical and practical knowledge of the different tools available for monitoring athletes and how they fit within the AES scope of practice.\n• Apply monitoring techniques in real-world settings: Experience hands-on the practical application of athlete monitoring technologies, improving your ability to gather, interpret, and apply data to enhance athletic performance.\n• Enhance professional practice skills: Develop skills that align with the professional standards required for an AES, focusing on the integration of technology and practical tools to improve athlete outcomes.\n• Understand training load: Develop a foundational understanding of the training load construct and its sub dimensions (e.g., internal versus external load), as well as how these are operationalised in practice to effectively monitor athlete physiology and performance.\n• Time permitting quick overview of more advanced techniques for performing systematic search strategies",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 10 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical6.html#background",
+    "href": "Practical6.html#background",
+    "title": "6  Week 10 - Practical",
+    "section": "6.3 Background:",
+    "text": "6.3 Background:\nOver the last two weeks in seminar material we have discussed the construct of “Training Load”. Importantly we can think of training load being made up of two sub dimensions Internal and External load. Internal Load can be further subdivided into Objective and Subjective markers.\nExternal load: Can quite simply just been thought of as a measure of how much work was done. e.g. 5km of running, 1000 steps, 100m swim.\nInternal load: Is a measure of the bodies response to performing the external load. Most commonly used measures are Heart rate based indices that were discussed in Week 4. Internal load can also represent biochemical markers (Creatine Kinase, Lactic Acid), Hormonal responses (Testosterone, Cortisol) or Immunological markers (IGA, IL1,6). The above would be considered objective internal load makers whilst measures based on perception of effort assessing mood such as Borg,Session RPE, Profile of Mood States, DALDA or simply Athlete Reported Outcome Measures would be considered subjective makers of internal load.\n\n6.3.1 Activity\nIn this weeks activity we are going to use a combination of external load and internal load markers as measured via integrated GPS/IMU and HR device from the Polar Team System and subjective outcome measures. This should help build your intuition around how interpreting both internal and external load can be useful in both categorising intensity of drills.\nTask 1: Please used the document to complete a Wellness Questionnaire.\nTask 2: After completing the wellness questionnaire, your supervisor will introduce the technology used to collect external and internal training loads throughout the workshop session.\nTask 3: Exercise 1 (Continuous protocol) In this exercise, you will complete a running task, performing ~3 minutes of sub-maximal intensity running across 20-meter shuttles. One group member will be assigned to guide the pacing using a stopwatch and guide paper that indicates the required time to reach each cone. After completing the exercise, please submit your rating of perceived exertion (RPE).\nTask 4: Exercise 2 (Intermittent protocol) In this exercise, you and your group will perform an intermittent activity consisting of 3 sets of 4 back-and-forth shuttles (each shuttle being 40 m long). The intensity should be self-paced at approximately 80% of maximal effort. Recovery periods between repetitions are self-chosen based on perceived exertion. After completing each set (i.e., 4 back-and-forth repetitions), there is a mandatory of 1-min rest at minimum. After completing the exercise, submit your RPE.\nTask 5: Exercise 3 (Cross-training) In this exercise, you will complete 3 sets of burpees followed by jump rope. For each set perform 2 to 4 burpees (depending on your ability). Immediately follow the burpees with 30 seconds of jump rope. After each set, you will have a 45 second recovery period. Repeat this sequence for 3 to 4 rounds. After completing the exercise, submit your RPE.\n\n\n  \n  \n  Compact RPE Scale\n  \n\n\n  \n    Rating of Perceived Exertion\n    \n    \n      \n        Absolute maximum\n        Extremely strong\n        Very strong\n        Strong\n        Moderate\n        Weak\n        Very weak\n        Extremely weak\n        Nothing at all\n      \n      \n      \n        \n        \n          \n            \n            \n          \n          \n            \n              1: \n              Nothing at all\n              0\n            \n            Show\n          \n        \n        \n        \n        \n          \n            \n            \n          \n          \n            \n              2: \n              Nothing at all\n              0\n            \n            Show\n          \n        \n        \n        \n        \n          \n            \n            \n          \n          \n            \n              3: \n              Nothing at all\n              0\n            \n            Show\n          \n        \n      \n    \n  \n\n  \n\n \n\n6.3.1.1 Save Results\n\n  \n  \n  Compact Protocol Table\n  \n\n\n  \n    \n\n\n\nProtocol\nDistance\nHR\nRPE\n\n\n\n\nContinuous\n\n\n\n\n\nIntermittent\n\n\n\n\n\nCross Training\n\n\n\n\n\n\n\n    \n    \n      Save CSV\n      Clear\n    \n    \n    \n  \n\n  \n\n\n\n\n6.3.2 Test your learning\nWhat is the key difference between external and internal load?\n\n External load measures the body's response, internal load measures work done External load measures work done, internal load measures the body's response Both external and internal load measure the same thing External load is always higher than internal load\n\nWhich of the following are examples of external load measures?\n\n Heart rate and RPE Testosterone and cortisol levels Distance covered and number of steps Mood state and wellness scores\n\nWhich of the following are examples of objective internal load markers?\n\n RPE and mood questionnaires Distance and speed Heart rate and creatine kinase GPS coordinates and accelerometer data\n\nWhich of the following are examples of subjective internal load markers?\n\n Heart rate variability Blood lactate levels Session RPE and Profile of Mood States Distance covered and jump height\n\nHow does technology like the Polar Team System contribute to load monitoring?\n\n Only external load can be measured with technology Technology can only measure subjective responses Technology can measure both external load (GPS/IMU) and objective internal load (heart rate) Technology cannot be used for load monitoring\n\nWhen comparing the three exercise protocols (continuous running, intermittent shuttles, cross-training), what would you expect?\n\n All three protocols will produce identical load profiles Only the continuous protocol produces meaningful data Different protocols (continuous, intermittent, cross-training) will likely produce different internal and external load responses External load is the same regardless of protocol type\n\nWhen should Rating of Perceived Exertion (RPE) be collected during the practical session?\n\n RPE should be collected before starting exercise RPE is only useful for continuous exercise RPE should be collected after each exercise protocol to assess subjective internal load RPE is an external load measure\n\nWhat is the primary purpose of monitoring both external and internal load in athletes?\n\n To make exercises more difficult for athletes To reduce the amount of training athletes do To optimize training by understanding both the work done and the body's response to that work To replace traditional coaching methods entirely\n\nWhat role do wellness questionnaires play in load monitoring?\n\n They measure external load They are objective biochemical markers They provide subjective internal load data about an athlete's readiness to train They are only used after exercise sessions\n\nHow should external and internal load measures be used together in practice?\n\n External load measures are more important than internal load measures Internal load measures are more important than external load measures Both external and internal load measures provide complementary information for comprehensive athlete monitoring Only one type of load measure is needed for effective monitoring",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 10 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical7.html",
+    "href": "Practical7.html",
+    "title": "7  Week 12 - Practical",
+    "section": "",
+    "text": "7.1 Learning Outcome:",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Week 12 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical7.html#learning-outcome",
+    "href": "Practical7.html#learning-outcome",
+    "title": "7  Week 12 - Practical",
+    "section": "",
+    "text": "Understand measurement accuracy concepts and their application to exercise testing and measurement\nEvaluate the feasibility of different tests according to environmental conditions and client characteristics\nDemonstrate basic data processing and analytical techniques\nCommunicate test results and their implications to hypothetical client scenarios",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Week 12 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical7.html#practical-goals",
+    "href": "Practical7.html#practical-goals",
+    "title": "7  Week 12 - Practical",
+    "section": "7.2 Practical Goals:",
+    "text": "7.2 Practical Goals:\n\nBuild intuition around Hypothesis testing by performing your own hypothesis test\nPractice interpreting results of your findings make sure to give context to the size of your effect, the precision around the effect you observed and confidence that these results may be reproducible in the future.\nProfessional report 2 overview",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Week 12 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical7.html#example-case-study",
+    "href": "Practical7.html#example-case-study",
+    "title": "7  Week 12 - Practical",
+    "section": "7.3 Example case study",
+    "text": "7.3 Example case study\nYou work for an organisation that wants to know whether some intervention/factor influences a measure that you track with clients. For example it may be that your boss wants know how much a warm up influence flexibility screening, or they might want to know how much getting to practise an activity acutely influences your performance on it.\nIn groups your goal is to come up with a question in which you want to test a hypothesis on?\nYou need to formally decide ahead of time what expected result it? e.g. Whether you think it will have an effect or not have an effect.\nUsing material discussed in Week 11 and 12 seminar your job is to test this hypothesis and report the results of your finding.",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Week 12 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical7.html#but-what-is-a-p-value",
+    "href": "Practical7.html#but-what-is-a-p-value",
+    "title": "7  Week 12 - Practical",
+    "section": "7.5 But what is a p-value",
+    "text": "7.5 But what is a p-value\nA p-value can be thought of as the probability of observing the test statistic we did assuming that there is no difference between testing occasions. Put differently, that any effect you observed is explained via pure random sampling variation. Effectively, all we are doing when we calculate a p-value is comparing the test statistic we observed to a distribution of test statistics that can be created via random sampling variation. If we observe a test statistic that can very rarely be created under random sampling variation, let’s say less than 5% of the time, we deem this a statistically significant result. That is, we observed a test statistic that is very rarely observed under the null hypothesis so we will treat our result as interesting.\nThe simulation below will hopefully build your intuition around the null distribution and p-values.\nhttps://r2mu.github.io/tvalSim/\n\n7.5.1 What a p-value isn’t\n\nRepresent the probability that the null hypothesis is true\n\nA p-value is calculated assuming the null hypothesis is true, not the probability of the null being true\n\nMeasure the size, importance, or practical significance of an effect\n\nSmall p-values can occur with trivial effects in large samples, and large p-values can occur with important effects in small samples\n\nDoes not tell you the probability that your results occurred by chance alone\n\nThe p-value tells you how often you would observe results at least as extreme as yours if the null hypothesis were true (pure chance) - Remember we are assuming it is true.\nIt doesn’t tell you the probability that your specific result was caused by chance versus a real effect\n\nIndicate the probability of replicating your finding\n\nA significant result (p &lt; .05) does not mean there’s a 95% chance of replication; replication probability depends on many other factors (sample size and size of the effect)",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Week 12 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical7.html#hypothesis-testing-recap",
+    "href": "Practical7.html#hypothesis-testing-recap",
+    "title": "7  Week 12 - Practical",
+    "section": "7.4 Hypothesis testing recap",
+    "text": "7.4 Hypothesis testing recap\nA quick recap of the main points discussed in lecture material. When we perform a hypothesis test, we are effectively trying to identify whether the signal (mean difference) we have observed can be considered an interesting result or could easily be explained via random variation. For this unit, we are going to focus on the T-statistic calculated from a paired t-test design (effectively comparing the same individuals pre and post some intervention). The T-statistic is calculated as:\n\\[\nT = \\frac{\\text{mean diff}}{\\frac{\\text{sd(differences)}}{\\sqrt{N}}}\n\\]\nWhere \\(N\\) the number of participants.\nLet’s look into the equation in a little more detail:\nWe have a mean difference which can be thought of as a signal. We divide that by the \\(sd(differences)\\), which can be thought of as the level of consistency in change amongst individuals or also considered a measure of noise\nThe smaller the noise (greater consistency), the larger the T-value will be.\nFinally, we divide this noise by the \\(\\sqrt{N}\\), which can be thought of as a penalty for the fact that we are only testing on a sample and not the full population\nThe more people, the less penalty is applied and the greater the T-value will be\nThe interactive figure below should hopefully drive home the message on how changing these parameters changes the T value.\n\n  \n\n  \n    \n      Participants (n)\n      21\n      \n    \n    \n      Mean difference\n      1.75\n      \n    \n    \n      Standard deviation\n      5\n      \n    \n    \n      Correlation\n      0\n      \n    \n  \n  \n  \n    \n      ROPE size (× SD)\n      0.2\n      \n    \n    \n      Show ROPE\n      Reset Visualization\n    \n  \n  \n  \n  \n  \n    \n  \n  \n  \n    \n      \n    \n  \n\n  \n  \n  \n  \n\n\nKey points from the plot above should be that increasing the sample size increases the precision/confidence we have in what the true mean difference is between the pre and post intervention which is shown by the smaller confidence interval around the change score. This can cause an issue in extremely large samples where tiny mean differences can be deemed “statistically significant” as we are effectively very confident that true mean difference from pre to post may indeed be greater than zero. You may then ask the question, “but do we care if something is only different than zero?”. Indeed, this is a perfectly reasonable question to ask and something that statisticians have been encouraging researchers to do for a long time and this is to report the magnitude of the effect. It should be noted that the word “magnitude” may mean different things in different contexts across different fields. However, the two measures of effect magnitude that I want you to focus on for this unit are\n\\[\nCohens D = \\frac{\\text{mean diff}}{\\text{Pooled SD}}\n\\]\nWhere \\(Pooled SD\\) is the average \\(SD\\) across both pre and post trials.\nFor understanding of qualitative interpretation around the Cohens D numbers make sure to check out the Week 11 and 12 seminar material.\nThe other measure of effect I want you to develop some intition around is common language effect size (CLES) sometimes also called the probability of superiority\n\\[ CLES = \\Phi\\left(\\frac{\\text{mean diff}}{\\text{sd diff}}\\right) \\]\nOkay lets talk through this a little more slowly as there is a scary looking symbol in there. We first compute what is called the signal to noise ratio \\((SNR)\\) which is calculated via \\(\\frac{\\text{mean diff}}{\\text{sd diff}}\\). This is then put into a function with a scary looking symbol \\(\\Phi(\\text{SNR})\\) however all this function does is convert the SNR into a probability for us. This probability can be thought of a randomly drawn person from this sample having a higher score vs lower score.",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Week 12 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical7.html#test-your-learning",
+    "href": "Practical7.html#test-your-learning",
+    "title": "7  Week 12 - Practical",
+    "section": "7.6 Test your learning",
+    "text": "7.6 Test your learning\nWhat does the T-statistic represent in a paired t-test?\n\n The correlation between pre and post measurements The standard deviation of individual scores The mean difference divided by the standard error of the differences The p-value multiplied by the sample size\n\nHow does increasing sample size (N) affect the T-statistic?\n\n Larger sample sizes increase the T-value by reducing the penalty for sampling variation Larger sample sizes decrease the T-value by increasing noise Sample size has no effect on the T-statistic Larger sample sizes only affect the p-value, not the T-statistic\n\nWhat does Cohen’s D measure?\n\n The p-value adjusted for sample size The probability of replicating the study The mean difference divided by the pooled standard deviation The correlation between pre and post measurements\n\nWhat does the Common Language Effect Size (CLES) represent?\n\n The percentage of participants who showed improvement The probability that a randomly selected person will have a higher post-intervention score The correlation between individual differences and group means The statistical power of the test\n\nWhich of the following is NOT what a p-value represents?\n\n The probability of observing the test statistic assuming no true difference The probability that the null hypothesis is true How often you would see results this extreme if there was no real effect The likelihood of the observed data under the null hypothesis\n\nIn the T-statistic equation, what represents the ‘signal’ and what represents the ‘noise’?\n\n Mean difference is signal, sample size is noise Mean difference is signal, standard deviation of differences is noise P-value is signal, confidence interval is noise Effect size is signal, p-value is noise\n\nWhat potential issue can arise with extremely large sample sizes in hypothesis testing?\n\n Large samples always produce more accurate results Large samples reduce the need for effect size calculations Large samples can make trivially small differences appear statistically significant Large samples eliminate the need for hypothesis testing\n\nWhat three components are needed to calculate a T-statistic for a paired t-test?\n\n Pre-test scores, post-test scores, and population standard deviation Mean difference, standard deviation of differences, and sample size Effect size, p-value, and confidence interval Correlation coefficient, regression slope, and intercept\n\nIf a test statistic occurs less than _____ of the time under random sampling variation, it is typically considered statistically significant.\n\n 1% 10% 5% 0.1%\n\nTo test whether a warm-up influences flexibility screening using a paired t-test design, you would:\n\n Measure flexibility once and compare to population norms Measure flexibility before and after warm-up in the same individuals Measure flexibility in two different groups of people Measure flexibility at multiple time points across several weeks",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Week 12 - Practical</span>"
+    ]
+  }
+]

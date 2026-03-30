@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>6&nbsp; Week 10 - Practical – SPRT2002 Prac Book</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./Practical7.html" rel="next">
+<link href="./Practical5.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-364982630eef5352dd1537128a8ed5cb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="include/webex.css">
+<link rel="stylesheet" href="custom.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">SPRT2002 Prac Book</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-practicals" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Practicals</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-practicals">    
+        <li>
+    <a class="dropdown-item" href="./Practical1.html">
+ <span class="dropdown-text">Practical 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Practical2.html">
+ <span class="dropdown-text">Practical 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Practical3.html">
+ <span class="dropdown-text">Practical 3</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Practical4.html">
+ <span class="dropdown-text">Practical 4</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Practical5.html">
+ <span class="dropdown-text">Practical 5</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Practical6.html">
+ <span class="dropdown-text">Practical 6</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Practical7.html">
+ <span class="dropdown-text">Practical 7</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="./SPRT2002-Prac-Book.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="./SPRT2002-Prac-Book.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#learning-outcome" id="toc-learning-outcome" class="nav-link active" data-scroll-target="#learning-outcome"><span class="header-section-number">6.1</span> Learning Outcome:</a></li>
+  <li><a href="#practical-goals" id="toc-practical-goals" class="nav-link" data-scroll-target="#practical-goals"><span class="header-section-number">6.2</span> Practical Goals:</a></li>
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background"><span class="header-section-number">6.3</span> Background:</a>
+  <ul class="collapse">
+  <li><a href="#activity" id="toc-activity" class="nav-link" data-scroll-target="#activity"><span class="header-section-number">6.3.1</span> Activity</a></li>
+  <li><a href="#test-your-learning" id="toc-test-your-learning" class="nav-link" data-scroll-target="#test-your-learning"><span class="header-section-number">6.3.2</span> Test your learning</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 10 - Practical</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-outcome" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="learning-outcome"><span class="header-section-number">6.1</span> Learning Outcome:</h2>
+<ol type="1">
+<li><p>Understand measurement accuracy concepts and their application to exercise testing and measurement</p></li>
+<li><p>Evaluate the feasibility of different tests according to environmental conditions and client characteristics</p></li>
+<li><p>Demonstrate basic data processing and analytical techniques</p></li>
+<li><p>Communicate test results and their implications to hypothetical client scenarios</p></li>
+</ol>
+<p><br></p>
+</section>
+<section id="practical-goals" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="practical-goals"><span class="header-section-number">6.2</span> Practical Goals:</h2>
+<p>• <strong>Explore athlete monitoring tools and technologies:</strong> Gain both theoretical and practical knowledge of the different tools available for monitoring athletes and how they fit within the AES scope of practice.</p>
+<p>• <strong>Apply monitoring techniques in real-world settings:</strong> Experience hands-on the practical application of athlete monitoring technologies, improving your ability to gather, interpret, and apply data to enhance athletic performance.</p>
+<p>• <strong>Enhance professional practice skills:</strong> Develop skills that align with the professional standards required for an AES, focusing on the integration of technology and practical tools to improve athlete outcomes.</p>
+<p>• <strong>Understand training load:</strong> Develop a foundational understanding of the training load construct and its sub dimensions (e.g., internal versus external load), as well as how these are operationalised in practice to effectively monitor athlete physiology and performance.</p>
+<p>• Time permitting quick overview of more advanced techniques for performing systematic search strategies</p>
+<p><br></p>
+</section>
+<section id="background" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="background"><span class="header-section-number">6.3</span> Background:</h2>
+<p>Over the last two weeks in seminar material we have discussed the construct of <strong>“Training Load”</strong>. Importantly we can think of training load being made up of two sub dimensions <strong>Internal</strong> and <strong>External</strong> load. <strong>Internal Load</strong> can be further subdivided into <strong>Objective</strong> and <strong>Subjective</strong> markers.</p>
+<p><strong>External load</strong>: Can quite simply just been thought of as a measure of how much work was done. e.g.&nbsp;5km of running, 1000 steps, 100m swim.</p>
+<p><strong>Internal load</strong>: Is a measure of the bodies response to performing the external load. Most commonly used measures are Heart rate based indices that were discussed in Week 4. Internal load can also represent biochemical markers (Creatine Kinase, Lactic Acid), Hormonal responses (Testosterone, Cortisol) or Immunological markers (IGA, IL1,6). The above would be considered <strong>objective</strong> internal load makers whilst measures based on perception of effort assessing mood such as Borg,Session RPE, Profile of Mood States, DALDA or simply Athlete Reported Outcome Measures would be considered <strong>subjective</strong> makers of internal load.</p>
+<section id="activity" class="level3" data-number="6.3.1">
+<h3 data-number="6.3.1" class="anchored" data-anchor-id="activity"><span class="header-section-number">6.3.1</span> Activity</h3>
+<p>In this weeks activity we are going to use a combination of external load and internal load markers as measured via integrated GPS/IMU and HR device from the Polar Team System and subjective outcome measures. This should help build your intuition around how interpreting both internal and external load can be useful in both categorising intensity of drills.</p>
+<p><strong>Task 1:</strong> Please used the document to complete a Wellness Questionnaire.</p>
+<p><strong>Task 2:</strong> After completing the wellness questionnaire, your supervisor will introduce the technology used to collect external and internal training loads throughout the workshop session.</p>
+<p><strong>Task 3:</strong> Exercise 1 (Continuous protocol) In this exercise, you will complete a running task, performing ~3 minutes of sub-maximal intensity running across 20-meter shuttles. One group member will be assigned to guide the pacing using a stopwatch and guide paper that indicates the required time to reach each cone. After completing the exercise, please submit your rating of perceived exertion (RPE).</p>
+<p><strong>Task 4:</strong> Exercise 2 (Intermittent protocol) In this exercise, you and your group will perform an intermittent activity consisting of 3 sets of 4 back-and-forth shuttles (each shuttle being 40 m long). The intensity should be self-paced at approximately 80% of maximal effort. Recovery periods between repetitions are self-chosen based on perceived exertion. After completing each set (i.e., 4 back-and-forth repetitions), there is a mandatory of 1-min rest at minimum. After completing the exercise, submit your RPE.</p>
+<p><strong>Task 5:</strong> Exercise 3 (Cross-training) In this exercise, you will complete 3 sets of burpees followed by jump rope. For each set perform 2 to 4 burpees (depending on your ability). Immediately follow the burpees with 30 seconds of jump rope. After each set, you will have a 45 second recovery period. Repeat this sequence for 3 to 4 rounds. After completing the exercise, submit your RPE.</p>
+<p><br></p>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compact RPE Scale</title>
+  <style>
+    /* Scope all RPE styles to avoid conflicts with webexercises */
+    .rpe-container * {
+      box-sizing: border-box;
+    }
+    
+    .rpe-container {
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+      width: 100%;
+      max-width: 450px;
+      margin: 0 auto;
+      padding: 0.5rem;
+      box-sizing: border-box;
+    }
+    
+    .rpe-title {
+      font-size: 1rem;
+      margin: 0.5rem 0;
+      text-align: center;
+    }
+    
+    .main-area {
+      display: flex;
+      width: 100%;
+      position: relative;
+    }
+    
+    .scale-labels {
+      position: relative;
+      height: 300px;
+      width: 40%;
+      margin-right: 0.5rem;
+    }
+    
+    .scale-label {
+      position: absolute;
+      right: 0.5rem;
+      transform: translateY(-50%);
+      white-space: nowrap;
+      text-align: right;
+      font-size: 0.8rem;
+    }
+    
+    /* Position the descriptors */
+    .label-100 { top: 0%; }
+    .label-90 { top: 10%; }
+    .label-70 { top: 30%; }
+    .label-50 { top: 50%; }
+    .label-30 { top: 70%; }
+    .label-20 { top: 80%; }
+    .label-10 { top: 90%; }
+    .label-5 { top: 95%; }
+    .label-0 { top: 100%; }
+    
+    .bullet {
+      display: inline-block;
+      width: 0.5rem;
+      height: 0.5rem;
+      background-color: black;
+      border-radius: 50%;
+      margin-left: 0.3rem;
+    }
+    
+    .sliders-container {
+      display: flex;
+      width: 60%;
+      gap: 0.5rem;
+    }
+    
+    .slider-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .slider-track {
+      position: relative;
+      height: 300px;
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+    
+    .track-line {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      height: 100%;
+      width: 1px;
+      background-color: #000;
+      transform: translateX(-50%);
+    }
+    
+    .thumb {
+      position: absolute;
+      left: 50%;
+      bottom: 0%;
+      width: 1rem;
+      height: 1rem;
+      background-color: #4285f4;
+      border-radius: 50%;
+      transform: translate(-50%, 50%);
+      cursor: pointer;
+      z-index: 10;
+    }
+    
+    .thumb-1 { background-color: #4285f4; }
+    .thumb-2 { background-color: #ea4335; }
+    .thumb-3 { background-color: #34a853; }
+    
+    .slider-control {
+      width: 100%;
+      text-align: center;
+      min-height: 60px;
+    }
+    
+    .result {
+      font-size: 0.8rem;
+      font-weight: bold;
+      margin-bottom: 0.25rem;
+      line-height: 1.2;
+    }
+    
+    .numeric-value {
+      display: none;
+      margin-left: 0.25rem;
+    }
+    
+    .numeric-value-1 { color: #4285f4; }
+    .numeric-value-2 { color: #ea4335; }
+    .numeric-value-3 { color: #34a853; }
+    
+    .rpe-container button {
+      padding: 0.3rem 0.5rem;
+      font-size: 0.8rem;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      width: 80%;
+      max-width: 80px;
+    }
+    
+    .rpe-container .button-1 { background: #4285f4; }
+    .rpe-container .button-1:hover { background: #3367d6; }
+    
+    .rpe-container .button-2 { background: #ea4335; }
+    .rpe-container .button-2:hover { background: #d62516; }
+    
+    .rpe-container .button-3 { background: #34a853; }
+    .rpe-container .button-3:hover { background: #2e8b57; }
+  </style>
+
+
+  <div class="rpe-container">
+    <h3 class="rpe-title anchored">Rating of Perceived Exertion</h3>
+    
+    <div class="main-area">
+      <div class="scale-labels">
+        <div class="scale-label label-100">Absolute maximum<span class="bullet"></span></div>
+        <div class="scale-label label-90">Extremely strong</div>
+        <div class="scale-label label-70">Very strong</div>
+        <div class="scale-label label-50">Strong</div>
+        <div class="scale-label label-30">Moderate</div>
+        <div class="scale-label label-20">Weak</div>
+        <div class="scale-label label-10">Very weak</div>
+        <div class="scale-label label-5">Extremely weak</div>
+        <div class="scale-label label-0">Nothing at all</div>
+      </div>
+      
+      <div class="sliders-container">
+        <!-- Slider 1 Column -->
+        <div class="slider-column">
+          <div class="slider-track" id="track-1">
+            <div class="track-line"></div>
+            <div class="thumb thumb-1" id="slider-thumb-1"></div>
+          </div>
+          <div class="slider-control">
+            <div class="result">
+              <span>1: </span>
+              <span id="descriptor-1">Nothing at all</span>
+              <span id="numeric-value-1" class="numeric-value numeric-value-1">0</span>
+            </div>
+            <button id="toggle-btn-1" class="button-1">Show</button>
+          </div>
+        </div>
+        
+        <!-- Slider 2 Column -->
+        <div class="slider-column">
+          <div class="slider-track" id="track-2">
+            <div class="track-line"></div>
+            <div class="thumb thumb-2" id="slider-thumb-2"></div>
+          </div>
+          <div class="slider-control">
+            <div class="result">
+              <span>2: </span>
+              <span id="descriptor-2">Nothing at all</span>
+              <span id="numeric-value-2" class="numeric-value numeric-value-2">0</span>
+            </div>
+            <button id="toggle-btn-2" class="button-2">Show</button>
+          </div>
+        </div>
+        
+        <!-- Slider 3 Column -->
+        <div class="slider-column">
+          <div class="slider-track" id="track-3">
+            <div class="track-line"></div>
+            <div class="thumb thumb-3" id="slider-thumb-3"></div>
+          </div>
+          <div class="slider-control">
+            <div class="result">
+              <span>3: </span>
+              <span id="descriptor-3">Nothing at all</span>
+              <span id="numeric-value-3" class="numeric-value numeric-value-3">0</span>
+            </div>
+            <button id="toggle-btn-3" class="button-3">Show</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Create slider objects to organize our code
+    const sliders = [
+      {
+        id: 1,
+        thumb: document.getElementById('slider-thumb-1'),
+        track: document.getElementById('track-1'),
+        descriptor: document.getElementById('descriptor-1'),
+        numericValue: document.getElementById('numeric-value-1'),
+        toggleBtn: document.getElementById('toggle-btn-1'),
+        value: 0,
+        showValue: false
+      },
+      {
+        id: 2,
+        thumb: document.getElementById('slider-thumb-2'),
+        track: document.getElementById('track-2'),
+        descriptor: document.getElementById('descriptor-2'),
+        numericValue: document.getElementById('numeric-value-2'),
+        toggleBtn: document.getElementById('toggle-btn-2'),
+        value: 0,
+        showValue: false
+      },
+      {
+        id: 3,
+        thumb: document.getElementById('slider-thumb-3'),
+        track: document.getElementById('track-3'),
+        descriptor: document.getElementById('descriptor-3'),
+        numericValue: document.getElementById('numeric-value-3'),
+        toggleBtn: document.getElementById('toggle-btn-3'),
+        value: 0,
+        showValue: false
+      }
+    ];
+    
+    // Initialize all sliders
+    sliders.forEach(slider => {
+      positionThumb(slider, 0);
+      
+      // Toggle button event listener
+      slider.toggleBtn.addEventListener('click', function() {
+        slider.showValue = !slider.showValue;
+        slider.numericValue.style.display = slider.showValue ? 'inline' : 'none';
+        slider.toggleBtn.textContent = slider.showValue ? 'Hide' : 'Show';
+      });
+    });
+    
+    // Function to position a thumb
+    function positionThumb(slider, value) {
+      // Calculate bottom position (0 = bottom, 100 = top)
+      const position = value; // % from bottom
+      const thumbPosition = (position / 100) * slider.track.clientHeight;
+      slider.thumb.style.bottom = `${thumbPosition}px`;
+      slider.value = value;
+      
+      // Update descriptor and numeric value display
+      slider.descriptor.textContent = getDescriptor(value);
+      slider.numericValue.textContent = value.toFixed(1);
+    }
+    
+    // Function to get the appropriate descriptor based on slider value
+    function getDescriptor(value) {
+      if (value >= 100) return "Absolute maximum";
+      if (value >= 90) return "Extremely strong";
+      if (value >= 70) return "Very strong";
+      if (value >= 50) return "Strong";
+      if (value >= 30) return "Moderate";
+      if (value >= 20) return "Weak";
+      if (value >= 10) return "Very weak";
+      if (value >= 5) return "Extremely weak";
+      return "Nothing at all";
+    }
+    
+    // Add mouse/touch events for all sliders
+    sliders.forEach(slider => {
+      let isDragging = false;
+      
+      // Start drag
+      slider.thumb.addEventListener('mousedown', function(e) {
+        e.preventDefault();
+        isDragging = true;
+        
+        const handleMove = function(e) {
+          if (!isDragging) return;
+          
+          // Get mouse/touch position
+          let clientY = e.clientY;
+          if (e.type === 'touchmove') {
+            clientY = e.touches[0].clientY;
+          }
+          
+          // Get track position
+          const trackRect = slider.track.getBoundingClientRect();
+          const trackBottom = trackRect.bottom;
+          const trackHeight = trackRect.height;
+          
+          // Calculate position within track (from bottom)
+          let posY = trackBottom - clientY;
+          
+          // Constrain to track
+          posY = Math.max(0, Math.min(posY, trackHeight));
+          
+          // Convert position to value (0-100)
+          const value = (posY / trackHeight) * 100;
+          
+          // Round to nearest 0.1
+          const roundedValue = Math.round(value * 10) / 10;
+          
+          // Update thumb position
+          positionThumb(slider, roundedValue);
+        };
+        
+        const handleEnd = function() {
+          isDragging = false;
+          document.removeEventListener('mousemove', handleMove);
+          document.removeEventListener('touchmove', handleMove);
+          document.removeEventListener('mouseup', handleEnd);
+          document.removeEventListener('touchend', handleEnd);
+        };
+        
+        document.addEventListener('mousemove', handleMove);
+        document.addEventListener('touchmove', handleMove);
+        document.addEventListener('mouseup', handleEnd);
+        document.addEventListener('touchend', handleEnd);
+      });
+      
+      slider.thumb.addEventListener('touchstart', function(e) {
+        e.preventDefault();
+        const touch = e.touches[0];
+        const mouseEvent = new MouseEvent('mousedown', {
+          clientX: touch.clientX,
+          clientY: touch.clientY
+        });
+        slider.thumb.dispatchEvent(mouseEvent);
+      });
+      
+      // Click on track
+      slider.track.addEventListener('click', function(e) {
+        // Only handle if it's a direct click on the track (not on the thumb)
+        if (e.target !== slider.thumb) {
+          const trackRect = slider.track.getBoundingClientRect();
+          const trackBottom = trackRect.bottom;
+          const trackHeight = trackRect.height;
+          
+          // Calculate position within track (from bottom)
+          const posY = trackBottom - e.clientY;
+          
+          // Constrain to track
+          const constrainedPosY = Math.max(0, Math.min(posY, trackHeight));
+          
+          // Convert position to value (0-100)
+          const value = (constrainedPosY / trackHeight) * 100;
+          
+          // Round to nearest 0.1
+          const roundedValue = Math.round(value * 10) / 10;
+          
+          // Update thumb position
+          positionThumb(slider, roundedValue);
+        }
+      });
+    });
+  </script>
+
+<p><br> <br></p>
+<section id="save-results" class="level4" data-number="6.3.1.1">
+<h4 data-number="6.3.1.1" class="anchored" data-anchor-id="save-results"><span class="header-section-number">6.3.1.1</span> Save Results</h4>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compact Protocol Table</title>
+  <style>
+    .protocol-container {
+      font-family: Arial, sans-serif;
+      font-size: 0.85rem;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Scope all styles to only affect the protocol container */
+    .protocol-container table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 0.5rem;
+    }
+    
+    .protocol-container th, 
+    .protocol-container td {
+      padding: 0.35rem 0.5rem;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+    
+    .protocol-container th {
+      background-color: #4285f4;
+      color: white;
+      font-weight: bold;
+      font-size: 0.8rem;
+    }
+    
+    .protocol-cell {
+      font-weight: bold;
+      font-size: 0.8rem;
+    }
+    
+    /* Only affect input elements inside the protocol container */
+    .protocol-container input[type="number"] {
+      width: 100%;
+      padding: 0.25rem;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      box-sizing: border-box;
+      font-size: 0.8rem;
+    }
+    
+    .buttons {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+    
+    /* Only affect buttons inside the protocol container */
+    .protocol-container button {
+      padding: 0.25rem 0.5rem;
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 0.75rem;
+    }
+    
+    .protocol-container #clearBtn {
+      background-color: #ea4335;
+    }
+    
+    .feedback {
+      margin-top: 0.5rem;
+      padding: 0.25rem 0.5rem;
+      border-radius: 3px;
+      display: none;
+      font-size: 0.75rem;
+    }
+  </style>
+
+
+  <div class="protocol-container">
+    
+<table id="data-table" class="caption-top table" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Protocol</th>
+<th data-quarto-table-cell-role="th">Distance</th>
+<th data-quarto-table-cell-role="th">HR</th>
+<th data-quarto-table-cell-role="th">RPE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td class="protocol-cell">Continuous</td>
+<td><input type="number" class="distance" min="0"></td>
+<td><input type="number" class="hr" min="0" max="220"></td>
+<td><input type="number" class="rpe" min="0" max="100" step="0.1"></td>
+</tr>
+<tr class="even">
+<td class="protocol-cell">Intermittent</td>
+<td><input type="number" class="distance" min="0"></td>
+<td><input type="number" class="hr" min="0" max="220"></td>
+<td><input type="number" class="rpe" min="0" max="100" step="0.1"></td>
+</tr>
+<tr class="odd">
+<td class="protocol-cell">Cross Training</td>
+<td><input type="number" class="distance" min="0"></td>
+<td><input type="number" class="hr" min="0" max="220"></td>
+<td><input type="number" class="rpe" min="0" max="100" step="0.1"></td>
+</tr>
+</tbody>
+</table>
+
+    
+    <div class="buttons">
+      <button id="saveBtn">Save CSV</button>
+      <button id="clearBtn">Clear</button>
+    </div>
+    
+    <div id="feedback" class="feedback"></div>
+  </div>
+
+  <script>
+    const saveBtn = document.getElementById('saveBtn');
+    const clearBtn = document.getElementById('clearBtn');
+    const feedback = document.getElementById('feedback');
+    
+    // Generate and download CSV data
+    saveBtn.addEventListener('click', function() {
+      const rows = document.querySelectorAll('#data-table tbody tr');
+      let csvContent = "Protocol,Distance,HR,RPE\n";
+      let hasData = false;
+      
+      rows.forEach(row => {
+        const protocol = row.querySelector('.protocol-cell').textContent;
+        const distance = row.querySelector('.distance').value || '';
+        const hr = row.querySelector('.hr').value || '';
+        const rpe = row.querySelector('.rpe').value || '';
+        
+        if (distance || hr || rpe) {
+          hasData = true;
+        }
+        
+        csvContent += `"${protocol}",${distance},${hr},${rpe}\n`;
+      });
+      
+      if (!hasData) {
+        showFeedback('Enter at least one value', false);
+        return;
+      }
+      
+      // Create and download CSV
+      const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      
+      link.setAttribute('href', url);
+      link.setAttribute('download', 'protocol_data.csv');
+      link.style.visibility = 'hidden';
+      
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      
+      showFeedback('CSV downloaded', true);
+    });
+    
+    // Clear all form fields
+    clearBtn.addEventListener('click', function() {
+      document.querySelectorAll('input[type="number"]').forEach(input => {
+        input.value = '';
+      });
+      
+      feedback.style.display = 'none';
+    });
+    
+    // Show feedback message
+    function showFeedback(message, isSuccess) {
+      feedback.textContent = message;
+      feedback.className = 'feedback';
+      
+      if (isSuccess) {
+        feedback.classList.add('success');
+        feedback.style.backgroundColor = '#d4edda';
+        feedback.style.color = '#155724';
+      } else {
+        feedback.style.backgroundColor = '#f8d7da';
+        feedback.style.color = '#721c24';
+      }
+      
+      feedback.style.display = 'block';
+      
+      // Auto-hide after 3 seconds
+      setTimeout(() => {
+        feedback.style.display = 'none';
+      }, 3000);
+    }
+  </script>
+
+</section>
+</section>
+<section id="test-your-learning" class="level3" data-number="6.3.2">
+<h3 data-number="6.3.2" class="anchored" data-anchor-id="test-your-learning"><span class="header-section-number">6.3.2</span> Test your learning</h3>
+What is the key difference between external and internal load?
+<div id="radio_XPJEXVWVCH" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_XPJEXVWVCH" value=""> <span>External load measures the body's response, internal load measures work done</span></label><label><input type="radio" autocomplete="off" name="radio_XPJEXVWVCH" value="answer"> <span>External load measures work done, internal load measures the body's response</span></label><label><input type="radio" autocomplete="off" name="radio_XPJEXVWVCH" value=""> <span>Both external and internal load measure the same thing</span></label><label><input type="radio" autocomplete="off" name="radio_XPJEXVWVCH" value=""> <span>External load is always higher than internal load</span></label>
+</div>
+Which of the following are examples of external load measures?
+<div id="radio_ANNTRRZMKH" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_ANNTRRZMKH" value=""> <span>Heart rate and RPE</span></label><label><input type="radio" autocomplete="off" name="radio_ANNTRRZMKH" value=""> <span>Testosterone and cortisol levels</span></label><label><input type="radio" autocomplete="off" name="radio_ANNTRRZMKH" value="answer"> <span>Distance covered and number of steps</span></label><label><input type="radio" autocomplete="off" name="radio_ANNTRRZMKH" value=""> <span>Mood state and wellness scores</span></label>
+</div>
+Which of the following are examples of objective internal load markers?
+<div id="radio_EJBQTNVZPY" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_EJBQTNVZPY" value=""> <span>RPE and mood questionnaires</span></label><label><input type="radio" autocomplete="off" name="radio_EJBQTNVZPY" value=""> <span>Distance and speed</span></label><label><input type="radio" autocomplete="off" name="radio_EJBQTNVZPY" value="answer"> <span>Heart rate and creatine kinase</span></label><label><input type="radio" autocomplete="off" name="radio_EJBQTNVZPY" value=""> <span>GPS coordinates and accelerometer data</span></label>
+</div>
+Which of the following are examples of subjective internal load markers?
+<div id="radio_RYNFCUWQLB" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_RYNFCUWQLB" value=""> <span>Heart rate variability</span></label><label><input type="radio" autocomplete="off" name="radio_RYNFCUWQLB" value=""> <span>Blood lactate levels</span></label><label><input type="radio" autocomplete="off" name="radio_RYNFCUWQLB" value="answer"> <span>Session RPE and Profile of Mood States</span></label><label><input type="radio" autocomplete="off" name="radio_RYNFCUWQLB" value=""> <span>Distance covered and jump height</span></label>
+</div>
+How does technology like the Polar Team System contribute to load monitoring?
+<div id="radio_VMDOTHWLHZ" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_VMDOTHWLHZ" value=""> <span>Only external load can be measured with technology</span></label><label><input type="radio" autocomplete="off" name="radio_VMDOTHWLHZ" value=""> <span>Technology can only measure subjective responses</span></label><label><input type="radio" autocomplete="off" name="radio_VMDOTHWLHZ" value="answer"> <span>Technology can measure both external load (GPS/IMU) and objective internal load (heart rate)</span></label><label><input type="radio" autocomplete="off" name="radio_VMDOTHWLHZ" value=""> <span>Technology cannot be used for load monitoring</span></label>
+</div>
+When comparing the three exercise protocols (continuous running, intermittent shuttles, cross-training), what would you expect?
+<div id="radio_NFEVIFJUGV" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_NFEVIFJUGV" value=""> <span>All three protocols will produce identical load profiles</span></label><label><input type="radio" autocomplete="off" name="radio_NFEVIFJUGV" value=""> <span>Only the continuous protocol produces meaningful data</span></label><label><input type="radio" autocomplete="off" name="radio_NFEVIFJUGV" value="answer"> <span>Different protocols (continuous, intermittent, cross-training) will likely produce different internal and external load responses</span></label><label><input type="radio" autocomplete="off" name="radio_NFEVIFJUGV" value=""> <span>External load is the same regardless of protocol type</span></label>
+</div>
+When should Rating of Perceived Exertion (RPE) be collected during the practical session?
+<div id="radio_IYERQXTMPH" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_IYERQXTMPH" value=""> <span>RPE should be collected before starting exercise</span></label><label><input type="radio" autocomplete="off" name="radio_IYERQXTMPH" value=""> <span>RPE is only useful for continuous exercise</span></label><label><input type="radio" autocomplete="off" name="radio_IYERQXTMPH" value="answer"> <span>RPE should be collected after each exercise protocol to assess subjective internal load</span></label><label><input type="radio" autocomplete="off" name="radio_IYERQXTMPH" value=""> <span>RPE is an external load measure</span></label>
+</div>
+What is the primary purpose of monitoring both external and internal load in athletes?
+<div id="radio_HYSRDCZTJN" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_HYSRDCZTJN" value=""> <span>To make exercises more difficult for athletes</span></label><label><input type="radio" autocomplete="off" name="radio_HYSRDCZTJN" value=""> <span>To reduce the amount of training athletes do</span></label><label><input type="radio" autocomplete="off" name="radio_HYSRDCZTJN" value="answer"> <span>To optimize training by understanding both the work done and the body's response to that work</span></label><label><input type="radio" autocomplete="off" name="radio_HYSRDCZTJN" value=""> <span>To replace traditional coaching methods entirely</span></label>
+</div>
+What role do wellness questionnaires play in load monitoring?
+<div id="radio_FULRBPFPNG" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_FULRBPFPNG" value=""> <span>They measure external load</span></label><label><input type="radio" autocomplete="off" name="radio_FULRBPFPNG" value=""> <span>They are objective biochemical markers</span></label><label><input type="radio" autocomplete="off" name="radio_FULRBPFPNG" value="answer"> <span>They provide subjective internal load data about an athlete's readiness to train</span></label><label><input type="radio" autocomplete="off" name="radio_FULRBPFPNG" value=""> <span>They are only used after exercise sessions</span></label>
+</div>
+How should external and internal load measures be used together in practice?
+<div id="radio_MOIYXBOBMO" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_MOIYXBOBMO" value=""> <span>External load measures are more important than internal load measures</span></label><label><input type="radio" autocomplete="off" name="radio_MOIYXBOBMO" value=""> <span>Internal load measures are more important than external load measures</span></label><label><input type="radio" autocomplete="off" name="radio_MOIYXBOBMO" value="answer"> <span>Both external and internal load measures provide complementary information for comprehensive athlete monitoring</span></label><label><input type="radio" autocomplete="off" name="radio_MOIYXBOBMO" value=""> <span>Only one type of load measure is needed for effective monitoring</span></label>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script>
+
+/* update total correct if #webex-total_correct exists */
+update_total_correct = function() {
+  console.log("webex: update total_correct");
+
+  var t = document.getElementsByClassName("webex-total_correct");
+  for (var i = 0; i < t.length; i++) {
+    p = t[i].parentElement;
+    var correct = p.getElementsByClassName("webex-correct").length;
+    var solvemes = p.getElementsByClassName("webex-solveme").length;
+    var radiogroups = p.getElementsByClassName("webex-radiogroup").length;
+    var selects = p.getElementsByClassName("webex-select").length;
+
+    t[i].innerHTML = correct + " of " + (solvemes + radiogroups + selects) + " correct";
+  }
+}
+
+/* webex-solution button toggling function */
+b_func = function() {
+  console.log("webex: toggle hide");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('open')) {
+    cl.remove("open");
+  } else {
+    cl.add("open");
+  }
+}
+
+/* check answers */
+check_func = function() {
+  console.log("webex: check answers");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('unchecked')) {
+    cl.remove("unchecked");
+    this.innerHTML = "Hide Answers";
+  } else {
+    cl.add("unchecked");
+    this.innerHTML = "Show Answers";
+  }
+}
+
+/* function for checking solveme answers */
+solveme_func = function(e) {
+  console.log("webex: check solveme");
+
+  var real_answers = JSON.parse(this.dataset.answer);
+  var my_answer = this.value;
+  var cl = this.classList;
+  if (cl.contains("ignorecase")) {
+    my_answer = my_answer.toLowerCase();
+  }
+  if (cl.contains("nospaces")) {
+    my_answer = my_answer.replace(/ /g, "")
+  }
+
+  if (my_answer == "") {
+    cl.remove("webex-correct");
+    cl.remove("webex-incorrect");
+  } else if (real_answers.includes(my_answer)) {
+    cl.add("webex-correct");
+    cl.remove("webex-incorrect");
+  } else {
+    cl.add("webex-incorrect");
+    cl.remove("webex-correct");
+  }
+
+  // match numeric answers within a specified tolerance
+  if(this.dataset.tol > 0){
+    var tol = JSON.parse(this.dataset.tol);
+    var matches = real_answers.map(x => Math.abs(x - my_answer) < tol)
+    if (matches.reduce((a, b) => a + b, 0) > 0) {
+      cl.add("webex-correct");
+    } else {
+      cl.remove("webex-correct");
+    }
+  }
+
+  // added regex bit
+  if (cl.contains("regex")){
+    answer_regex = RegExp(real_answers.join("|"))
+    if (answer_regex.test(my_answer)) {
+      cl.add("webex-correct");
+    }
+  }
+
+  update_total_correct();
+}
+
+/* function for checking select answers */
+select_func = function(e) {
+  console.log("webex: check select");
+
+  var cl = this.classList
+
+  /* add style */
+  cl.remove("webex-incorrect");
+  cl.remove("webex-correct");
+  if (this.value == "answer") {
+    cl.add("webex-correct");
+  } else if (this.value != "blank") {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+/* function for checking radiogroups answers */
+radiogroups_func = function(e) {
+  console.log("webex: check radiogroups");
+
+  var checked_button = document.querySelector('input[name=' + this.id + ']:checked');
+  var cl = checked_button.parentElement.classList;
+  var labels = checked_button.parentElement.parentElement.children;
+
+  /* get rid of styles */
+  for (i = 0; i < labels.length; i++) {
+    labels[i].classList.remove("webex-incorrect");
+    labels[i].classList.remove("webex-correct");
+  }
+
+  /* add style */
+  if (checked_button.value == "answer") {
+    cl.add("webex-correct");
+  } else {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+window.onload = function() {
+  console.log("webex onload");
+  /* set up solution buttons */
+  var buttons = document.getElementsByTagName("button");
+
+  for (var i = 0; i < buttons.length; i++) {
+    if (buttons[i].parentElement.classList.contains('webex-solution')) {
+      buttons[i].onclick = b_func;
+    }
+  }
+
+  var check_sections = document.getElementsByClassName("webex-check");
+  console.log("check:", check_sections.length);
+  for (var i = 0; i < check_sections.length; i++) {
+    check_sections[i].classList.add("unchecked");
+
+    let btn = document.createElement("button");
+    btn.innerHTML = "Show Answers";
+    btn.classList.add("webex-check-button");
+    btn.onclick = check_func;
+    check_sections[i].appendChild(btn);
+
+    let spn = document.createElement("span");
+    spn.classList.add("webex-total_correct");
+    check_sections[i].appendChild(spn);
+  }
+
+  /* set up webex-solveme inputs */
+  var solveme = document.getElementsByClassName("webex-solveme");
+
+  for (var i = 0; i < solveme.length; i++) {
+    /* make sure input boxes don't auto-anything */
+    solveme[i].setAttribute("autocomplete","off");
+    solveme[i].setAttribute("autocorrect", "off");
+    solveme[i].setAttribute("autocapitalize", "off");
+    solveme[i].setAttribute("spellcheck", "false");
+    solveme[i].value = "";
+
+    /* adjust answer for ignorecase or nospaces */
+    var cl = solveme[i].classList;
+    var real_answer = solveme[i].dataset.answer;
+    if (cl.contains("ignorecase")) {
+      real_answer = real_answer.toLowerCase();
+    }
+    if (cl.contains("nospaces")) {
+      real_answer = real_answer.replace(/ /g, "");
+    }
+    solveme[i].dataset.answer = real_answer;
+
+    /* attach checking function */
+    solveme[i].onkeyup = solveme_func;
+    solveme[i].onchange = solveme_func;
+
+    $(solveme[i]).after(" <span class='webex-icon'></span>");
+  }
+
+  /* set up radiogroups */
+  var radiogroups = document.getElementsByClassName("webex-radiogroup");
+  for (var i = 0; i < radiogroups.length; i++) {
+    radiogroups[i].onchange = radiogroups_func;
+  }
+
+  /* set up selects */
+  var selects = document.getElementsByClassName("webex-select");
+  for (var i = 0; i < selects.length; i++) {
+    selects[i].onchange = select_func;
+    $(selects[i]).after(" <span class='webex-icon'></span>");
+  }
+
+  update_total_correct();
+}
+
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./Practical5.html" class="pagination-link" aria-label="Week 6 - Practical">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 6 - Practical</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./Practical7.html" class="pagination-link" aria-label="Week 12 - Practical">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 12 - Practical</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

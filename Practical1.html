@@ -1,0 +1,2171 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>1&nbsp; Week 2 - Practical – SPRT2002 Prac Book</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./Practical2.html" rel="next">
+<link href="./index.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-364982630eef5352dd1537128a8ed5cb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="include/webex.css">
+<link rel="stylesheet" href="custom.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">SPRT2002 Prac Book</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-practicals" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Practicals</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-practicals">    
+        <li>
+    <a class="dropdown-item" href="./Practical1.html">
+ <span class="dropdown-text">Practical 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Practical2.html">
+ <span class="dropdown-text">Practical 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Practical3.html">
+ <span class="dropdown-text">Practical 3</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Practical4.html">
+ <span class="dropdown-text">Practical 4</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Practical5.html">
+ <span class="dropdown-text">Practical 5</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Practical6.html">
+ <span class="dropdown-text">Practical 6</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Practical7.html">
+ <span class="dropdown-text">Practical 7</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="./SPRT2002-Prac-Book.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="./SPRT2002-Prac-Book.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#learning-outcome" id="toc-learning-outcome" class="nav-link active" data-scroll-target="#learning-outcome"><span class="header-section-number">1.1</span> Learning Outcome:</a>
+  <ul class="collapse">
+  <li><a href="#assessments" id="toc-assessments" class="nav-link" data-scroll-target="#assessments"><span class="header-section-number">1.1.1</span> <u><strong><em>Assessments</em></strong></u><strong><em>:</em></strong></a></li>
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background"><span class="header-section-number">1.1.2</span> <u><strong><em>Background</em></strong></u><strong><em>:</em></strong></a></li>
+  </ul></li>
+  <li><a href="#practical-procedures-part-1" id="toc-practical-procedures-part-1" class="nav-link" data-scroll-target="#practical-procedures-part-1"><span class="header-section-number">1.2</span> <u><strong><em>Practical Procedures (PART 1)</em></strong></u><strong><em>:</em></strong></a>
+  <ul class="collapse">
+  <li><a href="#broad-jump" id="toc-broad-jump" class="nav-link" data-scroll-target="#broad-jump"><span class="header-section-number">1.2.1</span> Broad Jump</a></li>
+  <li><a href="#max-speed-assessment" id="toc-max-speed-assessment" class="nav-link" data-scroll-target="#max-speed-assessment"><span class="header-section-number">1.2.2</span> <strong><em>Max speed assessment</em></strong></a></li>
+  <li><a href="#drop-jump-assessment" id="toc-drop-jump-assessment" class="nav-link" data-scroll-target="#drop-jump-assessment"><span class="header-section-number">1.2.3</span> <strong><em>Drop Jump assessment</em></strong></a></li>
+  <li><a href="#interactive-stiffness-visual" id="toc-interactive-stiffness-visual" class="nav-link" data-scroll-target="#interactive-stiffness-visual"><span class="header-section-number">1.2.4</span> <strong><em>Interactive stiffness visual</em></strong></a></li>
+  </ul></li>
+  <li><a href="#practical-procedures-part-2" id="toc-practical-procedures-part-2" class="nav-link" data-scroll-target="#practical-procedures-part-2"><span class="header-section-number">1.3</span> <u><strong><em>Practical Procedures (PART 2):</em></strong></u></a></li>
+  <li><a href="#descriptive-statistics-recap" id="toc-descriptive-statistics-recap" class="nav-link" data-scroll-target="#descriptive-statistics-recap"><span class="header-section-number">2</span> Descriptive statistics recap</a>
+  <ul class="collapse">
+  <li><a href="#fig1" id="toc-fig1" class="nav-link" data-scroll-target="#fig1"><span class="header-section-number">2.0.1</span> Fig1</a></li>
+  <li><a href="#fig2" id="toc-fig2" class="nav-link" data-scroll-target="#fig2"><span class="header-section-number">2.0.2</span> Fig2</a></li>
+  <li><a href="#reflection-1" id="toc-reflection-1" class="nav-link" data-scroll-target="#reflection-1"><span class="header-section-number">2.0.3</span> Reflection</a></li>
+  <li><a href="#but-what-is-the-standard-error" id="toc-but-what-is-the-standard-error" class="nav-link" data-scroll-target="#but-what-is-the-standard-error"><span class="header-section-number">2.0.4</span> But what is the standard error?</a></li>
+  <li><a href="#confidence-intervals" id="toc-confidence-intervals" class="nav-link" data-scroll-target="#confidence-intervals"><span class="header-section-number">2.0.5</span> Confidence intervals</a></li>
+  <li><a href="#test-your-learning" id="toc-test-your-learning" class="nav-link" data-scroll-target="#test-your-learning"><span class="header-section-number">2.1</span> Test your learning</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week 2 - Practical</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<section id="learning-outcome" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="learning-outcome"><span class="header-section-number">1.1</span> Learning Outcome:</h2>
+<ol type="1">
+<li>Understand measurement accuracy concepts and their application to exercise testing and measurement</li>
+<li>Evaluate the feasibility of different tests according to environmental conditions and client characteristics</li>
+<li>Demonstrate basic data processing and analytical techniques for calculating distribution based statistics (Mean, Standard Deviation) <br></li>
+</ol>
+<section id="assessments" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="assessments"><span class="header-section-number">1.1.1</span> <u><strong><em>Assessments</em></strong></u><strong><em>:</em></strong></h3>
+<p>This is the first of three lab weeks (weeks 2, 3 and 4) where the data you collect will be used for your first professional report assessment (1-page report in week 9). <em>HELPFUL TIP:</em> The more attention you pay to the quality of your data during this lab, the easier it will be to complete your professional.</p>
+</section>
+<section id="background" class="level3" data-number="1.1.2">
+<h3 data-number="1.1.2" class="anchored" data-anchor-id="background"><span class="header-section-number">1.1.2</span> <u><strong><em>Background</em></strong></u><strong><em>:</em></strong></h3>
+<p>Maximal sprinting speed and its derivative acceleration have both been shown to be key discriminators in playing status across many sports. Whilst, performing a maximal sprint test would give the most valid insight into these qualities, it may not always be possible to perform this test in a practical environment due factors such as, perceived risk of injury and cost of equipment (timing gates, radar gun etc). Hence, identifying cost effective test that may give insight into these qualities is of interest.</p>
+<p>Two commonly used test that are used as both proxy measures of acceleration and sprinting speed respectively are the <strong>standing broad jump</strong> (SBJ) and assessment of lower limb stiffness. Whilst a number of techniques for measuring lower limb stiffness exist, the test we will focus on today is the <strong>drop jump test</strong>.</p>
+<p>PART 1 of today will involve collecting data across a 0<strong>-5 and 0-10m sprint tes</strong>t, <strong>standing broad jump</strong> and <strong>drop jump test</strong> (look to get at least two trials across each test). PART 2 aims of today involve calculating basic summary statistics that represent the mean and spread/deviation of the data and other descriptive statistics discussed in the lecture.</p>
+</section>
+</section>
+<section id="practical-procedures-part-1" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="practical-procedures-part-1"><span class="header-section-number">1.2</span> <u><strong><em>Practical Procedures (PART 1)</em></strong></u><strong><em>:</em></strong></h2>
+<p>Before completing each assessment as a group discuss what you think would be an appropriate warm up and then action the warm up together before completing trials.</p>
+<p>For each assessment make at least one individual is updating the results into the Google form below.</p>
+<p><a href="https://docs.google.com/spreadsheets/d/1ovjxRvN4N5482ikOBO_SK1qetU6CBPnkArYUs_rRigM/edit?usp=sharing" class="uri">https://docs.google.com/spreadsheets/d/1ovjxRvN4N5482ikOBO_SK1qetU6CBPnkArYUs_rRigM/edit?usp=sharing</a></p>
+<section id="broad-jump" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="broad-jump"><span class="header-section-number">1.2.1</span> Broad Jump</h3>
+<p><a href="https://www.youtube.com/watch?v=n0UeHxglMJ4" class="uri">https://www.youtube.com/watch?v=n0UeHxglMJ4</a></p>
+<ol type="1">
+<li><p>Position yourself accurately by standing behind the marker with your toes aligned directly with it - proper starting position is crucial for consistent measurement.</p></li>
+<li><p>Utilize the permitted counter-movement effectively by bending your knees and trunk while swinging your arms before takeoff, as this motion helps generate maximum power for the jump.</p></li>
+<li><p>Execute a proper two-foot takeoff and landing, ensuring both feet leave and touch the ground simultaneously - any step before takeoff will invalidate the attempt.</p></li>
+<li><p>Maintain balance during landing since falling backward will require a repeat attempt - focus on landing firmly on both feet with controlled momentum.</p></li>
+<li><p>Complete multiple attempts to achieve your maximal distance, which will be measured from the marker to the point of first contact (typically heel strike) upon landing.<br>
+<br> <br></p></li>
+</ol>
+</section>
+<section id="max-speed-assessment" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="max-speed-assessment"><span class="header-section-number">1.2.2</span> <strong><em>Max speed assessment</em></strong></h3>
+<ol type="1">
+<li><p>Complete a standardized warm-up before beginning maximal 10m sprint testing, with timing gates positioned at both 5m and 10m distances</p></li>
+<li><p>Organize into groups of 4-5 students and establish a clear testing order, with each athlete performing multiple maximal sprint effort</p></li>
+<li><p>Record sprint times using both electronic timing gates (Swift SpeedLight Timing™ Gates) and handheld stopwatches, ensuring to match and record corresponding times from both measurement methods for each attempt</p></li>
+<li><p>Ensure all group members complete their designated number of sprint attempts while maintaining accurate record-keeping of all times <br> <br></p></li>
+</ol>
+</section>
+<section id="drop-jump-assessment" class="level3" data-number="1.2.3">
+<h3 data-number="1.2.3" class="anchored" data-anchor-id="drop-jump-assessment"><span class="header-section-number">1.2.3</span> <strong><em>Drop Jump assessment</em></strong></h3>
+<p>Utilsing the EZ jumpmat.</p>
+<ol type="1">
+<li><p>&nbsp;Stand on a box or elevated platform behind.</p></li>
+<li><p>Place your hands on your hips.</p></li>
+<li><p>Keep your chest up and look forward.</p></li>
+<li><p>Step off the box; then.</p></li>
+<li><p>Land on the plates with both feet at the same time;</p></li>
+<li><p>Immediately jump as high as possible whilst looking to minimize ground contact time; then</p></li>
+<li><p>Land softly, remaining completely still on the jump mat.</p></li>
+<li><p>Record RSI from device <br> <br></p></li>
+</ol>
+</section>
+<section id="interactive-stiffness-visual" class="level3" data-number="1.2.4">
+<h3 data-number="1.2.4" class="anchored"><span class="header-section-number">1.2.4</span> <strong><em>Interactive stiffness visual</em></strong></h3>
+<p>Below is simplified interactive visualization to help build intuition of how we can thinking about the legs as springs.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Click to expand">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Click to expand
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+
+
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+        .spring-container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .spring {
+            text-align: center;
+        }
+        .slider-container {
+            margin: 1rem 0;
+        }
+        .slider-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        input[type="range"] {
+            width: 100%;
+        }
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        button {
+            padding: 0.5rem 1rem;
+            border: 1px solid #ccc;
+            border-radius: 0.25rem;
+            background: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #f0f0f0;
+        }
+        .info {
+            text-align: center;
+            font-size: 0.875rem;
+            color: #666;
+        }
+    </style>
+
+
+    <div class="container">
+        <h2 class="anchored" data-anchor-id="interactive-stiffness-visual">Compare Springs with Different Stiffness</h2>
+        
+        <div class="slider-container">
+            <label class="slider-label">
+                Ball Mass: <span id="mass-value">1.0</span> kg
+            </label>
+            <input type="range" id="mass-slider" min="1" max="10" step="0.1" value="1">
+        </div>
+        
+        <div class="slider-container">
+            <label class="slider-label">
+                Spring Compression: <span id="compression-value">20.0</span> cm
+            </label>
+            <input type="range" id="compression-slider" min="5" max="40" step="1" value="20">
+        </div>
+
+        <div class="spring-container">
+            <div class="spring" id="spring1">
+                <h3 class="anchored">Softer Spring</h3>
+                <p>k = 30 N/m</p>
+                <p>Force = <span id="force1">0</span> N</p>
+                <p>Max Height = <span id="height1">0</span> cm</p>
+            </div>
+            <div class="spring" id="spring2">
+                <h3 class="anchored">Stiffer Spring</h3>
+                <p>k = 90 N/m</p>
+                <p>Force = <span id="force2">0</span> N</p>
+                <p>Max Height = <span id="height2">0</span> cm</p>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="play-button">Play</button>
+            <button id="reset-button">Reset</button>
+        </div>
+
+        <div class="slider-container">
+            <label class="slider-label">Animation Progress</label>
+            <input type="range" id="time-slider" min="0" max="1" step="0.01" value="0">
+        </div>
+
+        <div id="info" class="info"></div>
+    </div>
+
+<script>
+// Physics constants
+const GRAVITY = 9.81;
+const MAX_POSSIBLE_COMPRESSION = 0.4;
+const PIXELS_PER_METER = 400;
+const SPRING_HEIGHT = 160;
+const GROUND_Y = 200;
+
+// Spring properties
+const k1 = 30;
+const k2 = 90;
+
+// Animation phases
+const COMPRESSION_END = 0.3;
+const HOLD_END = 0.4;
+const RELEASE_END = 0.5;
+
+// Set up SVG containers
+const svg1 = d3.select("#spring1")
+    .append("svg")
+    .attr("width", 200)
+    .attr("height", 250);
+
+const svg2 = d3.select("#spring2")
+    .append("svg")
+    .attr("width", 200)
+    .attr("height", 250);
+
+// Add ground lines
+svg1.append("line")
+    .attr("x1", 40)
+    .attr("y1", GROUND_Y)
+    .attr("x2", 160)
+    .attr("y2", GROUND_Y)
+    .style("stroke", "#666")
+    .style("stroke-width", 2);
+
+svg2.append("line")
+    .attr("x1", 40)
+    .attr("y1", GROUND_Y)
+    .attr("x2", 160)
+    .attr("y2", GROUND_Y)
+    .style("stroke", "#666")
+    .style("stroke-width", 2);
+
+// Add springs
+const spring1 = svg1.append("rect")
+    .attr("x", 70)
+    .attr("width", 60);
+
+const spring2 = svg2.append("rect")
+    .attr("x", 55)
+    .attr("width", 90);
+
+// Add balls
+const ball1 = svg1.append("circle")
+    .attr("cx", 100)
+    .attr("r", 15)
+    .style("fill", "#4CAF50");
+
+const ball2 = svg2.append("circle")
+    .attr("cx", 100)
+    .attr("r", 15)
+    .style("fill", "#4CAF50");
+
+let animationFrame;
+let isPlaying = false;
+
+function calculateMaxHeight(k, mass, compression) {
+    return (0.5 * k * compression * compression) / (mass * GRAVITY) * 100;
+}
+
+function updateDisplay(timeValue) {
+    const mass = parseFloat(d3.select("#mass-slider").property("value"));
+    const compression = parseFloat(d3.select("#compression-slider").property("value")) / 100;
+    
+    let currentCompression = 0;
+    let height1 = 0;
+    let height2 = 0;
+
+    if (timeValue <= COMPRESSION_END) {
+        currentCompression = (timeValue / COMPRESSION_END) * compression;
+    } else if (timeValue <= HOLD_END) {
+        currentCompression = compression;
+    } else if (timeValue <= RELEASE_END) {
+        const releaseProgress = (timeValue - HOLD_END) / (RELEASE_END - HOLD_END);
+        currentCompression = compression * (1 - releaseProgress);
+    } else {
+        const motionProgress = (timeValue - RELEASE_END) / (1 - RELEASE_END);
+        const maxHeight1 = calculateMaxHeight(k1, mass, compression);
+        const maxHeight2 = calculateMaxHeight(k2, mass, compression);
+        
+        if (motionProgress <= 0.5) {
+            height1 = motionProgress * 2 * maxHeight1;
+            height2 = motionProgress * 2 * maxHeight2;
+        } else {
+            height1 = (1 - motionProgress) * 2 * maxHeight1;
+            height2 = (1 - motionProgress) * 2 * maxHeight2;
+        }
+    }
+
+    const currentSpringHeight = SPRING_HEIGHT - (currentCompression * PIXELS_PER_METER);
+    
+    // Update springs
+    spring1
+        .attr("y", GROUND_Y - currentSpringHeight)
+        .attr("height", currentSpringHeight);
+    
+    spring2
+        .attr("y", GROUND_Y - currentSpringHeight)
+        .attr("height", currentSpringHeight);
+
+    // Update balls
+    ball1
+        .attr("cy", GROUND_Y - currentSpringHeight - 15 - height1);
+    
+    ball2
+        .attr("cy", GROUND_Y - currentSpringHeight - 15 - height2);
+
+    // Update forces and heights
+    const force1 = k1 * currentCompression;
+    const force2 = k2 * currentCompression;
+    
+    d3.select("#force1").text(force1.toFixed(1));
+    d3.select("#force2").text(force2.toFixed(1));
+    
+    const maxHeight1 = calculateMaxHeight(k1, mass, compression);
+    const maxHeight2 = calculateMaxHeight(k2, mass, compression);
+    
+    d3.select("#height1").text(maxHeight1.toFixed(1));
+    d3.select("#height2").text(maxHeight2.toFixed(1));
+
+    // Update info
+    const phase = timeValue <= COMPRESSION_END ? "Compression Phase" :
+                 timeValue <= HOLD_END ? "Hold Phase" :
+                 timeValue <= RELEASE_END ? "Release Phase" :
+                 "Projectile Motion Phase";
+    
+    d3.select("#info").html(`
+        Current Heights: ${height1.toFixed(1)} cm vs ${height2.toFixed(1)} cm<br>
+        Compression distance: ${(currentCompression * 100).toFixed(1)} cm<br>
+        Stiff spring force (${force2.toFixed(1)} N) = ${(force2/force1 || 0).toFixed(1)}× greater than soft spring force (${force1.toFixed(1)} N)<br>
+        ${phase}
+    `);
+}
+
+// Initialize animation
+function animate() {
+    if (!isPlaying) return;
+    
+    const timeSlider = d3.select("#time-slider");
+    let currentTime = parseFloat(timeSlider.property("value"));
+    currentTime += 0.01;
+    
+    if (currentTime > 1) {
+        currentTime = 0;
+        isPlaying = false;
+        d3.select("#play-button").text("Play");
+    }
+    
+    timeSlider.property("value", currentTime);
+    updateDisplay(currentTime);
+    
+    if (isPlaying) {
+        animationFrame = requestAnimationFrame(animate);
+    }
+}
+
+// Event listeners
+d3.select("#play-button").on("click", () => {
+    isPlaying = !isPlaying;
+    d3.select("#play-button").text(isPlaying ? "Pause" : "Play");
+    if (isPlaying) animate();
+});
+
+d3.select("#reset-button").on("click", () => {
+    isPlaying = false;
+    d3.select("#play-button").text("Play");
+    d3.select("#time-slider").property("value", 0);
+    updateDisplay(0);
+});
+
+d3.select("#time-slider").on("input", function() {
+    updateDisplay(parseFloat(this.value));
+});
+
+d3.select("#mass-slider").on("input", function() {
+    d3.select("#mass-value").text(parseFloat(this.value).toFixed(1));
+    updateDisplay(parseFloat(d3.select("#time-slider").property("value")));
+});
+
+d3.select("#compression-slider").on("input", function() {
+    d3.select("#compression-value").text(parseFloat(this.value).toFixed(1));
+    updateDisplay(parseFloat(d3.select("#time-slider").property("value")));
+});
+
+// Initial update
+updateDisplay(0);
+</script>
+
+
+</div>
+</div>
+</div>
+<p>What difference do you notice between the two springs that have different stiffness values?</p>
+<p><br></p>
+</section>
+</section>
+<section id="practical-procedures-part-2" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="practical-procedures-part-2"><span class="header-section-number">1.3</span> <u><strong><em>Practical Procedures (PART 2):</em></strong></u></h2>
+<p><strong>REMEMBER</strong>: <strong>the data you collect today and over the previous week’s labs will be used for your first 1-page report…so be attentive and ask questions during PART 2 of the lab session!</strong></p>
+<p>Use lecture material as a reference point to calculate mean and standard deviation of data collected. ( you may use excel functions but also have a go going step by step through calculations)</p>
+<ul>
+<li><p>Practice plotting data has a histogram.</p></li>
+<li><p>Calculate the mean, SD and CV%</p></li>
+<li><p>Calculate Z – Scores (Also outlined in lecture material)</p></li>
+</ul>
+<p><u><strong><em>Reflection Question:</em></strong></u></p>
+<ol type="1">
+<li><p>Why is important to understand how your data is distributed?</p></li>
+<li><p>Why is the practical reason for us transforming numbers into a Zscore?</p></li>
+<li><p>When trying to describe a distribution what are the most important components we would want to know?</p></li>
+</ol>
+<p><br> <br> <br></p>
+<hr>
+</section>
+<section id="descriptive-statistics-recap" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Descriptive statistics recap</h1>
+<p><strong>Material discussed below was discussed in more detail in the week 2 lecture.</strong></p>
+<p>An essential component of being a sport and exercise scientist is the ability to summarise results collected from groups or individuals correctly. Luckily many of summary statistics that you will need are things that you would have covered in yr 8 and 10 mathematics. These are parameters such as <strong>mean, median, mode</strong>, <strong>standard deviation (SD)</strong> and <strong>coefficient of variation (CV%)</strong>.</p>
+<p>An important aspect to remember is the idea that data we collect from a group consider a “sample” from the population. To help build your intuition around this, lets say I wanted to summarise the sprint test results collected from SPRT2002. Now imagine I only used one practical class sprint times to reflect the full cohort of SPRT2002. It would be reasonable for you to say that I am only using a sample from the full cohort to represent the sprint capability. This situation arises effectively any time we collect data from a group as there always some of the population of interest using missing from our sample.</p>
+<section id="fig1" class="level3" data-number="2.0.1">
+<h3 data-number="2.0.1" class="anchored" data-anchor-id="fig1"><span class="header-section-number">2.0.1</span> Fig1</h3>
+<p>The visualization below demonstrates random sampling from a normal distribution with a fixed population mean of 50. You can adjust the population standard deviation using the slider, which changes the spread of the underlying distribution.</p>
+<p>When you click “Add Samples,” the tool draws a random sample from this population (visualized as green dots falling from the distribution curve), then calculates and displays key sample statistics including the mean, median, standard deviation, standard error, confidence intervals, range, and coefficient of variation.</p>
+<p>This interactive demonstration illustrates an important statistical concept: in real-world research however, we never know the true population parameters (mean and SD). Instead, we only work with sample statistics to make inferences about the unknown population. By repeatedly drawing different samples, you can observe how sample statistics vary around the true population values, highlighting concepts like sampling variability and estimation precision</p>
+<div class="viz-container">
+  <div class="controls">
+    <div class="slider-container">
+      <label>Sample Size: <span id="sampleSizeVal">20</span></label>
+      <input type="range" id="sampleSizeA" min="5" max="100" value="20" class="slider">
+    </div>
+    <div class="slider-container">
+      <label>Population SD: <span id="sdVal">5</span></label>
+      <input type="range" id="sdSlider" min="3" max="10" value="5" step="0.5" class="slider">
+    </div>
+    <div class="button-group">
+      <button id="addSample">Add Samples</button>
+      <button id="reset">Reset</button>
+      <button id="downloadCSV">Download Data</button>
+    </div>
+  </div>
+  <div id="visualization"></div>
+</div>
+
+<style>
+.viz-container {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.controls {
+  margin-bottom: 15px;
+}
+
+.slider-container {
+  margin-bottom: 15px;
+}
+
+.slider {
+  width: 200px;
+  margin-top: 5px;
+}
+
+button {
+  padding: 8px 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.point-range line {
+  stroke: #666;
+  stroke-width: 2;
+}
+
+.point-range circle {
+  fill: #666;
+}
+
+.density-path {
+  fill: #90EE90;
+  opacity: 0.5;
+  stroke: #228B22;
+  stroke-width: 1.5;
+}
+
+.falling-point {
+  fill: #32CD32;
+  opacity: 0.7;
+}
+
+.mean-line {
+  stroke: #666;
+  stroke-width: 1;
+  stroke-dasharray: 4;
+}
+
+.sd-line {
+  stroke: #228B22;
+  stroke-width: 1;
+  stroke-dasharray: 4;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.annotation {
+  font-size: 12px;
+  fill: #666;
+}
+
+.annotation-box {
+  fill: #fff;
+  stroke: #ddd;
+  rx: 4;
+  ry: 4;
+}
+</style>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Set up dimensions
+  const width = 600;
+  const height = 400;
+  const margin = {top: 20, right: 200, bottom: 40, left: 60};
+  const plotWidth = width - margin.left - margin.right;
+  const plotHeight = height - margin.top - margin.bottom;
+  
+  // Parameters for normal distribution
+  const mu = 50;
+  let sigma = 5;
+  let samples = [];
+
+  // Create SVG
+  const svg = d3.select("#visualization")
+    .append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+  // Create plot group
+  const g = svg.append("g")
+    .attr("transform", `translate(${margin.left},${margin.top})`);
+
+  // Set up scales
+  const x = d3.scaleLinear()
+    .domain([0.08, 0])
+    .range([0, plotWidth * 0.25]);
+
+  const xPoints = d3.scaleLinear()
+    .domain([0, 1])
+    .range([plotWidth * 0.5, plotWidth * 0.55]);
+
+  const y = d3.scaleLinear()
+    //.domain([mu - 4*sigma, mu + 4*sigma])
+    .domain([20,80])
+    .range([plotHeight, 0]);
+
+  // Add y-axis only
+  g.append("g")
+    .call(d3.axisLeft(y));
+
+  // Add SD lines
+  const sdLinesGroup = g.append("g")
+    .attr("class", "sd-lines");
+
+  function updateSDLines() {
+    sdLinesGroup.selectAll(".sd-line").remove();
+    
+    // Add upper SD line
+    sdLinesGroup.append("line")
+      .attr("class", "sd-line")
+      .attr("x1", 0)
+      .attr("x2", plotWidth)
+      .attr("y1", y(mu + sigma))
+      .attr("y2", y(mu + sigma));
+
+    // Add lower SD line
+    sdLinesGroup.append("line")
+      .attr("class", "sd-line")
+      .attr("x1", 0)
+      .attr("x2", plotWidth)
+      .attr("y1", y(mu - sigma))
+      .attr("y2", y(mu - sigma));
+  }
+
+  function updateVisualization() {
+    // Update y scale
+  //  y.domain([mu - 4*sigma, mu + 4*sigma]);
+  //  g.select("g").call(d3.axisLeft(y));
+
+    // Update density curve
+    const curve = d3.range(mu - 4*sigma, mu + 4*sigma + 0.1, 0.1).map(x => ({
+      x: normalDensity(x, mu, sigma),
+      y: x
+    }));
+
+    g.select(".density-path").datum(curve).attr("d", line);
+    
+    // Update mean line
+    g.select(".mean-line")
+      .attr("y1", y(mu))
+      .attr("y2", y(mu));
+
+    // Update SD lines
+    updateSDLines();
+
+    // Update point range if samples exist
+    if (samples.length > 0) {
+      updatePointRange();
+      updateAnnotations();
+    }
+  }
+
+  // Function to calculate normal distribution
+  function normalDensity(x, mu, sigma) {
+    return (1 / (sigma * Math.sqrt(2 * Math.PI))) * 
+           Math.exp(-0.5 * Math.pow((x - mu) / sigma, 2));
+  }
+
+  // Generate points for the density curve
+  const curve = d3.range(mu - 4*sigma, mu + 4*sigma + 0.1, 0.1).map(x => ({
+    x: normalDensity(x, mu, sigma),
+    y: x
+  }));
+
+  // Draw the density curve
+  const line = d3.line()
+    .x(d => x(d.x))
+    .y(d => y(d.y));
+
+  g.append("path")
+    .datum(curve)
+    .attr("class", "density-path")
+    .attr("d", line);
+
+  // Add mean line
+  g.append("line")
+    .attr("class", "mean-line")
+    .attr("x1", 0)
+    .attr("x2", plotWidth)
+    .attr("y1", y(mu))
+    .attr("y2", y(mu));
+
+  // Add initial SD lines
+  updateSDLines();
+
+  // Function to generate random normal value
+  function randomNormal() {
+    let u = 0, v = 0;
+    while(u === 0) u = Math.random();
+    while(v === 0) v = Math.random();
+    return mu + sigma * Math.sqrt(-2.0 * Math.log(u)) * Math.cos(2.0 * Math.PI * v);
+  }
+
+  // Function to update annotations
+  function updateAnnotations() {
+    g.selectAll(".annotation").remove();
+    g.selectAll(".annotation-box").remove();
+
+    if (samples.length > 0) {
+      const mean = d3.mean(samples);
+      const sd = d3.deviation(samples);
+      const se = sd/Math.sqrt(samples.length);
+      const LL = mean - se*1.96
+      const UL = mean + se*1.96
+      const min = d3.min(samples);
+      const max = d3.max(samples);
+      const range = max - min;
+      const cv = (sd / mean) * 100;
+      const median = d3.median(samples);
+      // Mode approximation for continuous data
+      const mode = d3.mode(samples.map(x => Math.round(x)));
+
+      const annotations = [
+        `Sample statistics`,
+        `Mean (x̄) = ${mean.toFixed(1)}`,
+        `Median = ${median.toFixed(1)}`,
+        `SD = ${sd.toFixed(1)}`,
+        `SE = ${se.toFixed(1)}`,
+        `95% LL = ${LL.toFixed(1)}`,
+        `95% UL = ${UL.toFixed(1)}`,
+        `Min = ${min.toFixed(1)}`,
+        `Max = ${max.toFixed(1)}`,
+        `Range = ${range.toFixed(1)}`,
+        `CV% = ${cv.toFixed(1)}%`
+      ];
+
+      const boxPadding = 10;
+      const lineHeight = 20;
+      const boxHeight = annotations.length * lineHeight + 2 * boxPadding;
+      
+      g.append("rect")
+        .attr("class", "annotation-box")
+        .attr("x", plotWidth + 20)
+        .attr("y", 0)
+        .attr("width", 160)
+        .attr("height", boxHeight);
+
+      annotations.forEach((text, i) => {
+        g.append("text")
+          .attr("class", "annotation")
+          .attr("x", plotWidth + 30)
+          .attr("y", 20 + i * lineHeight)
+          .text(text);
+      });
+    }
+  }
+
+  // Function to animate falling points
+  function addFallingPoints() {
+    const sampleSize = +document.getElementById("sampleSizeA").value;
+    const newPoints = Array.from({length: sampleSize}, () => randomNormal());
+    
+    newPoints.forEach((value, i) => {
+      const startX = x(normalDensity(value, mu, sigma));
+      const endX = xPoints(Math.random());
+
+      const point = g.append("circle")
+        .attr("class", "falling-point")
+        .attr("cx", startX)
+        .attr("cy", y(value))
+        .attr("r", 3);
+
+      point.transition()
+        .duration(500)
+        .delay(i * 20)
+        .attr("cx", endX)
+        .on("end", function() {
+          samples.push(value);
+          if (i === newPoints.length - 1) {
+            updatePointRange();
+            updateAnnotations();
+          }
+        });
+    });
+  }
+
+  // Function to update the point range
+  function updatePointRange() {
+    g.selectAll(".point-range").remove();
+
+    if (samples.length > 0) {
+      const mean = d3.mean(samples);
+      const sd = d3.deviation(samples);
+
+      const pointRange = g.append("g")
+        .attr("class", "point-range")
+        .attr("transform", `translate(${plotWidth * 0.45},0)`);
+
+      pointRange.append("line")
+        .attr("x1", 0)
+        .attr("x2", 0)
+        .attr("y1", y(mean - sd))
+        .attr("y2", y(mean + sd));
+
+      pointRange.append("circle")
+        .attr("cx", 0)
+        .attr("cy", y(mean))
+        .attr("r", 4);
+    }
+  }
+  
+  function downloadCSV() {
+    if (samples.length === 0) {
+        alert("No data to download. Please add samples first.");
+        return;
+    }
+
+    // Create CSV content
+    const headers = "value\n";
+    const csvContent = headers + samples.map(value => value.toFixed(4)).join("\n");
+
+    // Create blob and download link
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const link = document.createElement("a");
+    const url = URL.createObjectURL(blob);
+    
+    link.setAttribute("href", url);
+    link.setAttribute("download", "sample_data.csv");
+    link.style.visibility = 'hidden';
+    
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
+// Add this with your other event listeners
+document.getElementById("downloadCSV").addEventListener("click", downloadCSV);
+
+  // Add button handlers
+  document.getElementById("addSample").addEventListener("click", addFallingPoints);
+  
+  document.getElementById("reset").addEventListener("click", function() {
+    samples = [];
+    g.selectAll(".falling-point").remove();
+    g.selectAll(".point-range").remove();
+    g.selectAll(".annotation").remove();
+    g.selectAll(".annotation-box").remove();
+  });
+
+  // Add slider handlers
+  document.getElementById("sampleSizeA").addEventListener("input", function() {
+    document.getElementById("sampleSizeVal").textContent = this.value;
+  });
+
+  document.getElementById("sdSlider").addEventListener("input", function() {
+    sigma = +this.value;
+    document.getElementById("sdVal").textContent = this.value;
+    updateVisualization();
+  });
+});
+</script>
+<section id="reflection" class="level4" data-number="2.0.1.1">
+<h4 data-number="2.0.1.1" class="anchored" data-anchor-id="reflection"><span class="header-section-number">2.0.1.1</span> Reflection</h4>
+<p>What did you notice when you changed the population SD slider and sampled again?</p>
+<p>Did you notice anything about the stability and or precision of the sample mean and SD estimates when sampling from lower sample sizes e.g.&nbsp;5 to higher sample sizes e.g.&nbsp;100? (The below interactive visual may help emphasize this relationship)</p>
+<p>Download the data using the “Download Data” button and see if you are able to replicate the sample based parameters in excel (mean,median,SD,CV% and create a Zscore for each participant)?</p>
+</section>
+</section>
+<section id="fig2" class="level3" data-number="2.0.2">
+<h3 data-number="2.0.2" class="anchored" data-anchor-id="fig2"><span class="header-section-number">2.0.2</span> Fig2</h3>
+<p>The figure below is just an extension of the figure above and may help better show how sample estimates may vary around the true population mean, and how the amount they vary are a function of both the sample size and SD.</p>
+<p>To best utilise the visualization below,either leave one of the slider values constant while you change the value of the other slider.<br>
+For example, you may draw 10 samples with the sample size set to 30 and population SD set to 10, then change the sample size value to 50 draw 10 values, then 5, then 100 etc. You may flip this process around then altering the SD values leaving the sample size set at a constant value. Each time have a think about how you might describe what you are seeing.</p>
+<div class="visualization-container">
+  <div class="control-group">
+    <label>Sample Size: <span id="sampleSizeValue">30</span></label>
+    <input type="range" id="sampleSize" min="5" max="100" value="30">
+  </div>
+  <div class="control-group">
+    <label>Population SD: <span id="sdValue">10</span></label>
+    <input type="range" id="sd" min="1" max="20" value="10">
+  </div>
+  <div class="button-group">
+    <button id="addData">Draw New Sample</button>
+    <button id="clearAll">Clear All</button>
+    <button id="toggleCI">Toggle 95% CI</button>
+    <button id="toggleSamplePoints">Toggle Sample Points</button>
+  </div>
+  <div id="plot"></div>
+</div>
+
+<style>
+.visualization-container {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.control-group {
+  margin-bottom: 15px;
+}
+
+.control-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.control-group input {
+  width: 100%;
+}
+
+button {
+  padding: 8px 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.size-line {
+    stroke: #666;
+    stroke-width: 1;
+    stroke-dasharray: 2;
+}
+
+.sample-size-text {
+  font-size: 12px;
+  fill: #666;
+}
+
+.button-group {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.ci-line {
+    stroke-width: 2;
+}
+
+.ci-line.captured {
+    stroke: rgba(70, 130, 180, 0.3);
+}
+
+.ci-line.missed {
+    stroke: rgba(255, 0, 0, 0.3);
+}
+
+.sample-point {
+    fill: rgba(70, 130, 180, 0.2);
+    r: 2;
+}
+
+.mean-point {
+    fill: steelblue;
+    r: 4;
+    stroke: white;
+    stroke-width: 1;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Set up dimensions
+    const width = 600;
+    const height = 300;
+    const margin = {top: 20, right: 20, bottom: 30, left: 40};
+
+    // Population parameters
+    const trueMean = 50;
+    let currentSD = 10;
+    let previousSampleSize = 30;
+    let showCI = false;
+    let showSamplePoints = false;
+
+    // Create SVG container
+    const svg = d3.select("#plot")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+    // Initial data
+    let data = [{time: 0, value: trueMean, sampleSize: 30, sd: currentSD, se: currentSD/Math.sqrt(30), samplePoints: []}];
+    let sizeChangePoints = [{time: 0, sampleSize: 30, sd: currentSD}];
+    let timePoint = 1;
+
+    // Set up scales
+    const x = d3.scaleLinear()
+        .domain([0, 10])
+        .range([margin.left, width - margin.right]);
+
+    const y = d3.scaleLinear()
+        .domain([20, 80])
+        .range([height - margin.bottom, margin.top]);
+
+    // Add axes
+    svg.append("g")
+        .attr("class", "x-axis")
+        .attr("transform", `translate(0,${height - margin.bottom})`)
+        .call(d3.axisBottom(x));
+
+    svg.append("g")
+        .attr("transform", `translate(${margin.left},0)`)
+        .call(d3.axisLeft(y));
+
+    // Add true mean line
+    svg.append("line")
+        .attr("x1", margin.left)
+        .attr("x2", width - margin.right)
+        .attr("y1", y(trueMean))
+        .attr("y2", y(trueMean))
+        .attr("stroke", "red")
+        .attr("stroke-dasharray", "4")
+        .attr("stroke-width", 2);
+
+    // Create group for size indicators
+    const sizeIndicators = svg.append("g")
+        .attr("class", "size-indicators");
+
+    // Create group for confidence intervals
+    const ciGroup = svg.append("g")
+        .attr("class", "ci-group");
+
+    // Create group for sample points
+    const samplePointsGroup = svg.append("g")
+        .attr("class", "sample-points-group");
+
+    // Line generator
+    const line = d3.line()
+        .x(d => x(d.time))
+        .y(d => y(d.value));
+
+    // Add the line path
+    const path = svg.append("path")
+        .datum(data)
+        .attr("fill", "none")
+        .attr("stroke", "steelblue")
+        .attr("stroke-width", 2)
+        .attr("d", line);
+
+    function updateSizeIndicators() {
+        // Remove all existing indicators first
+        sizeIndicators.selectAll(".size-indicator").remove();
+
+        // Then add new ones
+        const lines = sizeIndicators.selectAll(".size-indicator")
+            .data(sizeChangePoints);
+
+        const linesEnter = lines.enter()
+            .append("g")
+            .attr("class", "size-indicator");
+
+        linesEnter.append("line")
+            .attr("class", "size-line")
+            .attr("y1", margin.top)
+            .attr("y2", height - margin.bottom);
+
+        linesEnter.append("text")
+            .attr("class", "sample-size-text")
+            .attr("y", margin.top - 5)
+            .attr("text-anchor", "middle");
+
+        sizeIndicators.selectAll(".size-line")
+            .attr("x1", d => x(d.time))
+            .attr("x2", d => x(d.time));
+
+        sizeIndicators.selectAll(".sample-size-text")
+            .attr("x", d => x(d.time))
+            .text(d => `n = ${d.sampleSize}, SD = ${d.sd}`);
+
+        lines.exit().remove();
+    }
+
+    function updateConfidenceIntervals() {
+        if (!showCI) {
+            ciGroup.selectAll("line").remove();
+            return;
+        }
+
+        const ciLines = ciGroup.selectAll("line")
+            .data(data);
+
+        // Enter new CI lines
+        ciLines.enter()
+            .append("line")
+            .attr("class", d => {
+                const upperBound = d.value + 1.96 * d.se;
+                const lowerBound = d.value - 1.96 * d.se;
+                return `ci-line ${(lowerBound <= trueMean && upperBound >= trueMean) ? 'captured' : 'missed'}`;
+            })
+            .merge(ciLines)
+            .attr("x1", d => x(d.time))
+            .attr("x2", d => x(d.time))
+            .attr("y1", d => y(d.value + 1.96 * d.se))
+            .attr("y2", d => y(d.value - 1.96 * d.se));
+
+        ciLines.exit().remove();
+    }
+
+    function updateSamplePoints() {
+        samplePointsGroup.selectAll("*").remove();
+        
+        if (!showSamplePoints) return;
+        
+        // Flatten the data to get all sample points
+        let allSamplePoints = [];
+        
+        data.forEach((d, timeIndex) => {
+            if (d.samplePoints && d.samplePoints.length > 0) {
+                d.samplePoints.forEach(point => {
+                    allSamplePoints.push({
+                        time: d.time,
+                        value: point
+                    });
+                });
+            }
+        });
+        
+        // Add sample points
+        samplePointsGroup.selectAll(".sample-point")
+            .data(allSamplePoints)
+            .enter()
+            .append("circle")
+            .attr("class", "sample-point")
+            .attr("cx", d => x(d.time))
+            .attr("cy", d => y(d.value));
+    }
+
+    function normalRandom(mean, sd) {
+        let u = 0, v = 0;
+        while(u === 0) u = Math.random();
+        while(v === 0) v = Math.random();
+        return mean + sd * Math.sqrt(-2.0 * Math.log(u)) * Math.cos(2.0 * Math.PI * v);
+    }
+
+    function generateSample(mean, sd, size) {
+        let sample = [];
+        for(let i = 0; i < size; i++) {
+            sample.push(normalRandom(mean, sd));
+        }
+        return sample;
+    }
+
+    function calculateSampleMean(sample) {
+        return sample.reduce((sum, val) => sum + val, 0) / sample.length;
+    }
+
+    function updatePoints() {
+        const points = svg.selectAll(".mean-point")
+            .data(data);
+
+        points.enter()
+            .append("circle")
+            .attr("class", "mean-point")
+            .merge(points)
+            .attr("cx", d => x(d.time))
+            .attr("cy", d => y(d.value));
+
+        points.exit().remove();
+    }
+
+    function clearAll() {
+        const sampleSize = +document.getElementById("sampleSize").value;
+        const sd = +document.getElementById("sd").value;
+        data = [{time: 0, value: trueMean, sampleSize: sampleSize, sd: sd, se: sd/Math.sqrt(sampleSize), samplePoints: []}];
+        sizeChangePoints = [{time: 0, sampleSize: sampleSize, sd: sd}];
+        timePoint = 1;
+        previousSampleSize = sampleSize;
+
+        x.domain([0, 10]);
+        svg.select(".x-axis").call(d3.axisBottom(x));
+
+        path.datum(data).attr("d", line);
+        updatePoints();
+        updateSizeIndicators();
+        updateConfidenceIntervals();
+        updateSamplePoints();
+    }
+
+    document.getElementById("addData").addEventListener("click", function() {
+        const sampleSize = +document.getElementById("sampleSize").value;
+        const sd = +document.getElementById("sd").value;
+        
+        const samplePoints = generateSample(trueMean, sd, sampleSize);
+        const newValue = calculateSampleMean(samplePoints);
+        const se = sd/Math.sqrt(sampleSize);
+        
+        data.push({
+            time: timePoint, 
+            value: newValue,
+            sampleSize: sampleSize,
+            sd: sd,
+            se: se,
+            samplePoints: samplePoints
+        });
+        timePoint++;
+
+        x.domain([0, timePoint]);
+        svg.select(".x-axis").call(d3.axisBottom(x));
+
+        path.datum(data).attr("d", line);
+        updatePoints();
+        updateSizeIndicators();
+        updateConfidenceIntervals();
+        updateSamplePoints();
+    });
+
+    document.getElementById("sampleSize").addEventListener("input", function() {
+        const newSize = +this.value;
+        document.getElementById("sampleSizeValue").textContent = newSize;
+        const currentSD = +document.getElementById("sd").value;
+        
+        if (timePoint === 1) {
+            // If no samples drawn yet, update the initial point
+            sizeChangePoints[0] = {
+                time: 0,
+                sampleSize: newSize,
+                sd: currentSD
+            };
+        } else if (newSize !== previousSampleSize) {
+            sizeChangePoints.push({
+                time: timePoint - 1,
+                sampleSize: newSize,
+                sd: currentSD
+            });
+        }
+        previousSampleSize = newSize;
+        updateSizeIndicators();
+    });
+
+    document.getElementById("sd").addEventListener("input", function() {
+        const newSD = +this.value;
+        document.getElementById("sdValue").textContent = newSD;
+        currentSD = newSD;
+        
+        const currentSize = +document.getElementById("sampleSize").value;
+        if (timePoint === 1) {
+            // If no samples drawn yet, update the initial point
+            sizeChangePoints[0] = {
+                time: 0,
+                sampleSize: currentSize,
+                sd: newSD
+            };
+        } else {
+            sizeChangePoints.push({
+                time: timePoint - 1,
+                sampleSize: currentSize,
+                sd: newSD
+            });
+        }
+        updateSizeIndicators();
+    });
+
+    document.getElementById("clearAll").addEventListener("click", clearAll);
+
+    document.getElementById("toggleCI").addEventListener("click", function() {
+        showCI = !showCI;
+        updateConfidenceIntervals();
+    });
+    
+    document.getElementById("toggleSamplePoints").addEventListener("click", function() {
+        showSamplePoints = !showSamplePoints;
+        updateSamplePoints();
+    });
+
+    updatePoints();
+    updateSizeIndicators();
+});
+</script>
+</section>
+<section id="reflection-1" class="level3" data-number="2.0.3">
+<h3 data-number="2.0.3" class="anchored" data-anchor-id="reflection-1"><span class="header-section-number">2.0.3</span> Reflection</h3>
+<p>Based on what you may noticed from changing both the sample size and standard devation (SD) in the above visualisation, the figure below looks summarise this relationship you may have observed. This summary will show how the SE - Standard error (discussed more below) changes as function of both the sample size and the size of the SD.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Click to expand">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Click to expand
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Practical1_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Looking at the above plot we can see that as sample size increases we see a reduction in a variable called the “standard error - (SE)”. Likewise we can also see that larger SDs for a given sample size will have larger standard errors.</p>
+<p>Based on how the SE is calculated (discussed below) if you want to reduce SE by half, you could either:</p>
+<p>Reduce the SD by half (get a more homogeneous sample), OR Increase the sample size by a factor of 4 (Notice how there is diminishing returns in reducing the SE as the sample size gets larger)</p>
+</section>
+<section id="but-what-is-the-standard-error" class="level3" data-number="2.0.4">
+<h3 data-number="2.0.4" class="anchored" data-anchor-id="but-what-is-the-standard-error"><span class="header-section-number">2.0.4</span> But what is the standard error?</h3>
+<p>The standard error of the mean (<strong>SE</strong> and <strong>SEM</strong>) represents the expected variability of sample means if we were to repeatedly draw samples of the same sample size from the population. We could calculate the <strong>SE</strong> by taking the standard deviation of the sample means from the simulation above. However,unfortunately in research we often only ever have access to <strong>one</strong> sample to try and estimate a <strong>SE</strong> from. Luckily we can sill estimate a SE for one sample using the below formula</p>
+<p><strong>Standard error of the mean (SE) = sample SD/ sqrt(N)</strong><br>
+where N is the number of participants.</p>
+<p>This in a similar fashion to how the sample SD is measure of dispersion/spread of observations around the mean, can be thought of as the level of variability a sample means with some given sample size and SD would vary around the true population mean from repeated sampling.<br>
+</p>
+</section>
+<section id="confidence-intervals" class="level3" data-number="2.0.5">
+<h3 data-number="2.0.5" class="anchored" data-anchor-id="confidence-intervals"><span class="header-section-number">2.0.5</span> Confidence intervals</h3>
+<p>Perhaps a simpler way to think of the SE is a measure of confidence we have that our sample mean would be reflective of the true population mean. In samples with lower number of participants we can be less confident that the sample mean is representative of the true population mean, whilst in higher sample size studies we can be more confident that the sample reflects the true population mean. One way we highlight this uncertainty/confidence is by using something called <strong>confidence intervals CI</strong>.</p>
+<p>The simplest <strong>confidence interval</strong> would be to just use the calculated standard error from earlier to set lower and upper limits around the sample mean.<br>
+For example,</p>
+<p><strong>sample mean</strong> = 40,<br>
+<strong>SE</strong> = 5<br>
+<strong>LL</strong> = 40 - 5 = 35<br>
+<strong>UL</strong> = 40 + 5 = 45</p>
+<p>The above would represent a 68% level confidence interval, I want you to have a think about why this might be termed a 68% confidence interval?<br>
+<br>
+</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hint
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Think back to the normal distribution and how much the standard deviation tells us about the spread of data.</p>
+</div>
+</div>
+</div>
+<p>What is more commonly used however, is a 95% confidence interval which would be calculated by multiplying the <strong>SE</strong> by <strong>1.96</strong>.</p>
+<p>In our example above this would equate to<br>
+<strong>95% LL</strong> = 40 - (5*1.96 = 9.8) = 30.2,<br>
+<strong>95% UL</strong> = 40 + (5*1.96 = 9.8) = 49.8.</p>
+<p>The interpretation of a 95% confidence interval is that if we were to repeat this sampling process many times and calculate the interval each time, about 95% of these intervals would contain the true population mean. Wider confidence intervals indicate more uncertainty in our estimate, while narrower intervals suggest greater precision. This is why larger sample sizes (which lead to smaller standard errors) result in narrower confidence intervals and more precise estimates of the population mean.</p>
+<p>To help visualize this, go back to Figure 2. You will notice a button called “Show Confidence Interval” which will display the 95% confidence interval around each sample mean, illustrating how the precision of our estimates changes with different sample sizes and population standard deviations</p>
+</section>
+<section id="test-your-learning" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="test-your-learning"><span class="header-section-number">2.1</span> Test your learning</h2>
+If you calculate a mean from a sample of 100 participants, this mean is:
+<div id="radio_AEHWTHQXOE" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_AEHWTHQXOE" value=""> <span>Always exactly equal to the true population mean</span></label><label><input type="radio" autocomplete="off" name="radio_AEHWTHQXOE" value=""> <span>Always lower than the true population mean</span></label><label><input type="radio" autocomplete="off" name="radio_AEHWTHQXOE" value=""> <span>Not related to the true population mean</span></label><label><input type="radio" autocomplete="off" name="radio_AEHWTHQXOE" value="answer"> <span>An estimate of the true population mean</span></label>
+</div>
+When the population standard deviation increases, what happens to the standard error of the mean?
+<div id="radio_ABDPJMSGKV" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_ABDPJMSGKV" value=""> <span>It decreases</span></label><label><input type="radio" autocomplete="off" name="radio_ABDPJMSGKV" value=""> <span>It stays the same</span></label><label><input type="radio" autocomplete="off" name="radio_ABDPJMSGKV" value=""> <span>It becomes zero</span></label><label><input type="radio" autocomplete="off" name="radio_ABDPJMSGKV" value="answer"> <span>It increases</span></label>
+</div>
+A researcher collects vertical jump data from 25 athletes and calculates a 95% confidence interval of [45cm, 55cm]. This means:
+<div id="radio_CHIBMHUZDQ" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_CHIBMHUZDQ" value=""> <span>95% of all athletes' jumps fall between 45cm and 55cm</span></label><label><input type="radio" autocomplete="off" name="radio_CHIBMHUZDQ" value=""> <span>The true population mean definitely lies between 45cm and 55cm</span></label><label><input type="radio" autocomplete="off" name="radio_CHIBMHUZDQ" value=""> <span>95% of individual jump heights in this sample fall between 45cm and 55cm</span></label><label><input type="radio" autocomplete="off" name="radio_CHIBMHUZDQ" value="answer"> <span>If we repeated this sampling process many times, about 95% of the calculated intervals would contain the true population mean</span></label>
+</div>
+If you have a sample mean of 50 and a standard error of 2, what is the 68% confidence interval?
+<div id="radio_OBDTPOPFHB" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_OBDTPOPFHB" value=""> <span>[46, 54]</span></label><label><input type="radio" autocomplete="off" name="radio_OBDTPOPFHB" value=""> <span>[47, 53]</span></label><label><input type="radio" autocomplete="off" name="radio_OBDTPOPFHB" value=""> <span>[49, 51]</span></label><label><input type="radio" autocomplete="off" name="radio_OBDTPOPFHB" value="answer"> <span>[48, 52]</span></label>
+</div>
+Which of the following would NOT reduce the standard error of the mean?
+<div id="radio_PJAFNTFEHW" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_PJAFNTFEHW" value=""> <span>Increasing the sample size</span></label><label><input type="radio" autocomplete="off" name="radio_PJAFNTFEHW" value=""> <span>Reducing measurement error</span></label><label><input type="radio" autocomplete="off" name="radio_PJAFNTFEHW" value=""> <span>Using more precise equipment</span></label><label><input type="radio" autocomplete="off" name="radio_PJAFNTFEHW" value="answer"> <span>Calculating the median instead of the mean</span></label>
+</div>
+The coefficient of variation (CV%) is 15% for a group of athletes’ sprint times. This indicates:
+<div id="radio_ABBMGQTPOL" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_ABBMGQTPOL" value=""> <span>The data varies by exactly 15 seconds</span></label><label><input type="radio" autocomplete="off" name="radio_ABBMGQTPOL" value=""> <span>15% of the data points are outliers</span></label><label><input type="radio" autocomplete="off" name="radio_ABBMGQTPOL" value=""> <span>The confidence interval is 15% wide</span></label><label><input type="radio" autocomplete="off" name="radio_ABBMGQTPOL" value="answer"> <span>The standard deviation is 15% of the mean value</span></label>
+</div>
+Assuming a normal distribution (Bell curve) what proportion of the observations are contained between -1 to +1SD units around the mean?
+<div id="radio_FGXCDDYLDE" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_FGXCDDYLDE" value=""> <span>95%</span></label><label><input type="radio" autocomplete="off" name="radio_FGXCDDYLDE" value=""> <span>34%</span></label><label><input type="radio" autocomplete="off" name="radio_FGXCDDYLDE" value=""> <span>99%</span></label><label><input type="radio" autocomplete="off" name="radio_FGXCDDYLDE" value="answer"> <span>68%</span></label>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script>
+
+/* update total correct if #webex-total_correct exists */
+update_total_correct = function() {
+  console.log("webex: update total_correct");
+
+  var t = document.getElementsByClassName("webex-total_correct");
+  for (var i = 0; i < t.length; i++) {
+    p = t[i].parentElement;
+    var correct = p.getElementsByClassName("webex-correct").length;
+    var solvemes = p.getElementsByClassName("webex-solveme").length;
+    var radiogroups = p.getElementsByClassName("webex-radiogroup").length;
+    var selects = p.getElementsByClassName("webex-select").length;
+
+    t[i].innerHTML = correct + " of " + (solvemes + radiogroups + selects) + " correct";
+  }
+}
+
+/* webex-solution button toggling function */
+b_func = function() {
+  console.log("webex: toggle hide");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('open')) {
+    cl.remove("open");
+  } else {
+    cl.add("open");
+  }
+}
+
+/* check answers */
+check_func = function() {
+  console.log("webex: check answers");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('unchecked')) {
+    cl.remove("unchecked");
+    this.innerHTML = "Hide Answers";
+  } else {
+    cl.add("unchecked");
+    this.innerHTML = "Show Answers";
+  }
+}
+
+/* function for checking solveme answers */
+solveme_func = function(e) {
+  console.log("webex: check solveme");
+
+  var real_answers = JSON.parse(this.dataset.answer);
+  var my_answer = this.value;
+  var cl = this.classList;
+  if (cl.contains("ignorecase")) {
+    my_answer = my_answer.toLowerCase();
+  }
+  if (cl.contains("nospaces")) {
+    my_answer = my_answer.replace(/ /g, "")
+  }
+
+  if (my_answer == "") {
+    cl.remove("webex-correct");
+    cl.remove("webex-incorrect");
+  } else if (real_answers.includes(my_answer)) {
+    cl.add("webex-correct");
+    cl.remove("webex-incorrect");
+  } else {
+    cl.add("webex-incorrect");
+    cl.remove("webex-correct");
+  }
+
+  // match numeric answers within a specified tolerance
+  if(this.dataset.tol > 0){
+    var tol = JSON.parse(this.dataset.tol);
+    var matches = real_answers.map(x => Math.abs(x - my_answer) < tol)
+    if (matches.reduce((a, b) => a + b, 0) > 0) {
+      cl.add("webex-correct");
+    } else {
+      cl.remove("webex-correct");
+    }
+  }
+
+  // added regex bit
+  if (cl.contains("regex")){
+    answer_regex = RegExp(real_answers.join("|"))
+    if (answer_regex.test(my_answer)) {
+      cl.add("webex-correct");
+    }
+  }
+
+  update_total_correct();
+}
+
+/* function for checking select answers */
+select_func = function(e) {
+  console.log("webex: check select");
+
+  var cl = this.classList
+
+  /* add style */
+  cl.remove("webex-incorrect");
+  cl.remove("webex-correct");
+  if (this.value == "answer") {
+    cl.add("webex-correct");
+  } else if (this.value != "blank") {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+/* function for checking radiogroups answers */
+radiogroups_func = function(e) {
+  console.log("webex: check radiogroups");
+
+  var checked_button = document.querySelector('input[name=' + this.id + ']:checked');
+  var cl = checked_button.parentElement.classList;
+  var labels = checked_button.parentElement.parentElement.children;
+
+  /* get rid of styles */
+  for (i = 0; i < labels.length; i++) {
+    labels[i].classList.remove("webex-incorrect");
+    labels[i].classList.remove("webex-correct");
+  }
+
+  /* add style */
+  if (checked_button.value == "answer") {
+    cl.add("webex-correct");
+  } else {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+window.onload = function() {
+  console.log("webex onload");
+  /* set up solution buttons */
+  var buttons = document.getElementsByTagName("button");
+
+  for (var i = 0; i < buttons.length; i++) {
+    if (buttons[i].parentElement.classList.contains('webex-solution')) {
+      buttons[i].onclick = b_func;
+    }
+  }
+
+  var check_sections = document.getElementsByClassName("webex-check");
+  console.log("check:", check_sections.length);
+  for (var i = 0; i < check_sections.length; i++) {
+    check_sections[i].classList.add("unchecked");
+
+    let btn = document.createElement("button");
+    btn.innerHTML = "Show Answers";
+    btn.classList.add("webex-check-button");
+    btn.onclick = check_func;
+    check_sections[i].appendChild(btn);
+
+    let spn = document.createElement("span");
+    spn.classList.add("webex-total_correct");
+    check_sections[i].appendChild(spn);
+  }
+
+  /* set up webex-solveme inputs */
+  var solveme = document.getElementsByClassName("webex-solveme");
+
+  for (var i = 0; i < solveme.length; i++) {
+    /* make sure input boxes don't auto-anything */
+    solveme[i].setAttribute("autocomplete","off");
+    solveme[i].setAttribute("autocorrect", "off");
+    solveme[i].setAttribute("autocapitalize", "off");
+    solveme[i].setAttribute("spellcheck", "false");
+    solveme[i].value = "";
+
+    /* adjust answer for ignorecase or nospaces */
+    var cl = solveme[i].classList;
+    var real_answer = solveme[i].dataset.answer;
+    if (cl.contains("ignorecase")) {
+      real_answer = real_answer.toLowerCase();
+    }
+    if (cl.contains("nospaces")) {
+      real_answer = real_answer.replace(/ /g, "");
+    }
+    solveme[i].dataset.answer = real_answer;
+
+    /* attach checking function */
+    solveme[i].onkeyup = solveme_func;
+    solveme[i].onchange = solveme_func;
+
+    $(solveme[i]).after(" <span class='webex-icon'></span>");
+  }
+
+  /* set up radiogroups */
+  var radiogroups = document.getElementsByClassName("webex-radiogroup");
+  for (var i = 0; i < radiogroups.length; i++) {
+    radiogroups[i].onchange = radiogroups_func;
+  }
+
+  /* set up selects */
+  var selects = document.getElementsByClassName("webex-select");
+  for (var i = 0; i < selects.length; i++) {
+    selects[i].onchange = select_func;
+    $(selects[i]).after(" <span class='webex-icon'></span>");
+  }
+
+  update_total_correct();
+}
+
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link" aria-label="Introduction">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introduction</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./Practical2.html" class="pagination-link" aria-label="Week 3 - Practical">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week 3 - Practical</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
