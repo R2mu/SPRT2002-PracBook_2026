@@ -222,144 +222,144 @@
   {
     "objectID": "Practical4.html",
     "href": "Practical4.html",
-    "title": "4  Week 5 - Practical",
+    "title": "4  Week 6 - Practical",
     "section": "",
     "text": "4.1 Learning Outcome:",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 5 - Practical</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 6 - Practical</span>"
     ]
   },
   {
     "objectID": "Practical4.html#learning-outcome",
     "href": "Practical4.html#learning-outcome",
-    "title": "4  Week 5 - Practical",
+    "title": "4  Week 6 - Practical",
     "section": "",
     "text": "Understand measurement accuracy concepts and their application to exercise testing and measurement\nEvaluate the feasibility of different tests according to environmental conditions and client characteristics\nDemonstrate basic data processing and analytical techniques\nCommunicate test results and their implications to hypothetical client scenarios",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 5 - Practical</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 6 - Practical</span>"
     ]
   },
   {
     "objectID": "Practical4.html#practical-goals",
     "href": "Practical4.html#practical-goals",
-    "title": "4  Week 5 - Practical",
+    "title": "4  Week 6 - Practical",
     "section": "4.2 Practical Goals:",
     "text": "4.2 Practical Goals:\n\nConsolidate previous 5 weeks of practical and seminar material.\nPreliminary introduction to performing a systematic review search.\nBuild confidence in verbally discussing results",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 5 - Practical</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 6 - Practical</span>"
     ]
   },
   {
     "objectID": "Practical4.html#key-terms-discussed-so-far-this-semester",
     "href": "Practical4.html#key-terms-discussed-so-far-this-semester",
-    "title": "4  Week 5 - Practical",
+    "title": "4  Week 6 - Practical",
     "section": "4.3 Key Terms Discussed So Far This Semester",
     "text": "4.3 Key Terms Discussed So Far This Semester\nA useful step to build confidence for your professional report would be to make sure you feel confident calculating and discussing the key terms listed below.\n\n\n\n\n\n\nWeek 2 material\n\n\n\n\n\nValidity (Logical and Statistical):\n- Logical = (Face, Ecological, Content)\n- Statistical = Criterion (Concurrent and Predictive) and Construct\nDescriptive Stats:\n- Mean - Standard Deviation (SD)\n- Coefficient Variation (CV%)\n- Standard Error (SE)\n- Confidence Interval (CI)\n- Zscore\n\n\n\n\n\n\n\n\n\nWeek 3 material\n\n\n\n\n\nDose Response relationships (Neuromuscular)\nReliability:\n-Typical Error (TE)\n-CVTE%\n-Minimal Detectable Change (MDC)\n-Smallest Worthwhile Change (SWC)\n-Minimal Clinically important Difference (MCID)\n\n\n\n\n\n\n\n\n\nWeek 4 material\n\n\n\n\n\nDose Response relationships (Internal, Biochemical)\nBland-Altman Plots:\n-Bias\n-Limits of Agreement (LOA)\n-Proportional Bias\n-Heteroskedasticity\n\n\nPlease note the final two points are discussed in Week 5\n\n\n\n\n\n\n\n\n\n\nWeek 5 material\n\n\n\n\n\nCorrelations\nScatter plots:\n- Pearsons Correlation Coefficient (r)\n- r2 (r squared)\n- y = bX+c = Linear regression equation\n- b = Slope of the regression line\n- c = Intercept of regression line when X = 0\n- SEE = Standard Error of the Estimate",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 5 - Practical</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 6 - Practical</span>"
     ]
   },
   {
     "objectID": "Practical4.html#task-1",
     "href": "Practical4.html#task-1",
-    "title": "4  Week 5 - Practical",
+    "title": "4  Week 6 - Practical",
     "section": "4.4 Task 1:",
     "text": "4.4 Task 1:\nOver the last 5 weeks we have learnt about concepts relating to descriptive statistics, validity, reliability and dose response relationships. In particular, a focus a was made regarding the importance of reliability and how it can help identify was can be considered a practically meaningful effect.\nIn the first task, your tutor will rotate you in pairs. One of you will act as the client and one of you will act as the trainer. The trainer, using the interactive document below is to draw a random sample of data, and then summarise the data to their partner as if they were a client.\nhttps://r2mu.github.io/ETM_Wk5/\n\n\n\n\n\n\nExample\n\n\n\n\n\nMean 1-RM squat: 120 kg and Standard deviation (SD): 15 kg Test-retest reliability showed a SD of difference scores = 5.66 kg\nCalculations:\nTypical Error (TE) = SD_diff/√2 = 5.66/1.414 = 4 kg\nCVTE = 4/120*100 = 3.33%\nInterpretation: On average, repeated measurements will vary by about 4 kg due to measurement variability.\n\nMinimal Detectable Change (MDC) = TE×√2×1.96 = 4×1.414×1.96 = 11.1 kg\nInterpretation: A change of at least 11.1 kg is needed to be 95% confident the change is real and not due to measurement error.\n\nSmallest Worthwhile Change (SWC) = 0.2×SD = 0.2×15 = 3 kg\nInterpretation: A change of 3 kg would be considered practically meaningful for these athletes.\n\nMinimal Clinically Important Difference (MCID) = MDC+SWC = 11.1+3 = 14.1 kg\nInterpretation: An increase of at least 14.1 kg represents a change that is both statistically significant and practically meaningful.",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 5 - Practical</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 6 - Practical</span>"
     ]
   },
   {
     "objectID": "Practical4.html#task-2",
     "href": "Practical4.html#task-2",
-    "title": "4  Week 5 - Practical",
+    "title": "4  Week 6 - Practical",
     "section": "4.5 Task 2:",
     "text": "4.5 Task 2:\nYou are hired by a organisation (sports team , high school, private clinic) to help increase the rigour of their testing procedures via development of evidenced-based position statement for best practice guidelines. This includes from testing justification, testing methodology to testing application.\nIn groups of 7, you are to pick a scenario (sport, school based, clinic), you are to pick 3 test that you believe measure the most important constructs within the scenario you have chosen. Your focus however,is to convince the organisation that these are indeed the the three best test to use.\nUsing aspects that we have discussed over the previous 5 weeks you are to create a mini representation (aim for 1-2 slides per test), that talks about validity and reliability of each of the test and aspects that could increase measurement accuracy. You will be expected to use research to support your claims.\n\n4.5.1 Useful resources:\nWSU library & Google Scholar systematic search\nFor example try and copy and paste the below into Google scholar\n“Netball” AND ((“validity” AND “reliability”) OR “physical qualities” OR “determinants”)\nBook search:\nPhysiological Test for Elite Athletes (2nd Edition) (Available online in library)\nAdditional resources:\nhttps://www.ais.gov.au/position_statements\n\n\n\n4.5.2 Reflection:\nWhat aspects of the presentations you heard today made you feel most confident in the test that were chosen from each group for their scenario?\nWhat additionally information do you think would have been relevant for them to add?\nWould you have chosen different test?",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 5 - Practical</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 6 - Practical</span>"
     ]
   },
   {
     "objectID": "Practical4.html#task-3",
     "href": "Practical4.html#task-3",
-    "title": "4  Week 5 - Practical",
+    "title": "4  Week 6 - Practical",
     "section": "4.6 Task 3:",
     "text": "4.6 Task 3:\nUsing the scatter interactive regression plot from Week 4 (3.3.1) Practice making a scatter plot with regression and correlation statistics.\n\n\n\n\n\n\nScatter plot and regression helper video",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 5 - Practical</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 6 - Practical</span>"
     ]
   },
   {
     "objectID": "Practical4.html#test-your-learning",
     "href": "Practical4.html#test-your-learning",
-    "title": "4  Week 5 - Practical",
+    "title": "4  Week 6 - Practical",
     "section": "4.7 Test your learning",
     "text": "4.7 Test your learning\n\nWhy do we calculate a z-score?\n\n To calculate the mean of a distribution To determine the sample size needed for a study To standardize values so they can be compared across different scales and distributions To convert all negative values to positive values\n\nA student scores 85 on a fitness test where the class mean is 75 and the standard deviation is 6.67. What is their z-score? (Round to 1 decimal place)\n\n -0.5 1.5 2.5 0.67\n\nIn the linear regression equation y = mx + b, which statement correctly describes the relationship?\n\n y equals the sum of x and b y equals the product of x and m, minus b y equals the product of m and x, plus b y equals the sum of m and x, divided by b\n\nIn a linear regression equation y = mx + b, what does the slope (m) represent?\n\n The value of y when the analysis begins The amount y changes when x increases by one unit The starting point of the regression line The amount x changes when y increases by one unit\n\nIn a linear regression equation y = mx + b, what does the y-intercept (b) represent?\n\n The average value of all y measurements The point where the regression line crosses the x-axis The predicted value of y when x equals zero The minimum possible value for y in the dataset\n\nWhat does Pearson’s correlation coefficient (r) represent in the context of linear regression?\n\n The proportion of variance in y explained by x The average error in the prediction model The slope of the regression line The strength and direction of the linear relationship between x and y\n\nWhat does the coefficient of determination (R²) represent in linear regression?\n\n The square root of the average squared error The square of the slope in the regression equation The proportion of variance in the dependent variable explained by the independent variable The average distance between predicted and actual values\n\nWhat does the standard error of the estimate represent in linear regression?\n\n The average distance of data points from the mean The average distance between observed values and predicted values on the regression line The standard deviation of the slope coefficient The standard deviation of the x variable\n\nIf a regression equation is TestScore = 2x + 65, where x is hours spent studying, what is the correct interpretation if a student increases their study time from 10 to 15 hours?\n\n 5 additional hours of studying has no effect on test scores 5 additional hours of studying is associated with a 10-point increase in test scores Each hour of studying is associated with a 2-point increase in test scores For every 2 points increase in test scores, students study 1 additional hour\n\nIf Pearson’s r = 0.8 for the relationship between two variables, what does the corresponding R² = 0.64 tell us?\n\n The relationship is perfectly linear There is no relationship between the variables About 64% of the variation in y can be explained by its linear relationship with x The slope of the regression line is 0.8\n\nWhat does a Pearson’s r value of -0.7 indicate about the relationship between variables x and y?\n\n The relationship between x and y is weak As x increases, y remains constant As x increases, y tends to decrease As x increases, y tends to increase\n\nIf the standard error of the estimate for a regression model is 3.0, what does this tell us?\n\n The regression model perfectly predicts all y values The correlation between x and y is very strong The observed y values tend to differ from predicted values by about 3 units on average The slope of the regression line is changing by 3 units",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 5 - Practical</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 6 - Practical</span>"
     ]
   },
   {
     "objectID": "Practical5.html",
     "href": "Practical5.html",
-    "title": "5  Week 6 - Practical",
+    "title": "5  Week 7 - Practical",
     "section": "",
     "text": "5.1 Learning Outcome:",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 6 - Practical</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 7 - Practical</span>"
     ]
   },
   {
     "objectID": "Practical5.html#learning-outcome",
     "href": "Practical5.html#learning-outcome",
-    "title": "5  Week 6 - Practical",
+    "title": "5  Week 7 - Practical",
     "section": "",
     "text": "Understand measurement accuracy concepts and their application to exercise testing and measurement\nEvaluate the feasibility of different tests according to environmental conditions and client characteristics\nDemonstrate basic data processing and analytical techniques\nCommunicate test results and their implications to hypothetical client scenarios",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 6 - Practical</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 7 - Practical</span>"
     ]
   },
   {
     "objectID": "Practical5.html#practical-goals",
     "href": "Practical5.html#practical-goals",
-    "title": "5  Week 6 - Practical",
+    "title": "5  Week 7 - Practical",
     "section": "5.2 Practical Goals:",
-    "text": "5.2 Practical Goals:\n\nConsolidate previous 5 weeks of practical and seminar material.\nProfessional report 1 overview\nIntroduction to pivot tables.",
+    "text": "5.2 Practical Goals:\n\nConsolidate previous 6 weeks of practical and seminar material.\nProfessional report 1 overview\nIntroduction to pivot tables.",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 6 - Practical</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 7 - Practical</span>"
     ]
   },
   {
     "objectID": "Practical5.html#case-study",
     "href": "Practical5.html#case-study",
-    "title": "5  Week 6 - Practical",
+    "title": "5  Week 7 - Practical",
     "section": "5.3 Case Study",
     "text": "5.3 Case Study\nOver the semester we have learnt about different ways we can assess the validity and reliability of metrics. In particular, you have calculated descriptive statistics (mean, SD and CV%), reliability statistics (TE,CVTE%, MDC, SWC & MCID), created a Bland-Altman plot and create a scatter plot with a regression line. The interactive documents that allow you to download the datasets to practise calculating these statistics however, have largely been optimised to make the analysis as easy as possible for you.\n\nIn reality however, the datasets you will work with will often require some transformation to get it into a format that allows you to do the analysis you want.\nTherefore the goal of practicals this week is to introduce you to Pivot Tables in excel. Pivot tables allow you to relatively easily manipulate datasets into different formats that make analysis easier. You will be required to use a pivot table to manipulate the dataset given to you for your first professional report due in week 9.",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 6 - Practical</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 7 - Practical</span>"
     ]
   },
   {
     "objectID": "Practical5.html#by-end-of-class",
     "href": "Practical5.html#by-end-of-class",
-    "title": "5  Week 6 - Practical",
+    "title": "5  Week 7 - Practical",
     "section": "5.4 By end of class",
     "text": "5.4 By end of class\n\nYou should feel confident with the requirements for the professional report.\nYou should have chosen what variables you want to analyse for what aspects of the report.\n\n\nWhat three test will you analyse regarding reliability based metrics?\nWhat two test will you compare using a Bland-Altman plot?\nWhat two test will you compare using a scatter plot and regression analysis?\n\n\nYou should know where to find the relevant information regarding how to perform the appropriate analysis and its interpretation.\n\nThis material can be found in both the seminar content and prac work book.",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 6 - Practical</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 7 - Practical</span>"
     ]
   },
   {
