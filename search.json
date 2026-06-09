@@ -587,7 +587,7 @@
     "href": "Practical8.html#hypothesis-testing-recap",
     "title": "8  Week 12 - Practical",
     "section": "8.4 Hypothesis testing recap",
-    "text": "8.4 Hypothesis testing recap\nA quick recap of the main points discussed in lecture material. When we perform a hypothesis test, we are effectively trying to identify whether the signal (mean difference) we have observed can be considered an interesting result or could easily be explained via random variation. For this unit, we are going to focus on the T-statistic calculated from a paired t-test design (effectively comparing the same individuals pre and post some intervention). The T-statistic is calculated as:\n\\[\nT = \\frac{\\text{mean diff}}{\\frac{\\text{sd(differences)}}{\\sqrt{N}}}\n\\]\nWhere \\(N\\) the number of participants.\nLet’s look into the equation in a little more detail:\nWe have a mean difference which can be thought of as a signal. We divide that by the \\(sd(differences)\\), which can be thought of as the level of consistency in change amongst individuals or also considered a measure of noise\nThe smaller the noise (greater consistency), the larger the T-value will be.\nFinally, we divide this noise by the \\(\\sqrt{N}\\), which can be thought of as a penalty for the fact that we are only testing on a sample and not the full population\nThe more people, the less penalty is applied and the greater the T-value will be\nThe interactive figure below should hopefully drive home the message on how changing these parameters changes the T value.\n\n  \n\n  \n    \n      Participants (n)\n      21\n      \n    \n    \n      Mean difference\n      1.75\n      \n    \n    \n      Standard deviation\n      5\n      \n    \n    \n      Correlation\n      0\n      \n    \n  \n  \n  \n    \n      ROPE size (× SD)\n      0.2\n      \n    \n    \n      Show ROPE\n      Reset Visualization\n    \n  \n  \n  \n  \n  \n    \n  \n  \n  \n    \n      \n    \n  \n\n  \n  \n  \n  \n\n\nKey points from the plot above should be that increasing the sample size increases the precision/confidence we have in what the true mean difference is between the pre and post intervention which is shown by the smaller confidence interval around the change score. This can cause an issue in extremely large samples where tiny mean differences can be deemed “statistically significant” as we are effectively very confident that true mean difference from pre to post may indeed be greater than zero. You may then ask the question, “but do we care if something is only different than zero?”. Indeed, this is a perfectly reasonable question to ask and something that statisticians have been encouraging researchers to do for a long time and this is to report the magnitude of the effect. It should be noted that the word “magnitude” may mean different things in different contexts across different fields. However, the two measures of effect magnitude that I want you to focus on for this unit are\n\\[\nCohens D = \\frac{\\text{mean diff}}{\\text{Pooled SD}}\n\\]\nWhere \\(Pooled SD\\) is the average \\(SD\\) across both pre and post trials.\nFor understanding of qualitative interpretation around the Cohens D numbers make sure to check out the Week 11 and 12 seminar material.\nThe other measure of effect I want you to develop some intition around is common language effect size (CLES) sometimes also called the probability of superiority\n\\[ CLES = \\Phi\\left(\\frac{\\text{mean diff}}{\\text{sd diff}}\\right) \\]\nOkay lets talk through this a little more slowly as there is a scary looking symbol in there. We first compute what is called the signal to noise ratio \\((SNR)\\) which is calculated via \\(\\frac{\\text{mean diff}}{\\text{sd diff}}\\). This is then put into a function with a scary looking symbol \\(\\Phi(\\text{SNR})\\) however all this function does is convert the SNR into a probability for us. This probability can be thought of a randomly drawn person from this sample having a higher score vs lower score.",
+    "text": "8.4 Hypothesis testing recap\nA quick recap of the main points discussed in lecture material. When we perform a hypothesis test, we are effectively trying to identify whether the signal (mean difference) we have observed can be considered an interesting result or could easily be explained via random variation. For this unit, we are going to focus on the T-statistic calculated from a paired t-test design (effectively comparing the same individuals pre and post some intervention). The T-statistic is calculated as:\n\\[\nT = \\frac{\\text{mean diff}}{\\frac{\\text{sd(differences)}}{\\sqrt{N}}}\n\\]\nWhere \\(N\\) the number of participants.\nLet’s look into the equation in a little more detail:\nWe have a mean difference which can be thought of as a signal. We divide that by the \\(sd(differences)\\), which can be thought of as the level of consistency in change amongst individuals or also considered a measure of noise.\nThe smaller the noise (greater consistency), the larger the T-value will be.\nFinally, we divide this noise by the \\(\\sqrt{N}\\), which can be thought of as a penalty for the fact that we are only testing on a sample and not the full population\nThe more people, the less penalty is applied and the greater the T-value will be\nThe interactive figure below should hopefully drive home the message on how changing these parameters changes the T value.\n\n  \n\n  \n    \n      Participants (n)\n      21\n      \n    \n    \n      Mean difference\n      1.75\n      \n    \n    \n      Standard deviation\n      5\n      \n    \n    \n      Correlation\n      0\n      \n    \n  \n  \n  \n    \n      ROPE size (× SD)\n      0.2\n      \n    \n    \n      Show ROPE\n      Reset Visualization\n    \n  \n  \n  \n  \n  \n    \n  \n  \n  \n    \n      \n    \n  \n\n  \n  \n  \n  \n\n\nKey points from the plot above should be that increasing the sample size increases the precision/confidence we have in what the true mean difference is between the pre and post intervention which is shown by the smaller confidence interval around the change score. This can cause an issue in extremely large samples where tiny mean differences can be deemed “statistically significant” as we are effectively very confident that true mean difference from pre to post may indeed be greater than zero. You may then ask the question, “but do we care if something is only different than zero?”. Indeed, this is a perfectly reasonable question to ask and something that statisticians have been encouraging researchers to do for a long time and this is to report the magnitude of the effect. It should be noted that the word “magnitude” may mean different things in different contexts across different fields. However, the two measures of effect magnitude that I want you to focus on for this unit are\n\\[\nCohens D = \\frac{\\text{mean diff}}{\\text{Pooled SD}}\n\\]\nWhere \\(Pooled SD\\) is the average \\(SD\\) across both pre and post trials.\nFor understanding of qualitative interpretation around the Cohens D numbers make sure to check out the Week 11 and 12 seminar material.\nThe other measure of effect I want you to develop some intition around is common language effect size (CLES) sometimes also called the probability of superiority\n\\[ CLES = \\Phi\\left(\\frac{\\text{mean diff}}{\\text{sd diff}}\\right) \\]\nOkay lets talk through this a little more slowly as there is a scary looking symbol in there. We first compute what is called the signal to noise ratio \\((SNR)\\) which is calculated via \\(\\frac{\\text{mean diff}}{\\text{sd diff}}\\). This is then put into a function with a scary looking symbol \\(\\Phi(\\text{SNR})\\) however all this function does is convert the SNR into a probability for us. This probability can be thought of a randomly drawn person from this sample having a higher score vs lower score.",
     "crumbs": [
       "Home",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Week 12 - Practical</span>"
@@ -800,6 +800,853 @@
     "crumbs": [
       "Home",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Week 11 - Practical</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html",
+    "href": "Practical9.html",
+    "title": "9  Exam preparation",
+    "section": "",
+    "text": "9.1 A quick note about short-answer responses\nFor short-answer questions, aim for clear, concise bullet points using the correct terminology. Markers reward discrete correct ideas, not long paragraphs.\nFor example:\nThat answer is long but does not clearly state why the median is useful. Aim for the first box.",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exam preparation</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#a1.-describing-data-centre-vs-spread",
+    "href": "Practical9.html#a1.-describing-data-centre-vs-spread",
+    "title": "9  Examp prep",
+    "section": "11.1 A1. Describing data: centre vs spread",
+    "text": "11.1 A1. Describing data: centre vs spread\nWhat does a Bland-Altman plot show?\n\n The difference between measurements plotted against time The difference between measurements plotted against the mean of both measurements The correlation between two measurements The mean of both measurements plotted against time\n\nA coach wants a single number summarising the typical skinfold value of a squad. Which is a measure of central tendency (not spread)?\n\n range standard deviation interquartile range median\n\nQ2. Which statistic tells you how tightly clustered a set of jump heights are around their average?\n\n standard deviation mean mode sample size\n\nQ3. A dataset of reaction times contains one athlete with an enormous outlier. Which measure of centre is least affected by that outlier?\n\n the mean the median the range the standard deviation\n\nQ4. The range of a dataset is calculated from:\n\n the mean and the SD the highest and lowest values the middle 50% of values all values added together\n\nQ5. A squad’s sprint times have a large standard deviation. The best interpretation is:\n\n The squad performed badly overall The times are widely spread around the mean The mean must be incorrect There were no outliers",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#a2.-measurement-scales",
+    "href": "Practical9.html#a2.-measurement-scales",
+    "title": "9  Examp prep",
+    "section": "11.2 A2. Measurement scales",
+    "text": "11.2 A2. Measurement scales\nJersey numbers used purely to identify players (no ranking implied) are an example of which scale?\n\n nominal ordinal interval ratio\n\nA finishing-order list (1st, 2nd, 3rd) where the gaps between places are not equal is which scale?\n\n nominal ordinal interval ratio\n\nA measurement with equal intervals and a true zero (e.g. distance in metres, where 0 m means none) is which scale?\n\n nominal ordinal interval ratio\n\nWhich scale has equal intervals but no true zero (so ratios are not meaningful)?\n\n nominal ordinal interval ratio",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#a3.-reliability",
+    "href": "Practical9.html#a3.-reliability",
+    "title": "9  Examp prep",
+    "section": "11.3 A3. Reliability",
+    "text": "11.3 A3. Reliability\nThe coefficient of variation (CV) is normally reported as:\n\n a correlation coefficient a raw-unit standard deviation a percentage (%) a p-value\n\nTwo tests measure peak power. Test X has a CV of 4%, Test Y a CV of 9%. The more reliable test (less relative noise) is:\n\n Test X (CV 4%) Test Y (CV 9%) they are equally reliable cannot tell, because CV measures validity not reliability\n\nThe same tester measures an athlete’s grip strength three times one morning and checks how consistent they were. This is:\n\n interrater reliability intrarater reliability concurrent validity ecological validity\n\nTwo different assessors score the same gymnastics routine and you compare how closely they agree. This is:\n\n interrater reliability intrarater reliability test-retest reliability construct validity\n\nTypical error (TE) is best described as:\n\n the spread of scores between different athletes the random measurement noise expected on a repeat test the bias between two devices the smallest worthwhile change\n\nA smaller CV% generally indicates:\n\n better reliability worse reliability better validity no relationship to reliability",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#a4.-validity",
+    "href": "Practical9.html#a4.-validity",
+    "title": "9  Examp prep",
+    "section": "11.4 A4. Validity",
+    "text": "11.4 A4. Validity\nA questionnaire is meant to measure ‘competitive anxiety’, which cannot be observed directly. Checking it genuinely captures that underlying concept is:\n\n construct validity ecological validity intrarater reliability objectivity\n\nA panel of experts reviews a knowledge test to confirm it covers all relevant topics of the syllabus. This is:\n\n construct validity content validity criterion validity test-retest reliability\n\nA cheap lactate analyser is compared at the same time against a gold-standard lab analyser to see if they agree. This is a form of:\n\n predictive validity concurrent (criterion) validity content validity face validity\n\nA pre-season test score is used to forecast end-of-season match performance. The evidence it does so relates to:\n\n concurrent validity predictive validity content validity intrarater reliability\n\nA straight-line sprint test is used to judge a sport that is mostly multidirectional with frequent changes of direction. The concern that it does not reflect the real demands of the sport relates most to:\n\n face validity ecological validity intrarater reliability objectivity\n\nCan a test be highly reliable (consistent) yet not valid (not measuring what you want)?\n\n no, reliability guarantees validity yes, a test can be consistent yet measure the wrong thing no, they are the same property only for subjective tests",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#a5.-internal-vs-external-load-monitoring-tools",
+    "href": "Practical9.html#a5.-internal-vs-external-load-monitoring-tools",
+    "title": "9  Examp prep",
+    "section": "11.5 A5. Internal vs external load & monitoring tools",
+    "text": "11.5 A5. Internal vs external load & monitoring tools\nQ22. GPS-derived total distance, accelerations and peak speed are examples of:\n\n internal load external load subjective wellness psychological readiness\n\nQ23. Heart rate and blood lactate during a session are examples of:\n\n external load objective internal load subjective internal load training output\n\nQ24. A session-RPE (sRPE) score is best classed as:\n\n external load objective internal load subjective internal load a measure of distance\n\nQ25. All of the following are objective monitoring measures EXCEPT:\n\n cortisol creatine kinase heart-rate variability rating of perceived exertion\n\nQ26. Salivary IgA is best described as:\n\n external load objective internal load (biomarker) subjective internal load a measure of velocity\n\nQ27. A Profile of Mood States (POMS) questionnaire score is:\n\n external load objective internal load subjective internal load a mechanical variable",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#a6.-mechanics-physiology",
+    "href": "Practical9.html#a6.-mechanics-physiology",
+    "title": "9  Examp prep",
+    "section": "11.6 A6. Mechanics & physiology",
+    "text": "11.6 A6. Mechanics & physiology\nQ28. Power is the product of:\n\n force and distance distance and time force and velocity mass and height\n\nQ29. An athlete shows a long-term performance decline, persistent mood disturbance and fatigue that does NOT recover even after a substantial reduction in training. This best fits:\n\n functional overreaching overtraining syndrome tapering detraining\n\nQ30. A short-term drop in performance that fully recovers after a few days of reduced load, often planned, is best described as:\n\n functional overreaching overtraining syndrome illness injury\n\nQ31. Compared with low-speed running, the accuracy of GPS units for high-speed running is typically:\n\n the same as for low-speed running better than for low-speed running worse than for low-speed running unaffected by speed\n\nQ32. Which factor can influence the reliability/quality of GPS data?\n\n the number of connected satellites signal interference from stadium structures the unit sampling rate all of the above",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#a7.-correlation-regression-relationships",
+    "href": "Practical9.html#a7.-correlation-regression-relationships",
+    "title": "9  Examp prep",
+    "section": "11.7 A7. Correlation, regression & relationships",
+    "text": "11.7 A7. Correlation, regression & relationships\nQ33. Which correlation coefficient indicates the strongest relationship? (Strength = distance from 0; sign = direction only.)\n\n +0.30 -0.55 -0.85 +0.70\n\nQ34. A correlation of -0.80 means:\n\n a weak positive relationship a strong negative relationship no relationship a perfect relationship\n\nQ35. Estimating one variable from another using a known linear relationship is called:\n\n correlation prediction (regression) standardisation generalisation\n\nQ36. If r between two variables is 0.60, the variance shared (r-squared) is approximately:\n\n 0.60 (60%) 0.36 (36%) 0.06 (6%) 0.84 (84%)\n\nQ37. Does a strong correlation between two variables prove that one causes the other?\n\n Yes - a strong correlation proves causation No - correlation alone does not prove one variable causes the other Yes - but only for negative correlations Yes - if r is above 0.9",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#a8.-distributions-p-values",
+    "href": "Practical9.html#a8.-distributions-p-values",
+    "title": "9  Examp prep",
+    "section": "11.8 A8. Distributions & p-values",
+    "text": "11.8 A8. Distributions & p-values\nQ38. In a normal distribution, approximately what proportion of observations fall within ONE standard deviation of the mean?\n\n ~34% ~68% ~95% ~99.7%\n\nQ39. Approximately what proportion fall within TWO standard deviations of the mean?\n\n ~50% ~68% ~95% ~99.7%\n\nQ40. Results are conventionally called ‘statistically significant’ when the p-value is:\n\n p &lt;= 0.05 p &gt; 0.80 p &gt;= 0.95 p &gt;= 1.0\n\nQ41. Does a statistically significant result (p &lt; 0.05) automatically mean the effect is large or practically important?\n\n Yes - significant always means a large effect No - significance does not tell you the effect is large or practically important Yes - if the sample is small Yes - p-values measure effect size\n\nQ42. An athlete scores 60 on a test where the squad mean is 50 and the SD is 5. What is their z-score?\n\n 0.5 1.0 2.0 10.0",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#a9.-agreement-bland-altman",
+    "href": "Practical9.html#a9.-agreement-bland-altman",
+    "title": "9  Examp prep",
+    "section": "11.9 A9. Agreement & Bland-Altman",
+    "text": "11.9 A9. Agreement & Bland-Altman\nQ43. A Bland-Altman analysis is most appropriate when you want to:\n\n to decide how long a test should be to assess the agreement between two measurement methods to run a content-validity study to measure central tendency\n\nQ44. On a Bland-Altman plot, the mean difference (bias) line represents:\n\n the random error between methods the SD of the differences the systematic difference between the two methods the correlation between methods\n\nQ45. The 95% limits of agreement mainly describe:\n\n the systematic bias only the range within which most differences between methods are expected to fall (random error) the validity of the criterion measure the test-retest CV\n\nQ46. Can a method have near-zero bias but still have wide limits of agreement?\n\n No - zero bias means perfect agreement Yes - on average they agree, but any single comparison can still differ a lot No - bias and limits always move together Only if the sample is small",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#a10.-decision-thresholds-swc-mdc-mcid",
+    "href": "Practical9.html#a10.-decision-thresholds-swc-mdc-mcid",
+    "title": "9  Examp prep",
+    "section": "11.10 A10. Decision thresholds: SWC, MDC, MCID",
+    "text": "11.10 A10. Decision thresholds: SWC, MDC, MCID\nQ47. The smallest worthwhile change (SWC, often 0.2 x SD) is best described as:\n\n the smallest change we can detect above measurement noise the smallest change considered practically/meaningfully important the typical error of the test the p-value threshold\n\nQ48. The minimal detectable change (MDC) is best described as:\n\n the smallest change that exceeds measurement error (real, not noise) the smallest change worth caring about practically the bias between two devices the correlation between test and retest\n\nQ49. Is it possible for an athlete’s change to exceed the SWC but NOT the MDC?\n\n No - that is impossible Yes - the change looks meaningful in size but may not be a real change rather than noise Yes - it always means a real change No - SWC is always larger than MDC\n\nQ50. In MDC95 = TE x 1.96 x sqrt(2), the sqrt(2) appears because:\n\n because there are two athletes because the SD is doubled because two measurements (test and retest) each carry error, so the errors combine because you convert to a percentage\n\nQ51. A jump test has a between-athlete SD of 5.0 cm. Using SWC = 0.2 x SD, the smallest worthwhile change is:\n\n 0.4 cm 1.0 cm 2.0 cm 5.0 cm\n\nQ52. A test has a typical error of 4 units and a mean of 50 units. Expressed as a CV, the relative error is:\n\n 4% 8% 12.5% 50%",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#b1.-centre-vs-spread",
+    "href": "Practical9.html#b1.-centre-vs-spread",
+    "title": "9  Examp prep",
+    "section": "12.1 B1. Centre vs spread",
+    "text": "12.1 B1. Centre vs spread\n\nAre you comfortable explaining the difference between a measure of central tendency and a measure of spread, and naming two of each?\n\n\n\nModel answer\n\n\nCentral tendency = the typical/representative value: mean, median, mode.\nSpread (dispersion) = how variable the data are around the centre: standard deviation, range, interquartile range, variance, CV.\nCentre tells you where the data sit; spread tells you how consistent/variable they are.",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#b2.-interpreting-r-and-r-squared",
+    "href": "Practical9.html#b2.-interpreting-r-and-r-squared",
+    "title": "9  Examp prep",
+    "section": "12.2 B2. Interpreting r and r-squared",
+    "text": "12.2 B2. Interpreting r and r-squared\n\nCould you explain, in plain language, what r and r² each tell you about two variables on a scatterplot?\n\n\n\nModel answer\n\n\nr = the strength and direction of the linear relationship (-1 to +1; sign = direction, magnitude = strength).\nr² = the proportion of variance in one variable shared with/explained by the other (0 to 1, often a %).\nExample: r = 0.8 -&gt; strong positive; r² = 0.64 -&gt; ~64% of variance shared.\nNeither proves causation.",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#b3.-what-plotting-data-lets-you-do-first",
+    "href": "Practical9.html#b3.-what-plotting-data-lets-you-do-first",
+    "title": "9  Examp prep",
+    "section": "12.3 B3. What plotting data lets you do first",
+    "text": "12.3 B3. What plotting data lets you do first\n\nList several things that plotting your data before analysis allows you to spot.\n\n\n\nModel answer\n\n\nSee the shape/distribution (normal vs skewed).\nSpot outliers or data-entry errors.\nCheck the direction and form of relationships (linear vs non-linear).\nGet a feel for spread/variability and clustering.\nIdentify subgroups or patterns before formal testing.\nSense-check the data look plausible (right units, sensible ranges).",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#b4.-rpe-scales",
+    "href": "Practical9.html#b4.-rpe-scales",
+    "title": "9  Examp prep",
+    "section": "12.4 B4. RPE scales",
+    "text": "12.4 B4. RPE scales\n\nCan you distinguish the Borg RPE scale from session-RPE (sRPE) — their numeric ranges, when each is administered, and the link between heart rate and Borg RPE?\n\n\n\nModel answer\n\n\nBorg RPE classic scale runs 6-20; the category-ratio (CR10) version runs 0-10.\nsRPE uses a 0-10 rating multiplied by session duration (min) to give a load value in arbitrary units.\nTiming: Borg RPE is taken during/at a moment of effort; sRPE is taken ~30 min after the session so it reflects the whole session. Timing matters because they capture different windows (instantaneous vs whole-session load).\nHR-Borg link: Borg RPE rises roughly linearly with heart rate across submaximal intensities (the “x10 ~ HR” idea on the 6-20 scale is an approximation, not exact).",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#b5.-heart-rate-measures-and-what-affects-them",
+    "href": "Practical9.html#b5.-heart-rate-measures-and-what-affects-them",
+    "title": "9  Examp prep",
+    "section": "12.5 B5. Heart-rate measures and what affects them",
+    "text": "12.5 B5. Heart-rate measures and what affects them\n\nCould you describe a few distinct heart-rate-based monitoring measures, and list factors that influence the HR response?\n\n\n\nModel answer\n\n\nResting HR — baseline; a rise can flag fatigue/illness.\nHR at a fixed submaximal workload — tracks fitness/fatigue changes.\nHR recovery — how fast HR drops after exercise (parasympathetic reactivation).\nHeart-rate variability (HRV) — beat-to-beat variation; index of autonomic balance/recovery.\nFactors influencing HR: hydration, heat/ambient temperature, altitude, caffeine/stimulants, sleep, illness, stress/anxiety, time of day, medications, body position.",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#b6.-types-of-validity",
+    "href": "Practical9.html#b6.-types-of-validity",
+    "title": "9  Examp prep",
+    "section": "12.6 B6. Types of validity",
+    "text": "12.6 B6. Types of validity\n\nCan you name and define up to five types of validity covered this semester?\n\n\n\nModel answer\n\n\nFace validity — does it appear to measure what it claims (surface judgement)?\nContent validity — does it cover all relevant aspects/domains of the construct?\nConstruct validity — does it genuinely capture the underlying (unobservable) construct?\nCriterion validity — does it agree with a gold-standard criterion? Two sub-types: concurrent (same time) and predictive (forecasts a future outcome).\nEcological validity — do results generalise to the real-world/sport-specific setting?",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#b7.-objective-vs-subjective-monitoring",
+    "href": "Practical9.html#b7.-objective-vs-subjective-monitoring",
+    "title": "9  Examp prep",
+    "section": "12.7 B7. Objective vs subjective monitoring",
+    "text": "12.7 B7. Objective vs subjective monitoring\n\nAre you able to classify monitoring tools as objective vs subjective, give examples, and state one pro and con of each?\n\n\n\nModel answer\n\n\nObjective = instrument/biomarker, no self-report: HR, HRV, GPS distance, cortisol, creatine kinase, salivary IgA.\n\nPro: not biased by perception; Con: often costly, invasive, slow (lab turnaround).\n\nSubjective = self-reported perception: RPE, sRPE, wellness/mood questionnaires (e.g. POMS).\n\nPro: cheap, fast, low burden, sensitive to how the athlete feels; Con: can be biased, gamed or affected by mood/motivation.",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#b8.-independent-vs-dependent-variable",
+    "href": "Practical9.html#b8.-independent-vs-dependent-variable",
+    "title": "9  Examp prep",
+    "section": "12.8 B8. Independent vs dependent variable",
+    "text": "12.8 B8. Independent vs dependent variable\n\nGiven an intervention study (e.g., “does a supplement change sprint performance?”), can you identify the independent and dependent variable?\n\n\n\nModel answer\n\n\nIndependent variable (IV) = the thing you manipulate/group by (supplement vs placebo).\nDependent variable (DV) = the outcome you measure that may change (sprint time/distance).\nTip: the DV goes on the y-axis and “depends on” the IV.",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#b9.-cv-vs-typical-error-vs-sd",
+    "href": "Practical9.html#b9.-cv-vs-typical-error-vs-sd",
+    "title": "9  Examp prep",
+    "section": "12.9 B9. CV vs typical error vs SD",
+    "text": "12.9 B9. CV vs typical error vs SD\n\nCould you explain how CV%, typical error (TE) and between-athlete SD differ, and what each is used for?\n\n\n\nModel answer\n\n\nBetween-athlete SD = how different athletes are from each other (group spread).\nTypical error (TE) = the within-athlete measurement noise on a repeat test (reliability, raw units).\nCV% = TE (or SD) expressed relative to the mean as a % — lets you compare reliability across tests with different units.\nUse TE/CV to judge reliability; use SD to scale meaningful change (SWC = 0.2 x SD).",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#b10.-criterion--vs-norm-referenced",
+    "href": "Practical9.html#b10.-criterion--vs-norm-referenced",
+    "title": "9  Examp prep",
+    "section": "12.10 B10. Criterion- vs norm-referenced",
+    "text": "12.10 B10. Criterion- vs norm-referenced\n\nCan you distinguish criterion-referenced from norm-referenced standards with an example of each?\n\n\n\nModel answer\n\n\nCriterion-referenced = judged against a fixed, absolute standard (e.g., “must bench 1.5 x body mass to pass”).\nNorm-referenced = judged relative to others (e.g., “top 10% of the squad”, percentile rank).\nA selection system can use both (auto-qualify on a target, otherwise rank candidates).",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#b11.-standardising-a-test-protocol",
+    "href": "Practical9.html#b11.-standardising-a-test-protocol",
+    "title": "9  Examp prep",
+    "section": "12.11 B11. Standardising a test protocol",
+    "text": "12.11 B11. Standardising a test protocol\n\nCould you name several aspects of a test protocol that must be standardised, and say why and how for each?\n\n\n\nModel answer\n\n\nWarm-up/familiarisation — why: affects performance; how: fixed standardised protocol.\nTime of day — why: circadian effects; how: test each athlete at the same time across sessions.\nEquipment/calibration/setup — why: device drift changes scores; how: same calibrated unit, same positioning.\nInstructions/encouragement — why: effort & technique vary; how: scripted, identical cues.\nPre-test conditions — why: prior exercise, food, caffeine, hydration, sleep affect results; how: standardise (e.g., no hard training 24 h prior).",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#b12.-test-development-sequence",
+    "href": "Practical9.html#b12.-test-development-sequence",
+    "title": "9  Examp prep",
+    "section": "12.12 B12. Test-development sequence",
+    "text": "12.12 B12. Test-development sequence\n\nCan you put the logical steps of developing a new field test in order?\n\n\n\nModel answer\n\n\nIdentify the need (consult coaches/stakeholders — what decision will it inform?).\nBackground literature review (what exists, what’s valid/reliable?).\nIdentify key traits of your cohort (sport, level, demands to capture).\nPractical/equipment considerations (cost, space, scheduling, staffing).\nDesign, pilot and administer the test (then evaluate reliability/validity).",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#c1.-reliability-comparison",
+    "href": "Practical9.html#c1.-reliability-comparison",
+    "title": "9  Examp prep",
+    "section": "13.1 C1. Reliability comparison",
+    "text": "13.1 C1. Reliability comparison\n\nScenario. A pre-season battery on a junior rowing squad (n = 12):\n\n\n\nMetric\n2000 m time\nMid-thigh pull\n\n\n\n\nCV%\n1.2%\n6.5%\n\n\nTypical error\n2.1 s\n95 N\n\n\nCV_TE%\n0.9%\n5.1%\n\n\n\nWhich test shows better between-day reliability, and how would you justify it using at least two measures?\n\n\n\nModel answer\n\n\nThe 2000 m time is more reliable between days.\nCV% is much lower (1.2% vs 6.5%) -&gt; less relative measurement noise.\nCV_TE% is also lower (0.9% vs 5.1%) -&gt; smaller typical error relative to the mean.\nBoth reliability indices point the same way -&gt; a confident conclusion.",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#c2.-interpreting-an-individuals-change",
+    "href": "Practical9.html#c2.-interpreting-an-individuals-change",
+    "title": "9  Examp prep",
+    "section": "13.2 C2. Interpreting an individual’s change",
+    "text": "13.2 C2. Interpreting an individual’s change\n\nScenario. For a vertical-jump test: MDC95 = 2.5 cm and SWC = 1.0 cm. An athlete improves from 42.0 cm to 44.0 cm (a +2.0 cm change).\n(a) Is this change likely “real” (beyond noise)? (b) Could it be practically meaningful? (c) What does it mean when a change beats the SWC but not the MDC?\n\n\n\nModel answer\n\n\n(a) +2.0 cm is smaller than the MDC95 (2.5 cm) -&gt; you cannot be confident it is a real change rather than measurement noise.\n(b) It exceeds the SWC (1.0 cm) -&gt; it is large enough to be practically meaningful if it is real.\n(c) Beating SWC but not MDC = the change is practically interesting in size but statistically uncertain -&gt; treat it cautiously, keep monitoring, don’t over-react to one test.",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#c3.-bland-altman-device-comparison",
+    "href": "Practical9.html#c3.-bland-altman-device-comparison",
+    "title": "9  Examp prep",
+    "section": "13.3 C3. Bland-Altman device comparison",
+    "text": "13.3 C3. Bland-Altman device comparison\n\nScenario. A coach considers swapping calibrated force plates for a cheaper jump app. A Bland-Altman analysis (App - Plates) over 40 jumps gives bias = +1.5 cm and 95% limits of agreement = -2.0 cm to +5.0 cm. The SWC for jump height is 1.0 cm.\n(a) What does the bias tell you? (b) What do the limits of agreement add? (c) Should the two be used interchangeably for tracking change?\n\n\n\nModel answer\n\n\n(a) Bias +1.5 cm -&gt; the app systematically reads ~1.5 cm higher than the plates on average (a fixed offset).\n(b) Limits of agreement (-2.0 to +5.0 cm) -&gt; describe the random error: any individual jump could differ anywhere in that range. The bias alone doesn’t show this.\n(c) Not interchangeable for tracking change — the error band (and even the bias) is larger than the SWC (1.0 cm), so device differences would swamp the change you’re trying to detect. Pick one device and stick with it.",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#c4.-validity-reliability-for-test-selection",
+    "href": "Practical9.html#c4.-validity-reliability-for-test-selection",
+    "title": "9  Examp prep",
+    "section": "13.4 C4. Validity + reliability for test selection",
+    "text": "13.4 C4. Validity + reliability for test selection\n\nScenario. Two tests for a basketball squad:\n\nTest 1 (agility): CV = 2.0%; correlates with on-court defensive performance at r = 0.75.\nTest 2 (straight sprint): CV = 1.8%; correlates with on-court performance at r = 0.25.\n\nWhich would you prioritise for ongoing sport-specific monitoring, and why? What validity issue does the weak sprint correlation highlight?\n\n\n\nModel answer\n\n\nPrioritise Test 1 (agility).\nBoth are similarly reliable (CV ~2%), so reliability doesn’t separate them.\nValidity does: Test 1’s r = 0.75 shows a strong link to actual on-court performance; Test 2’s r = 0.25 is weak.\nA reliable-but-not-valid test consistently measures the wrong thing — low monitoring value.\nThe weak sprint link points to an ecological / criterion validity problem: a straight-line sprint doesn’t reflect the multidirectional demands of the sport.",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#c5.-why-root-2-in-the-mdc-formula",
+    "href": "Practical9.html#c5.-why-root-2-in-the-mdc-formula",
+    "title": "9  Examp prep",
+    "section": "13.5 C5. Why root-2 in the MDC formula",
+    "text": "13.5 C5. Why root-2 in the MDC formula\n\nSelf-check. In MDC95 = TE x 1.96 x sqrt(2), why is the typical error multiplied by sqrt(2)?\n\n\n\nModel answer\n\n\nA change score is the difference between two measurements (test and retest).\nEach measurement carries its own error, so the difference combines two independent errors.\nCombining two independent errors makes the variances add, and the SD of the difference scales by sqrt(2) -&gt; hence the term. (The 1.96 sets the 95% confidence level.)",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#c6.-load-monitoring-recommendation",
+    "href": "Practical9.html#c6.-load-monitoring-recommendation",
+    "title": "9  Examp prep",
+    "section": "13.6 C6. Load-monitoring recommendation",
+    "text": "13.6 C6. Load-monitoring recommendation\n\nSelf-check. A coach wants an in-season monitoring program. Recommend one external and one internal load metric, and explain why using both together beats either alone.\n\n\n\nModel answer\n\n\nExternal (example): GPS total distance / high-speed running / accelerations — what the athlete did (the work performed).\nInternal (example): sRPE or HR-based load / HRV — the athlete’s physiological & perceptual response to that work.\nWhy both: external = the dose, internal = the response/cost. The same external load can produce very different internal responses depending on fitness, fatigue, heat, sleep, stress.\nThe relationship between them (e.g., a high internal response to a normal external load) is an early flag for fatigue, illness or maladaptation — which neither metric reveals alone.\n\n\n\n\n\n\n\n\n\nFinal check before the exam\n\n\n\nIf you can confidently separate centre vs spread, read r / r² and a scatterplot, tell apart the reliability (CV, TE) and validity types, classify internal vs external and objective vs subjective load, interpret p-values, the 68-95-99.7 rule and Bland-Altman (bias vs LoA), and reason about SWC vs MDC for individual change — then you’re across the concepts this exam tests. Re-do any item you hesitated on.",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#a1.-describing-data",
+    "href": "Practical9.html#a1.-describing-data",
+    "title": "9  Examp prep",
+    "section": "11.1 A1. Describing data",
+    "text": "11.1 A1. Describing data\nA coach wants a single number summarising the typical skinfold value of a squad. Which is a measure of central tendency (not spread)?\n\n range standard deviation interquartile range median\n\nWhich statistic tells you how tightly clustered a set of jump heights are around their average?\n\n standard deviation mean mode sample size\n\nA set of reaction times contains one athlete with an enormous outlier. Which measure of centre is least affected by that outlier?\n\n the mean the median the range the standard deviation\n\nThe range of a dataset is calculated from:\n\n the mean and the SD the highest and lowest values the middle 50% of values all values added together\n\nA squad’s sprint times have a large standard deviation. The best interpretation is:\n\n the squad performed badly overall the times are widely spread around the mean the mean must be incorrect there were no outliers",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#a5.-internal-vs-external-load-and-monitoring-tools",
+    "href": "Practical9.html#a5.-internal-vs-external-load-and-monitoring-tools",
+    "title": "9  Examp prep",
+    "section": "11.5 A5. Internal vs external load and monitoring tools",
+    "text": "11.5 A5. Internal vs external load and monitoring tools\nGPS-derived total distance, accelerations and peak speed are examples of:\n\n internal load external load subjective wellness psychological readiness\n\nHeart rate and blood lactate measured during a session are examples of:\n\n external load objective internal load subjective internal load training output\n\nA session-RPE (sRPE) score is best classed as:\n\n external load objective internal load subjective internal load a measure of distance\n\nAll of the following are objective monitoring measures EXCEPT:\n\n cortisol creatine kinase heart-rate variability rating of perceived exertion\n\nSalivary IgA is best described as:\n\n external load objective internal load (biomarker) subjective internal load a measure of velocity\n\nA Profile of Mood States (POMS) questionnaire score is:\n\n external load objective internal load subjective internal load a mechanical variable",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#a6.-mechanics-and-physiology",
+    "href": "Practical9.html#a6.-mechanics-and-physiology",
+    "title": "9  Examp prep",
+    "section": "11.6 A6. Mechanics and physiology",
+    "text": "11.6 A6. Mechanics and physiology\nPower is the product of:\n\n force and distance distance and time force and velocity mass and height\n\nAn athlete shows a long-term performance decline, persistent mood disturbance and fatigue that does not recover even after a substantial reduction in training. This best fits:\n\n functional overreaching overtraining syndrome tapering detraining\n\nA short-term drop in performance that fully recovers after a few days of reduced load, often planned, is best described as:\n\n functional overreaching overtraining syndrome illness injury\n\nCompared with low-speed running, the accuracy of GPS units for high-speed running is typically:\n\n the same as for low-speed running better than for low-speed running worse than for low-speed running unaffected by speed\n\nWhich factor can influence the reliability and quality of GPS data?\n\n the number of connected satellites signal interference from stadium structures the unit sampling rate all of the above",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#a7.-correlation-and-regression",
+    "href": "Practical9.html#a7.-correlation-and-regression",
+    "title": "9  Examp prep",
+    "section": "11.7 A7. Correlation and regression",
+    "text": "11.7 A7. Correlation and regression\nWhich correlation coefficient indicates the strongest relationship? (Strength is distance from zero; the sign only gives direction.)\n\n +0.30 -0.55 -0.85 +0.70\n\nA correlation of -0.80 means:\n\n a weak positive relationship a strong negative relationship no relationship a perfect relationship\n\nEstimating one variable from another using a known linear relationship is called:\n\n correlation prediction (regression) standardisation generalisation\n\nDoes a strong correlation between two variables prove that one causes the other?\n\n yes, a strong correlation proves causation no, correlation alone does not prove one variable causes the other yes, but only for negative correlations yes, if r is above 0.9",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#a8.-monitoring-scales-and-measures",
+    "href": "Practical9.html#a8.-monitoring-scales-and-measures",
+    "title": "9  Examp prep",
+    "section": "11.8 A8. Monitoring scales and measures",
+    "text": "11.8 A8. Monitoring scales and measures\nThe classic Borg RPE scale runs across which numbered range?\n\n 0 to 5 6 to 20 1 to 100 0 to 1\n\nSession-RPE (sRPE) is designed to be collected:\n\n at the very start of the session at the single hardest moment of the session around 30 minutes after the session has finished the morning after the session\n\nHeart-rate variability (HRV) is best described as:\n\n the maximum heart rate an athlete can reach the beat-to-beat variation in heart rate, used as an index of recovery/autonomic balance the average heart rate during a session the time taken to reach a steady-state heart rate\n\nAcross submaximal intensities, the relationship between heart rate and Borg RPE is best described as:\n\n they are unrelated RPE tends to rise roughly linearly with heart rate across submaximal intensities RPE falls as heart rate rises RPE only relates to blood lactate, not heart rate",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#a9.-distributions-and-p-values",
+    "href": "Practical9.html#a9.-distributions-and-p-values",
+    "title": "9  Examp prep",
+    "section": "11.9 A9. Distributions and p-values",
+    "text": "11.9 A9. Distributions and p-values\nIn a normal distribution, approximately what proportion of observations fall within one standard deviation of the mean?\n\n about 34% about 68% about 95% about 99.7%\n\nApproximately what proportion of observations fall within two standard deviations of the mean?\n\n about 50% about 68% about 95% about 99.7%\n\nResults are conventionally called ‘statistically significant’ when the p-value is:\n\n p less than or equal to 0.05 p greater than 0.80 p greater than or equal to 0.95 p greater than or equal to 1.0\n\nDoes a statistically significant result (p &lt; 0.05) automatically mean the effect is large or practically important?\n\n yes, a significant result always means a large effect no, significance does not tell you the effect is large or practically important yes, if the sample is small yes, because the p-value is the effect size",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#a10.-agreement-bland-altman-and-decision-thresholds",
+    "href": "Practical9.html#a10.-agreement-bland-altman-and-decision-thresholds",
+    "title": "9  Examp prep",
+    "section": "11.10 A10. Agreement, Bland-Altman and decision thresholds",
+    "text": "11.10 A10. Agreement, Bland-Altman and decision thresholds\nA Bland-Altman analysis is most appropriate when you want to:\n\n to decide how long a test should be to assess the agreement between two measurement methods to run a content-validity study to measure central tendency\n\nOn a Bland-Altman plot, the mean difference (bias) line represents:\n\n the random error between the methods the standard deviation of the differences the systematic difference between the two methods the correlation between the methods\n\nThe 95% limits of agreement mainly describe:\n\n the systematic bias only the range within which most differences between the methods are expected to fall (random error) the validity of the criterion measure the test-retest CV\n\nThe smallest worthwhile change (SWC, often 0.2 x SD) is best described as:\n\n the smallest change we can detect above measurement noise the smallest change considered practically or meaningfully important the typical error of the test the p-value threshold\n\nThe minimal detectable change (MDC) is best described as:\n\n the smallest change that exceeds measurement error (i.e. a real change, not noise) the smallest change worth caring about practically the bias between two devices the correlation between test and retest\n\nIn the formula MDC95 = TE x 1.96 x the square root of 2, the square root of 2 appears because:\n\n because there are two athletes because the SD is doubled because two measurements (test and retest) each carry error, so the errors combine because you convert the result to a percentage",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#a-quick-note-regarding-short-and-long-answer-responses.",
+    "href": "Practical9.html#a-quick-note-regarding-short-and-long-answer-responses.",
+    "title": "9  Examp prep",
+    "section": "",
+    "text": "In one or two points, explain why standard deviation is useful when describing a squad’s sprint times.\n\n\n\n\n\n\n\nWhat we’re after\n\n\n\n\nSD describes the spread/variability of scores around the mean.\nA large SD = times are more spread out; a small SD = the squad is more homogeneous.\n\n\n\n\n\n\n\n\n\nWhat we’re not after\n\n\n\n“Standard deviation is a really important statistic coaches use all the time to understand their athletes. It’s a number about the times and how good or bad they are, calculated from the mean which is the average, and it’s useful for analysing things and making training decisions.”",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#think-about-the-key-themes-we-explore-over-the-semester",
+    "href": "Practical9.html#think-about-the-key-themes-we-explore-over-the-semester",
+    "title": "9  Examp prep",
+    "section": "9.2 Think about the key themes we explore over the semester:",
+    "text": "9.2 Think about the key themes we explore over the semester:\n\nData types\nMeasures to summarize a distribution\n\nMean, Median, SD, min, max, Range, CV%\n\nValidity\nReliability\nWhat makes a meaningful change\nAgreement\nCorrelation and prediction\nCombing validity and reliability to make applied decisions\nQuantifying dose and response\n\nDifferent measurement tools for quantifying response to training (neuromuscular, internal)\nPro’s and Cons\n\nInternal vs External load\n\nObjective vs Subjective\n\nHypothesis testing and effect sizes\nConsiderations when plotting data",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#describing-data",
+    "href": "Practical9.html#describing-data",
+    "title": "9  Examp prep",
+    "section": "10.1 Describing data",
+    "text": "10.1 Describing data\nA coach wants a single number summarising the typical skinfold value of a squad. Which is a measure of central tendency (not spread)?\n\n range standard deviation interquartile range median\n\nWhich statistic tells you how tightly clustered a set of jump heights are around their average?\n\n standard deviation mean mode sample size\n\nA set of reaction times contains one athlete with an enormous outlier. Which measure of centre is least affected by that outlier?\n\n the mean the median the range the standard deviation\n\nThe range of a dataset is calculated from:\n\n the mean and the SD the highest and lowest values the middle 50% of values all values added together\n\nA squad’s sprint times have a large standard deviation. The best interpretation is:\n\n the squad performed badly overall the times are widely spread around the mean the mean must be incorrect there were no outliers",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#measurement-scales",
+    "href": "Practical9.html#measurement-scales",
+    "title": "9  Examp prep",
+    "section": "10.2 Measurement scales",
+    "text": "10.2 Measurement scales\nJersey numbers used purely to identify players (no ranking implied) are an example of which scale?\n\n nominal ordinal interval ratio\n\nA finishing-order list (1st, 2nd, 3rd) where the gaps between places are not equal is which scale?\n\n nominal ordinal interval ratio\n\nA measurement with equal intervals and a true zero (e.g. distance in metres, where 0 m means none) is which scale?\n\n nominal ordinal interval ratio\n\nWhich scale has equal intervals but no true zero (so ratios are not meaningful)?\n\n nominal ordinal interval ratio",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#reliability",
+    "href": "Practical9.html#reliability",
+    "title": "9  Examp prep",
+    "section": "10.3 Reliability",
+    "text": "10.3 Reliability\nThe coefficient of variation (CV) is normally reported as:\n\n a correlation coefficient a raw-unit standard deviation a percentage (%) a p-value\n\nTwo tests measure peak power. Test X has a CV of 4%, Test Y a CV of 9%. The more reliable test (less relative noise) is:\n\n Test X (CV 4%) Test Y (CV 9%) they are equally reliable cannot tell, because CV measures validity not reliability\n\nThe same tester measures an athlete’s grip strength three times one morning and checks how consistent they were. This is:\n\n interrater reliability intrarater reliability concurrent validity ecological validity\n\nTwo different assessors score the same gymnastics routine and you compare how closely they agree. This is:\n\n interrater reliability intrarater reliability test-retest reliability construct validity\n\nTypical error (TE) is best described as:\n\n the spread of scores between different athletes the random measurement noise expected on a repeat test the bias between two devices the smallest worthwhile change\n\nA smaller CV% generally indicates:\n\n better reliability worse reliability better validity no relationship to reliability",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#validity",
+    "href": "Practical9.html#validity",
+    "title": "9  Examp prep",
+    "section": "10.4 Validity",
+    "text": "10.4 Validity\nA questionnaire is meant to measure ‘competitive anxiety’, which cannot be observed directly. Checking it genuinely captures that underlying concept is:\n\n construct validity ecological validity intrarater reliability objectivity\n\nA panel of experts reviews a knowledge test to confirm it covers all relevant topics of the syllabus. This is:\n\n construct validity content validity criterion validity test-retest reliability\n\nA cheap lactate analyser is compared at the same time against a gold-standard lab analyser to see if they agree. This is a form of:\n\n predictive validity concurrent (criterion) validity content validity face validity\n\nA pre-season test score is used to forecast end-of-season match performance. The evidence it does so relates to:\n\n concurrent validity predictive validity content validity intrarater reliability\n\nBefore any data are collected, a coach simply looks at a new agility drill and judges that it appears, on the surface, to measure change-of-direction ability. This surface-level, subjective judgement is best described as:\n\n face validity ecological validity construct validity typical error\n\nCan a test be highly reliable (consistent) yet not valid (not measuring what you want)?\n\n no, reliability guarantees validity yes, a test can be consistent yet measure the wrong thing no, they are the same property only for subjective tests",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#internal-vs-external-load-and-monitoring-tools",
+    "href": "Practical9.html#internal-vs-external-load-and-monitoring-tools",
+    "title": "9  Examp prep",
+    "section": "10.5 Internal vs external load and monitoring tools",
+    "text": "10.5 Internal vs external load and monitoring tools\nGPS-derived total distance, accelerations and peak speed are examples of:\n\n internal load external load subjective wellness psychological readiness\n\nHeart rate and blood lactate measured during a session are examples of:\n\n external load objective internal load subjective internal load training output\n\nA session-RPE (sRPE) score is best classed as:\n\n external load objective internal load subjective internal load a measure of distance\n\nAll of the following are objective monitoring measures EXCEPT:\n\n cortisol creatine kinase heart-rate variability rating of perceived exertion\n\nSalivary IgA is best described as:\n\n external load objective internal load (biomarker) subjective internal load a measure of velocity\n\nA Profile of Mood States (POMS) questionnaire score is:\n\n external load objective internal load subjective internal load a mechanical variable",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#measuring-training-load-and-response",
+    "href": "Practical9.html#measuring-training-load-and-response",
+    "title": "9  Examp prep",
+    "section": "10.6 Measuring training load and response",
+    "text": "10.6 Measuring training load and response\nPower is the product of:\n\n force and distance distance and time force and velocity mass and height\n\nAn athlete shows a long-term performance decline, persistent mood disturbance and fatigue that does not recover even after a substantial reduction in training. This best fits:\n\n functional overreaching overtraining syndrome tapering detraining\n\nA short-term drop in performance that fully recovers after a few days of reduced load, often planned, is best described as:\n\n functional overreaching overtraining syndrome illness injury\n\nCompared with low-speed running, the accuracy of GPS units for high-speed running is typically:\n\n the same as for low-speed running better than for low-speed running worse than for low-speed running unaffected by speed\n\nWhich factor can influence the reliability and quality of GPS data?\n\n the number of connected satellites signal interference from stadium structures the unit sampling rate all of the above",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#correlation-and-regression",
+    "href": "Practical9.html#correlation-and-regression",
+    "title": "9  Examp prep",
+    "section": "10.7 Correlation and regression",
+    "text": "10.7 Correlation and regression\nWhich correlation coefficient indicates the strongest relationship? (Strength is distance from zero; the sign only gives direction.)\n\n +0.30 -0.55 -0.85 +0.70\n\nA correlation of -0.80 means:\n\n a weak positive relationship a strong negative relationship no relationship a perfect relationship\n\nEstimating one variable from another using a known linear relationship is called:\n\n correlation prediction (regression) standardisation generalisation\n\nDoes a strong correlation between two variables prove that one causes the other?\n\n yes, a strong correlation proves causation no, correlation alone does not prove one variable causes the other yes, but only for negative correlations yes, if r is above 0.9",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#monitoring-scales-and-measures",
+    "href": "Practical9.html#monitoring-scales-and-measures",
+    "title": "9  Examp prep",
+    "section": "10.8 Monitoring scales and measures",
+    "text": "10.8 Monitoring scales and measures\nThe classic Borg RPE scale runs across which numbered range?\n\n 0 to 5 6 to 20 1 to 100 0 to 1\n\nSession-RPE (sRPE) is designed to be collected:\n\n at the very start of the session at the single hardest moment of the session around 30 minutes after the session has finished the morning after the session\n\nHeart-rate variability (HRV) is best described as:\n\n the maximum heart rate an athlete can reach the beat-to-beat variation in heart rate, used as an index of recovery/autonomic balance the average heart rate during a session the time taken to reach a steady-state heart rate\n\nAcross submaximal intensities, the relationship between heart rate and Borg RPE is best described as:\n\n they are unrelated RPE tends to rise roughly linearly with heart rate across submaximal intensities RPE falls as heart rate rises RPE only relates to blood lactate, not heart rate",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#distributions-and-p-values",
+    "href": "Practical9.html#distributions-and-p-values",
+    "title": "9  Examp prep",
+    "section": "10.9 Distributions and p-values",
+    "text": "10.9 Distributions and p-values\nIn a normal distribution, approximately what proportion of observations fall within one standard deviation of the mean?\n\n about 34% about 68% about 95% about 99.7%\n\nApproximately what proportion of observations fall within two standard deviations of the mean?\n\n about 50% about 68% about 95% about 99.7%\n\nResults are conventionally called ‘statistically significant’ when the p-value is:\n\n p less than or equal to 0.05 p greater than 0.80 p greater than or equal to 0.95 p greater than or equal to 1.0\n\nDoes a statistically significant result (p &lt; 0.05) automatically mean the effect is large or practically important?\n\n yes, a significant result always means a large effect no, significance does not tell you the effect is large or practically important yes, if the sample is small yes, because the p-value is the effect size",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#agreement-bland-altman-and-decision-thresholds",
+    "href": "Practical9.html#agreement-bland-altman-and-decision-thresholds",
+    "title": "9  Examp prep",
+    "section": "10.10 Agreement, Bland-Altman and decision thresholds",
+    "text": "10.10 Agreement, Bland-Altman and decision thresholds\nA Bland-Altman analysis is most appropriate when you want to:\n\n to decide how long a test should be to assess the agreement between two measurement methods to run a content-validity study to measure central tendency\n\nOn a Bland-Altman plot, the mean difference (bias) line represents:\n\n the random error between the methods the standard deviation of the differences the systematic difference between the two methods the correlation between the methods\n\nThe 95% limits of agreement mainly describe:\n\n the systematic bias only the range within which most differences between the methods are expected to fall (random error) the validity of the criterion measure the test-retest CV\n\nThe smallest worthwhile change (SWC, often 0.2 x SD) is best described as:\n\n the smallest change we can detect above measurement noise the smallest change considered practically or meaningfully important the typical error of the test the p-value threshold\n\nThe minimal detectable change (MDC) is best described as:\n\n the smallest change that exceeds measurement error (i.e. a real change, not noise) the smallest change worth caring about practically the bias between two devices the correlation between test and retest\n\nIn the formula MDC95 = TE x 1.96 x the square root of 2, the square root of 2 appears because:\n\n because there are two athletes because the SD is doubled because two measurements (test and retest) each carry error, so the errors combine because you convert the result to a percentage",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#applied-scenarios-case-study-practice",
+    "href": "Practical9.html#applied-scenarios-case-study-practice",
+    "title": "9  Examp prep",
+    "section": "12.1 Applied scenarios (case-study practice)",
+    "text": "12.1 Applied scenarios (case-study practice)\nRead each scenario and work through the questions as you would a case-study response: concise, reasoned bullet points. No answers are given.\nCase 1 — Is the change real? (meaningful change)\nA swimmer’s countermovement jump is measured every Monday. Across a training block the value drifts up and down by a centimetre or two week to week, then rises by 4 cm the week after a taper.\n\nWhich of these movements would you treat as noise, and which as a meaningful change?\nWhat would you need to know about the test itself to make that call?\nHow do the ideas of “detectable” and “worthwhile” each apply here?\n\nCase 2 — Can we trust the cheaper device? (agreement)\nA team trials a low-cost wrist heart-rate sensor against the chest strap they normally trust. The two track closely at rest but diverge during high-intensity efforts.\n\nHow would you investigate whether the cheaper unit is good enough to rely on?\nWhat would you plot or summarise to describe how well they agree?\nWould you be comfortable swapping between the two to track an athlete’s change over time?\nWhy is “the two are strongly correlated” not the same as “the two agree”?\n\nCase 3 — Which test earns a place? (reliability + validity for a decision)\nA rugby academy wants one test to monitor “match fitness”. Test A is a treadmill run that is highly repeatable between days. Test B is a repeated-sprint protocol that is a little more variable day to day but looks much more like the demands of a match.\n\nWhat trade-off are you weighing between these two?\nWhat evidence would push you toward one over the other?\nCould you justify keeping both? On what grounds?\n\nCase 4 — Filling out the picture (dose and response)\nA coach currently records only GPS distance for each session and asks you to build a fuller monitoring picture.\n\nWhat would you add to capture how the athletes respond to that load, and why?\nWhat are the trade-offs (cost, athlete burden, what it actually tells you) of the tools you would suggest?\nHow would viewing dose and response together let you spot something neither shows alone?\n\nCase 5 — Same session, different toll (internal vs external load)\nTwo athletes complete the identical prescribed session — the same external load on GPS — but one reports a much higher session-RPE and shows an elevated heart rate for the same work.\n\nWhich measures here are external load, and which are internal?\nWhat might explain the mismatch between them?\nWhat, if anything, would you do with that information the following day?\n\nCase 6 — Significant, but useful? (prediction + hypothesis testing)\nA study reports that a fitness-test score is “significantly” related to match high-speed running (p &lt; 0.01, r = 0.30). A coach wants to use the test to predict each player’s match output.\n\nWhat does the significant p-value tell you here — and what does it not?\nIs a correlation of this size strong enough to predict an individual athlete’s output?\nWhat would you advise the coach?",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Examp prep</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#a-quick-note-about-short-answer-responses",
+    "href": "Practical9.html#a-quick-note-about-short-answer-responses",
+    "title": "9  Exam preparation",
+    "section": "",
+    "text": "In one or two points, explain why a coach might report the median rather than the mean for a squad’s soreness scores.\n\n\n\n\n\n\n\nWhat we’re after\n\n\n\n\nThe median is less affected by extreme values/outliers than the mean.\nIt can better represent the typical response when the data are skewed.\n\n\n\n\n\n\n\n\n\nWhat we’re not after\n\n\n\n“The median is a useful statistic that sport scientists use in lots of ways. It is one of the main descriptive statistics and it helps coaches understand the group. It can be calculated from the data and then used to make better decisions.”",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exam preparation</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#key-themes-to-revise",
+    "href": "Practical9.html#key-themes-to-revise",
+    "title": "9  Exam preparation",
+    "section": "9.2 Key themes to revise",
+    "text": "9.2 Key themes to revise\n\nData types and measurement scales\nDescribing a distribution: mean, median, SD, range, CV%\nReliability and sources of measurement error\nValidity and whether a test measures what it claims to measure\nMeaningful change: TE, SWC, MDC, MCID\nAgreement between measurement methods\nCorrelation, regression and prediction\nPlotting data before analysis\nInternal vs external load\nObjective vs subjective monitoring tools\nDose-response thinking in athlete monitoring\nHypothesis testing, p-values, effect sizes and practical significance\nTest selection, standardisation and applied decision-making",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exam preparation</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#describing-data-and-measurement-scales",
+    "href": "Practical9.html#describing-data-and-measurement-scales",
+    "title": "9  Exam preparation",
+    "section": "10.1 Describing data and measurement scales",
+    "text": "10.1 Describing data and measurement scales\nA recovery questionnaire produces highly skewed scores because two athletes report extremely poor sleep. Which summary measure is least pulled around by those extreme scores?\n\n mean median standard deviation range\n\nTwo squads have the same average jump height, but Squad A’s scores are tightly clustered while Squad B’s scores vary widely. Which statistic best captures that difference in variability?\n\n mode sample size standard deviation p-value\n\nA coach wants to compare variability in body mass and jump height, which are measured in different units. Which statistic is most useful because it expresses variability relative to the mean?\n\n raw standard deviation coefficient of variation median sample size\n\nAthletes are grouped by preferred recovery strategy: massage, compression, cold water, or active recovery. Which measurement scale is this?\n\n nominal ordinal interval ratio\n\nA coach ranks athletes as low, moderate, or high injury risk. The categories have an order, but the gaps between categories are not necessarily equal. Which scale is this?\n\n nominal ordinal interval ratio\n\nTraining distance in metres has equal units and a meaningful zero. Which scale is this?\n\n nominal ordinal interval ratio\n\nBefore calculating group summaries, a sport scientist plots the raw scores and notices one value that is far away from the rest. What has the plot helped identify?\n\n statistical significance a possible outlier criterion validity the sample size",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exam preparation</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#reliability-validity-and-measurement-error",
+    "href": "Practical9.html#reliability-validity-and-measurement-error",
+    "title": "9  Exam preparation",
+    "section": "10.2 Reliability, validity and measurement error",
+    "text": "10.2 Reliability, validity and measurement error\nA test gives very similar results when the same athletes repeat it under the same conditions one week later. This mainly indicates good:\n\n construct validity test-retest reliability ecological validity statistical power\n\nThree analysts code the same match footage and their outputs are compared. Which form of reliability is being assessed?\n\n interrater reliability intrarater reliability predictive validity face validity\n\nOne assessor measures the same flexibility test several times and checks whether their own scores are consistent. Which form of reliability is being assessed?\n\n interrater reliability intrarater reliability content validity construct validity\n\nTypical error is best thought of as:\n\n the average difference between two groups the random noise expected when a measurement is repeated the practical importance of a change the strength of a relationship\n\nTwo field tests assess the same physical quality. Test A has a CV of 3%, while Test B has a CV of 8%. All else being equal, which is the more repeatable test?\n\n Test A Test B they are identical CV cannot tell us anything about repeatability\n\nA balance test gives almost identical results every week, but the coach wants to use it to select players for repeated-sprint ability. What is the main concern?\n\n the test is not objective the test may be reliable but not valid for that decision the test has no measurement units the test cannot have a p-value\n\nA group of subject experts reviews a practical skills assessment to judge whether it covers the full range of skills taught in the unit. This is mainly evidence for:\n\n predictive validity content validity test-retest reliability criterion-referenced scoring\n\nA survey claims to measure athlete confidence, which cannot be directly observed. The researchers examine whether the survey behaves as expected against related psychological measures. This is mainly about:\n\n construct validity intrarater reliability ratio scaling minimal detectable change\n\nA new wearable estimate of jump height is compared against a force platform collected during the same testing session. This is mainly a form of:\n\n face validity concurrent criterion validity predictive validity only ordinal scaling\n\nA laboratory agility test is very controlled, but the coach questions whether it reflects the perceptual and movement demands of match play. This concern is closest to:\n\n content validity intrarater reliability ecological validity central tendency",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exam preparation</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#meaningful-change-and-applied-interpretation",
+    "href": "Practical9.html#meaningful-change-and-applied-interpretation",
+    "title": "9  Exam preparation",
+    "section": "10.3 Meaningful change and applied interpretation",
+    "text": "10.3 Meaningful change and applied interpretation\nThe smallest worthwhile change is best described as the smallest change that:\n\n can be detected beyond all measurement error is considered practically meaningful equals the average score proves statistical significance\n\nThe minimal detectable change is mainly used to decide whether a change is likely to be:\n\n larger than measurement noise equal to the group mean caused by the intervention normally distributed\n\nAn athlete’s change is larger than the SWC but smaller than the MDC. The best interpretation is:\n\n the change is definitely real and important the change is definitely meaningless the change may be practically interesting, but we cannot be confident it exceeds measurement noise the test must be invalid\n\nCompared with a statistical threshold such as 0.2 x SD, an MCID is usually intended to reflect:\n\n only the sampling error the smallest change that matters in a real clinical or applied context the correlation between two tests the percentage form of standard deviation",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exam preparation</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#agreement-correlation-and-prediction",
+    "href": "Practical9.html#agreement-correlation-and-prediction",
+    "title": "9  Exam preparation",
+    "section": "10.4 Agreement, correlation and prediction",
+    "text": "10.4 Agreement, correlation and prediction\nA correlation of -0.82 between wellness score and muscle soreness would usually be described as:\n\n weak positive strong negative no relationship perfect positive\n\nWhich correlation shows the strongest relationship, ignoring direction?\n\n +0.25 -0.45 +0.68 -0.91\n\nA strong relationship is found between two monitoring variables. What should you avoid concluding from correlation alone?\n\n the variables move together the sign shows direction one variable definitely causes the other the relationship may be useful to investigate\n\nIn simple terms, r-squared describes:\n\n the raw difference between two methods the proportion of variance shared or explained by a linear relationship the smallest meaningful change the number of observations\n\nUsing a known line of best fit to estimate one variable from another is best described as:\n\n agreement normalisation prediction randomisation\n\nA coach wants to know whether two devices give similar enough values to be used in place of each other. Which analysis is most directly aimed at agreement?\n\n a pie chart a dependent t-test only Bland-Altman analysis a frequency table\n\nIn a device comparison, the average difference between the new device and the reference device is called the:\n\n standard error of estimate bias range sample mean\n\nThe 95% limits of agreement are mainly useful because they show:\n\n only the average systematic offset the likely spread of individual differences between methods whether the data are nominal the number of athletes tested",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exam preparation</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#monitoring-load-and-athlete-response",
+    "href": "Practical9.html#monitoring-load-and-athlete-response",
+    "title": "9  Exam preparation",
+    "section": "10.5 Monitoring load and athlete response",
+    "text": "10.5 Monitoring load and athlete response\nA microtechnology unit reports total distance, high-speed running distance and accelerations. These are examples of:\n\n subjective internal load external load biochemical markers mood states\n\nHeart rate recorded during a conditioning session is best classified as:\n\n external load objective internal load subjective internal load a nominal variable\n\nA wellness questionnaire completed by athletes each morning is best classified as:\n\n external load objective internal load subjective internal load mechanical power\n\nA blood or saliva marker used to monitor physiological response to training is best described as:\n\n external load an objective internal monitoring measure a subjective rating a measure of court distance\n\nRating of perceived exertion is useful because it captures:\n\n only the distance covered only the number of accelerations the athlete's perceived internal response to the session the timing-gate split time\n\nHeart-rate variability is commonly interpreted as an index related to:\n\n maximum sprint speed jump height only autonomic balance and recovery status the total number of match possessions\n\nTwo athletes complete the same external workload, but one reports much higher perceived exertion and has an elevated heart-rate response. This illustrates why it is useful to monitor:\n\n external load only internal load only both dose and response only match statistics\n\nWhen interpreting GPS-derived running data, which issue should be considered?\n\n only the athlete's height signal quality and environmental obstruction the colour of the vest whether the score is ordinal",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exam preparation</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#inference-practical-significance-and-test-development",
+    "href": "Practical9.html#inference-practical-significance-and-test-development",
+    "title": "9  Exam preparation",
+    "section": "10.6 Inference, practical significance and test development",
+    "text": "10.6 Inference, practical significance and test development\nA p-value below a chosen alpha level tells us that the observed result would be unlikely under the null hypothesis. What does it not tell us by itself?\n\n whether the result is statistically significant whether the effect is large or practically important whether the result can be reported whether a comparison was made\n\nWhy should effect sizes often be reported alongside p-values?\n\n because p-values are not allowed in sport science because effect sizes help describe the magnitude of the difference or relationship because they remove the need to collect data because they convert all data to nominal categories\n\nBefore buying equipment or writing a protocol for a new test, the first applied question should usually be:\n\n which spreadsheet will be used? what decision does the test need to support? which athlete is fastest? how many decimal places are available?",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exam preparation</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#describing-a-squads-data",
+    "href": "Practical9.html#describing-a-squads-data",
+    "title": "9  Exam preparation",
+    "section": "11.1 1. Describing a squad’s data",
+    "text": "11.1 1. Describing a squad’s data\nA practitioner reports two groups’ isometric mid-thigh pull scores:\n\nGroup A: 2100 ± 180 N\nGroup B: 1980 ± 320 N\n\nWrite 3–4 bullet points explaining what the mean and SD tell you about the two groups. Include one limitation of interpreting only the mean and SD.",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exam preparation</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#choosing-summary-statistics",
+    "href": "Practical9.html#choosing-summary-statistics",
+    "title": "9  Exam preparation",
+    "section": "11.2 2. Choosing summary statistics",
+    "text": "11.2 2. Choosing summary statistics\nA wellness score is collected from 20 athletes. Most scores are clustered between 6 and 8, but one athlete reports a score of 1.\n\nWould your report the mean or median here and why?\nWhat measure of spread might help communicate the variability?\nWhat would plotting the scores add before you summarise them?",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exam preparation</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#classifying-monitoring-metrics",
+    "href": "Practical9.html#classifying-monitoring-metrics",
+    "title": "9  Exam preparation",
+    "section": "11.3 3. Classifying monitoring metrics",
+    "text": "11.3 3. Classifying monitoring metrics\nClassify each metric as external load, objective internal load, or subjective internal load. Briefly justify each choice.\n\nPlayerLoad from an accelerometer\nBlood lactate after a repeated-sprint session\nSession-RPE\nMorning muscle soreness rating\nMean heart rate during a small-sided game",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exam preparation</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#validity-types",
+    "href": "Practical9.html#validity-types",
+    "title": "9  Exam preparation",
+    "section": "11.4 4. Validity types",
+    "text": "11.4 4. Validity types\nChoose three types of validity from the list below. Define each one and give a sport-science example that is not copied from the wording of your notes.\n\nFace validity\nContent validity\nConstruct validity\nConcurrent validity\nPredictive validity\nEcological validity",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exam preparation</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#reliability-and-standardisation",
+    "href": "Practical9.html#reliability-and-standardisation",
+    "title": "9  Exam preparation",
+    "section": "11.5 5. Reliability and standardisation",
+    "text": "11.5 5. Reliability and standardisation\nA new change-of-direction test is being trialled with academy athletes.\nList five sources of unwanted variation that could reduce reliability. For each one, suggest one practical way to standardise or control it.",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exam preparation</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#meaningful-change",
+    "href": "Practical9.html#meaningful-change",
+    "title": "9  Exam preparation",
+    "section": "11.6 6. Meaningful change",
+    "text": "11.6 6. Meaningful change\nAn athlete improves their jump score by an amount that is larger than the SWC but smaller than the MDC.\nIn 3 bullet points, explain how you would interpret that result for a coach. Use the terms practically meaningful, measurement noise, and confidence.",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exam preparation</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#agreement-between-devices",
+    "href": "Practical9.html#agreement-between-devices",
+    "title": "9  Exam preparation",
+    "section": "11.7 7. Agreement between devices",
+    "text": "11.7 7. Agreement between devices\nA low-cost wearable gives similar group averages to a laboratory device but individual readings sometimes differ substantially.\n\nWhy is the group bias not enough to decide whether the devices can be used interchangeably?\nWhat do limits of agreement add?\nWhy might a high correlation still be insufficient evidence of agreement?",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exam preparation</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#correlation-and-prediction",
+    "href": "Practical9.html#correlation-and-prediction",
+    "title": "9  Exam preparation",
+    "section": "11.8 8. Correlation and prediction",
+    "text": "11.8 8. Correlation and prediction\nA relationship between a field test and match output is reported as r = 0.35, p &lt; 0.05.\n\nWhat does the p-value suggest?\nWhat does the size of r suggest?\nWould you be cautious about using the field test to predict individual match output? Why?",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exam preparation</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#internal-load-scales",
+    "href": "Practical9.html#internal-load-scales",
+    "title": "9  Exam preparation",
+    "section": "11.9 9. Internal load scales",
+    "text": "11.9 9. Internal load scales\nCompare a within-session RPE scale, session-RPE, and Borg RPE approach.\n\nWhat is each trying to capture?\nWhy does timing of administration matter?\nWhat are two practical advantages and two limitations of subjective scales?",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exam preparation</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#biomarkers-in-applied-monitoring",
+    "href": "Practical9.html#biomarkers-in-applied-monitoring",
+    "title": "9  Exam preparation",
+    "section": "11.10 10. Biomarkers in applied monitoring",
+    "text": "11.10 10. Biomarkers in applied monitoring\nChoose one hormonal, immune, or biochemical marker discussed in the unit.\n\nWhat does it broadly reflect physiologically?\nWhat is one advantage of using it?\nWhat are two limitations in an applied sport environment?\nWhy should it usually be interpreted alongside other monitoring information?",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exam preparation</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#plotting-before-analysis",
+    "href": "Practical9.html#plotting-before-analysis",
+    "title": "9  Exam preparation",
+    "section": "11.11 11. Plotting before analysis",
+    "text": "11.11 11. Plotting before analysis\nList five things a plot can help you check before running or interpreting statistical analyses. For each one, write a phrase explaining why it matters.",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exam preparation</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#planning-a-field-test",
+    "href": "Practical9.html#planning-a-field-test",
+    "title": "9  Exam preparation",
+    "section": "11.12 12. Planning a field test",
+    "text": "11.12 12. Planning a field test\nYou have been asked to develop a new test for a team sport. Write the first five planning steps you would take before collecting data. Focus on the logic of the process rather than memorising a fixed list.",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exam preparation</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#scenario-1-selecting-a-monitoring-test",
+    "href": "Practical9.html#scenario-1-selecting-a-monitoring-test",
+    "title": "9  Exam preparation",
+    "section": "12.1 Scenario 1 — Selecting a monitoring test",
+    "text": "12.1 Scenario 1 — Selecting a monitoring test\nA volleyball program is deciding between two lower-body monitoring tests:\n\n\n\n\n\n\n\n\n\nTest\nCV%\nTypical error\nRelationship with match-relevant outcome\n\n\n\n\nTest A: controlled jump test\n3.5%\nlow\nmoderate relationship with match jumping actions\n\n\nTest B: reactive movement task\n6.8%\nhigher\nlarge relationship with match movement demands\n\n\n\nDiscuss:\n\nWhat trade-off exists between reliability and validity here?\nWhich test might you prioritise for routine monitoring, and under what conditions?\nCould there be a reason to keep both tests?\nWhat additional information would help you make the decision?",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exam preparation</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#scenario-2-tracking-change-over-time",
+    "href": "Practical9.html#scenario-2-tracking-change-over-time",
+    "title": "9  Exam preparation",
+    "section": "12.2 Scenario 2 — Tracking change over time",
+    "text": "12.2 Scenario 2 — Tracking change over time\nA swimmer’s weekly neuromuscular score varies slightly from week to week during heavy training, then increases noticeably after a taper.\nDiscuss:\n\nWhat information about the test do you need before calling the increase a real change?\nHow would TE, SWC, MDC and MCID each help your interpretation?\nHow would you explain the difference between a detectable change and a worthwhile change to a coach?\nWhat would you do if the athlete’s change is promising but still within the test’s measurement noise?",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exam preparation</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#scenario-3-comparing-a-cheaper-device",
+    "href": "Practical9.html#scenario-3-comparing-a-cheaper-device",
+    "title": "9  Exam preparation",
+    "section": "12.3 Scenario 3 — Comparing a cheaper device",
+    "text": "12.3 Scenario 3 — Comparing a cheaper device\nA team compares a low-cost timing app with its existing timing gates across repeated acceleration trials. The app is cheaper and easier to set up, but the differences between the two systems are not the same for every athlete.\nDiscuss:\n\nWhat does systematic bias tell you?\nWhat do limits of agreement tell you that the bias does not?\nWhy should the limits of agreement be considered relative to the smallest worthwhile change?\nWould you be comfortable switching devices halfway through a season? Why or why not?",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exam preparation</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#scenario-4-same-external-load-different-response",
+    "href": "Practical9.html#scenario-4-same-external-load-different-response",
+    "title": "9  Exam preparation",
+    "section": "12.4 Scenario 4 — Same external load, different response",
+    "text": "12.4 Scenario 4 — Same external load, different response\nTwo athletes complete the same conditioning session. Their external load metrics are almost identical, but Athlete 1 reports low session-RPE and normal recovery markers, whereas Athlete 2 reports high session-RPE, poor sleep and elevated heart-rate response.\nDiscuss:\n\nWhich information reflects the external dose?\nWhich information reflects the internal response?\nWhat could explain the mismatch between the two athletes?\nHow might this affect the next day’s training decision?\nWhy is it risky to rely on only one monitoring measure?",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exam preparation</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#scenario-5-significant-but-not-necessarily-useful",
+    "href": "Practical9.html#scenario-5-significant-but-not-necessarily-useful",
+    "title": "9  Exam preparation",
+    "section": "12.5 Scenario 5 — Significant but not necessarily useful",
+    "text": "12.5 Scenario 5 — Significant but not necessarily useful\nA study reports that a fitness test is statistically significantly related to match running output. The relationship is positive but modest.\nDiscuss:\n\nWhat does statistical significance tell you?\nWhat does it leave out?\nWhy does the size of the relationship matter for prediction?\nWhat other information would you want before recommending the test to a coach?",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exam preparation</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#scenario-6-standardising-a-test-battery",
+    "href": "Practical9.html#scenario-6-standardising-a-test-battery",
+    "title": "9  Exam preparation",
+    "section": "12.6 Scenario 6 — Standardising a test battery",
+    "text": "12.6 Scenario 6 — Standardising a test battery\nA team introduces a preseason testing battery involving jump, sprint and wellness measures. Testing is completed by different staff members across two weeks.\nDiscuss:\n\nWhat aspects of the protocol should be standardised?\nWhy do warm-up, instructions, timing, equipment setup and tester training matter?\nHow could inconsistent procedures affect reliability and validity?\nWhat would you include in a written testing protocol?",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exam preparation</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#key-themes-to-revise-from-semester",
+    "href": "Practical9.html#key-themes-to-revise-from-semester",
+    "title": "9  Exam preparation",
+    "section": "9.2 Key themes to revise from semester",
+    "text": "9.2 Key themes to revise from semester\n\nData types and measurement scales\nDescribing a distribution: mean, median, SD, range, CV%\nReliability and sources of measurement error\nValidity and whether a test measures what it claims to measure\nMeaningful change: TE, SWC, MDC, MCID\nAgreement between measurement methods\nCorrelation, regression and prediction\nPlotting data before analysis\nInternal vs external load\nObjective vs subjective monitoring tools\nDose-response thinking in athlete monitoring\nHypothesis testing, p-values, effect sizes and practical significance\nTest selection, standardisation and applied decision-making",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exam preparation</span>"
+    ]
+  },
+  {
+    "objectID": "Practical9.html#scenario-5-hypothesis-test",
+    "href": "Practical9.html#scenario-5-hypothesis-test",
+    "title": "9  Exam preparation",
+    "section": "12.5 Scenario 5 — Hypothesis test",
+    "text": "12.5 Scenario 5 — Hypothesis test\nA study reports that a fitness test is statistically significantly related to match running output. The relationship is positive but modest.\nDiscuss:\n\nWhat does statistical significance tell you?\nWhat does it leave out?\nWhy does the size of the relationship matter for prediction?\nWhat other information would you want before recommending the test to a coach?",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exam preparation</span>"
     ]
   }
 ]
